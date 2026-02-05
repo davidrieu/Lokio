@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Sono et Éclairage entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location sono
+
+Titre SEO:
+Location Sono et Éclairage entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre matériel sono et éclairage sur Lokio. Enceintes, jeux de lumière, table de mixage : économisez jusqu'à 65%. Réservez en ligne.
+
+URL/Slug:
+location-sono-eclairage
+
+Mots-clés secondaires (séparer par des virgules):
+location enceintes, louer sono, location éclairage, location table de mixage, location jeux de lumière
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location sono" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte

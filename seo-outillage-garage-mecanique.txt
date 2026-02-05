@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Outillage Garage et Mécanique entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location outillage
+
+Titre SEO:
+Location Outillage Garage et Mécanique entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre outillage garage et mécanique sur Lokio. Cric, compresseur, poste à souder : économisez jusqu'à 60%. Réservez en ligne.
+
+URL/Slug:
+location-outillage-garage-mecanique
+
+Mots-clés secondaires (séparer par des virgules):
+location compresseur, louer outillage, location cric hydraulique, location poste à souder, location outillage mécanique
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location outillage" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte

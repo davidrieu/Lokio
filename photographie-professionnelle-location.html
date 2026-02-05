@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Matériel Photo entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre matériel de photographie professionnelle sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Photo</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Matériel Photo : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location matériel photo</strong> pour un shooting, un mariage ou un projet créatif ? Vous possédez du matériel photo inutilisé ? La <strong>location de matériel photo</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer matériel photo</strong> avec les propriétaires d'équipements. Appareils photo, objectifs, flashs, trépieds : notre plateforme de <strong>location matériel photo</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location objectif</strong>, d'une <strong>location appareil photo</strong> ou d'une <strong>location flash studio</strong>, Lokio simplifie la <strong>location de matériel photo</strong>.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">350+</span>
+                    <span class="stat-label">équipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de matériel -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Matériel Photo : Tout l'Équipement Disponible</h2>
+            <p class="intro-text">
+                Notre service de <strong>location matériel photo</strong> propose une large gamme d'équipements pour tous vos besoins créatifs et professionnels. De la simple <strong>location appareil photo</strong> au kit studio complet, découvrez tout l'équipement en location sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">📷</div>
+                    <h3>Location Appareil Photo Reflex</h3>
+                    <p><strong>Location appareil photo</strong> reflex : Canon, Nikon, Sony. Boîtiers plein format et APS-C pour <strong>location matériel photo</strong> pro.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les appareils photo</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔭</div>
+                    <h3>Location Objectifs</h3>
+                    <p><strong>Location objectif</strong> : grand angle, téléobjectif, macro, portrait 85mm. Objectifs Canon, Nikon, Sony, Sigma pour votre <strong>location matériel photo</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un objectif</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">⚡</div>
+                    <h3>Location Flash et Éclairage Studio</h3>
+                    <p><strong>Location flash studio</strong> : flashs cobra, flashs de studio, softbox, parapluies. Éclairage pro pour <strong>location matériel photo</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver éclairage studio</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">📐</div>
+                    <h3>Location Trépieds et Stabilisateurs</h3>
+                    <p>Trépieds photo/vidéo, monopodes, gimbals, stabilisateurs. Accessoires essentiels pour votre <strong>location matériel photo</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un trépied</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎥</div>
+                    <h3>Location Caméra Vidéo</h3>
+                    <p>Caméras vidéo 4K, caméscopes professionnels, GoPro. <strong>Location matériel photo</strong> et vidéo pour tous projets.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les caméras vidéo</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🖼️</div>
+                    <h3>Location Fond Studio et Décors</h3>
+                    <p>Fonds photo (blanc, noir, chromakey), supports, réflecteurs. <strong>Louer matériel photo</strong> studio complet.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer fonds studio</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚁</div>
+                    <h3>Location Drone Photo</h3>
+                    <p>Drones DJI avec caméra 4K, drone photo/vidéo aérien. <strong>Location matériel photo</strong> aérienne pour prises de vue uniques.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les drones</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💼</div>
+                    <h3>Location Pack Studio Complet</h3>
+                    <p>Packs tout-en-un : boîtier + objectifs + éclairage + fonds. <strong>Location matériel photo</strong> complet pour shootings pro.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les packs studio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Matériel Photo sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 70%</h3>
+                    <p>La <strong>location matériel photo</strong> entre particuliers vous permet d'économiser par rapport aux loueurs spécialisés. La <strong>location de matériel photo</strong> est plus abordable.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📷</div>
+                    <h3>Matériel Haut de Gamme</h3>
+                    <p>La <strong>location objectif</strong>, <strong>location appareil photo</strong> et <strong>location flash studio</strong> offrent du matériel professionnel de qualité.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Photo Proximité</h3>
+                    <p>Trouvez de la <strong>location matériel photo</strong> près de chez vous. Récupérez facilement votre équipement dans votre ville.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔄</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>La <strong>location matériel photo</strong> permet de tester un objectif ou boîtier avant un investissement de plusieurs milliers d'euros.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎯</div>
+                    <h3>Matériel Adapté au Projet</h3>
+                    <p>La <strong>location matériel photo</strong> donne accès au bon objectif pour chaque situation : macro, portrait, sport, paysage.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Photo Sécurisée</h3>
+                    <p>Toute <strong>location de matériel photo</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Matériel Photo : Trouvez Votre Équipement Maintenant</h2>
+            <p>La <strong style="color: white;">location matériel photo</strong> n'a jamais été aussi simple. Trouvez votre équipement photo en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>📷 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 50% à 70% moins cher que les loueurs professionnels</li>
+                        <li><strong>Testez du matériel</strong> : Essayez un objectif ou boîtier avant d'acheter</li>
+                        <li><strong>Pas d'investissement</strong> : Accédez au matériel pro sans dépenser des milliers d'euros</li>
+                        <li><strong>Flexibilité</strong> : Location jour, weekend ou semaine selon votre projet</li>
+                        <li><strong>Large choix</strong> : Canon, Nikon, Sony, Fuji et toutes marques disponibles</li>
+                        <li><strong>Conseils passionnés</strong> : Les photographes loueurs partagent leurs conseils</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de matériel photo dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités près de chez vous</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> l'équipement au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Photographiez</strong> et rendez le matériel à la fin de la période</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver du Matériel Photo</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Matériel ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Matériel Photo</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre matériel photo peut rapporter 200€ à 1000€ par mois</li>
+                        <li><strong>Amortissez vos investissements</strong> : Rentabilisez objectifs et boîtiers coûteux</li>
+                        <li><strong>Matériel sous-utilisé</strong> : Vos objectifs prennent la poussière entre deux shootings</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel précieux</li>
+                        <li><strong>Forte demande</strong> : Le matériel photo est très recherché par photographes et créateurs</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description du matériel</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location de photographes</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Matériel Photo sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location matériel photo</strong> proposés sur notre plateforme. De l'objectif portrait au kit studio complet, trouvez l'inspiration.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Canon EOS R6 Mark II + 24-70mm f/2.8</h3>
+                    <p><strong>Boîtier Hybride Plein Format</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 80€/jour - 350€/semaine</p>
+                    <p>Appareil photo hybride Canon plein format avec objectif polyvalent 24-70mm f/2.8. Idéal mariages et reportages photo.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Kit Éclairage Studio 3 Flashs Godox</h3>
+                    <p><strong>3x 400W + Softbox + Parapluies</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 60€/jour - 250€/semaine</p>
+                    <p>Kit studio complet avec 3 flashs 400W, softbox, parapluies, réflecteurs et pieds. Parfait portraits et produits.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Sony 70-200mm f/2.8 GM II</h3>
+                    <p><strong>Téléobjectif Pro - Monture E</strong></p>
+                    <p>📍 Toulouse (31)</p>
+                    <p><strong>Prix :</strong> 45€/jour - 200€/semaine</p>
+                    <p>Téléobjectif professionnel Sony, autofocus rapide, stabilisé. Idéal sport, événements et portraits à distance.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Matériel Photo</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location matériel photo sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location matériel photo</strong> sur Lokio est simple : vous recherchez le type d'équipement dont vous avez besoin, vous consultez les annonces de <strong>location de matériel photo</strong> disponibles près de chez vous, vous contactez le propriétaire et réservez. Le paiement de la <strong>location matériel photo</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location matériel photo ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location matériel photo</strong> varie selon l'équipement. En moyenne, comptez entre 30€ et 80€ par jour pour un boîtier reflex ou hybride. Un <strong>objectif</strong> pro coûte 25€ à 60€ par jour. Un kit <strong>éclairage studio</strong> est à 40€ à 80€ par jour. Sur Lokio, vous pouvez comparer les prix de <strong>location matériel photo</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location matériel photo est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations matériel photo</strong> sur Lokio sont sécurisées. Une caution importante est demandée proportionnelle à la valeur du matériel. Un système d'évaluation permet de vérifier la fiabilité des utilisateurs et l'état de l'équipement.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je tester un objectif avant de l'acheter ?</div>
+                    <div class="faq-answer">
+                        C'est un usage courant de la <strong>location matériel photo</strong> sur Lokio. De nombreux photographes louent un <strong>objectif</strong> pendant quelques jours pour le tester en conditions réelles avant d'investir. C'est bien plus fiable que de se fier uniquement aux avis en ligne.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location matériel photo ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location matériel photo</strong> dépendent de votre équipement. Un boîtier plein format peut générer 300€ à 800€ par mois. Un <strong>objectif</strong> haut de gamme rapporte 150€ à 500€ mensuels. Un kit studio complet peut générer 400€ à 1200€ par mois. Lokio prélève une commission de 15% sur chaque <strong>location matériel photo</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location matériel photo ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location matériel photo</strong> est généralement d'une journée. Les locations weekend (vendredi-lundi) sont très populaires pour les événements. Certains loueurs proposent des forfaits semaine avec tarifs dégressifs pour la <strong>location matériel photo</strong> longue durée.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location matériel photo ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location matériel photo</strong>, vous êtes protégé par : vérification d'identité des locataires, caution bloquée proportionnelle à la valeur avant chaque <strong>location de matériel photo</strong>, système d'évaluation, vérification de l'état avant et après. Vous gardez le contrôle de votre <strong>location matériel photo</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les équipements les plus demandés en location matériel photo ?</div>
+                    <div class="faq-answer">
+                        Les équipements les plus demandés en <strong>location matériel photo</strong> sont les <strong>objectifs</strong> lumineux (f/1.4, f/2.8), les boîtiers hybrides plein format, les kits <strong>éclairage studio</strong> (flashs + softbox), les <strong>drones</strong> photo DJI, et les trépieds carbone. Les téléobjectifs sport et les objectifs macro sont également très recherchés en <strong>location matériel photo</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Matériel Photo : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location matériel photo</strong> pour votre prochain projet créatif, ou que vous souhaitiez rentabiliser votre équipement photographique, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location matériel photo</strong> entre particuliers. De l'objectif portrait au <strong>kit studio complet</strong>, tout devient simple avec Lokio.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Photo</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

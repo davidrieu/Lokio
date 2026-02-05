@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Sono et Éclairage entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre matériel sono et éclairage sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Sono</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Sono : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location sono</strong> pour une fête, un mariage ou un événement ? Vous possédez du matériel sonorisation ou éclairage inutilisé ? La <strong>location de sono</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer sono</strong> avec les propriétaires d'équipements. Enceintes, tables de mixage, jeux de lumière, machines à fumée : notre plateforme de <strong>location sono</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location enceintes</strong>, d'une <strong>location éclairage</strong> ou d'une <strong>location table de mixage</strong>, Lokio simplifie la <strong>location de sono</strong>.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">65%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">450+</span>
+                    <span class="stat-label">équipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de matériel -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Sono : Tout le Matériel Disponible</h2>
+            <p class="intro-text">
+                Notre service de <strong>location sono</strong> propose une large gamme d'équipements pour tous vos besoins sonores et lumineux. De la simple <strong>location enceintes</strong> au pack complet sono et éclairage, découvrez tout l'équipement en location sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔊</div>
+                    <h3>Location Enceintes</h3>
+                    <p><strong>Location sono</strong> enceintes : enceintes amplifiées 200W à 2000W, caissons de basses, colonnes portables. Son puissant pour événements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les enceintes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎛️</div>
+                    <h3>Location Table de Mixage</h3>
+                    <p><strong>Location table de mixage</strong> : tables 4 à 16 pistes, contrôleurs DJ, mixeurs numériques. Pour <strong>location sono</strong> professionnelle.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer une table de mixage</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💡</div>
+                    <h3>Location Jeux de Lumière</h3>
+                    <p><strong>Location éclairage</strong> : lyres, spots LED, laser, stroboscopes, boules à facettes. Ambiance lumineuse pour soirées.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver des jeux de lumière</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎤</div>
+                    <h3>Location Microphones</h3>
+                    <p>Micros sans fil, micros chant, micros sur pied. Complément indispensable à votre <strong>location sono</strong> pour discours et karaoké.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer des micros</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌫️</div>
+                    <h3>Location Machine à Fumée</h3>
+                    <p>Machines à fumée, machines à brouillard, machines à bulles. Effets spéciaux pour compléter votre <strong>location sono</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les machines à effets</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎧</div>
+                    <h3>Location Matériel DJ</h3>
+                    <p>Platines, contrôleurs Pioneer/Numark, casques DJ. <strong>Location sono</strong> complète pour DJ amateurs et professionnels.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer matériel DJ</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏗️</div>
+                    <h3>Location Structures et Pieds</h3>
+                    <p>Pieds d'enceintes, ponts lumière, structures alu. Support technique pour votre <strong>location éclairage</strong> et sono.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les structures</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎵</div>
+                    <h3>Location Pack Sono Complet</h3>
+                    <p>Packs tout-en-un : enceintes + mixeur + micros + lumières. <strong>Louer sono</strong> complète pour 50 à 500 personnes.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les packs complets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Sono sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 65%</h3>
+                    <p>La <strong>location sono</strong> entre particuliers vous permet d'économiser par rapport aux prestataires événementiels. La <strong>location de sono</strong> est plus abordable.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔊</div>
+                    <h3>Matériel Professionnel</h3>
+                    <p>La <strong>location enceintes</strong>, <strong>location éclairage</strong> et <strong>location table de mixage</strong> offrent du matériel de qualité pro.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Sono Proximité</h3>
+                    <p>Trouvez de la <strong>location sono</strong> près de chez vous. Récupérez facilement votre matériel dans votre ville.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎉</div>
+                    <h3>Événements Réussis</h3>
+                    <p>La <strong>location sono</strong> garantit un son de qualité et une ambiance lumineuse pour vos fêtes et célébrations.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">⏰</div>
+                    <h3>Location Courte Durée</h3>
+                    <p>La <strong>location sono</strong> évite d'acheter du matériel coûteux pour un usage ponctuel une à deux fois par an.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sono Sécurisée</h3>
+                    <p>Toute <strong>location de sono</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Sono : Trouvez Votre Matériel Maintenant</h2>
+            <p>La <strong style="color: white;">location sono</strong> n'a jamais été aussi simple. Trouvez votre équipement son et lumière en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🔊 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 50% à 70% moins cher que les prestataires événementiels</li>
+                        <li><strong>Son professionnel</strong> : Accédez à du matériel de qualité sans investissement</li>
+                        <li><strong>Éclairage complet</strong> : Jeux de lumière pour transformer votre événement</li>
+                        <li><strong>Flexibilité</strong> : Location pour une soirée, un weekend ou une semaine</li>
+                        <li><strong>Conseils du propriétaire</strong> : Les loueurs vous expliquent le fonctionnement</li>
+                        <li><strong>Proximité</strong> : Récupérez le matériel à quelques minutes de chez vous</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de matériel sono ou éclairage dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et puissances disponibles près de chez vous</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> le matériel au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Animez</strong> votre événement et rendez le matériel à la fin</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver du Matériel Sono</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Matériel ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Équipement</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre matériel sono peut rapporter 200€ à 800€ par mois</li>
+                        <li><strong>Amortissez vos achats</strong> : Rentabilisez vos enceintes et jeux de lumière</li>
+                        <li><strong>Matériel qui dort</strong> : Faites profiter votre équipement entre deux événements</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Le matériel sono est très recherché pour fêtes et mariages</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description du matériel</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location pour événements</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Sono sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location sono</strong> proposés sur notre plateforme. Des enceintes portables au pack sono complet, trouvez l'inspiration.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Pack Sono Complet 300 Personnes</h3>
+                    <p><strong>2 Enceintes 1000W + Caisson + Mixeur</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 120€/jour - 280€/weekend</p>
+                    <p>Pack sono professionnel complet avec 2 enceintes amplifiées, caisson de basses, table de mixage 8 pistes et 2 micros sans fil.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Kit Éclairage Soirée 8 Jeux de Lumière</h3>
+                    <p><strong>4 Lyres + 2 Lasers + 2 Stroboscopes</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 80€/jour - 180€/weekend</p>
+                    <p>Kit éclairage complet avec pieds, câbles et télécommande DMX. Effets professionnels pour soirées de 100 à 400 personnes.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Enceinte Bluetooth JBL PartyBox 1000</h3>
+                    <p><strong>1100W - Éclairage LED intégré</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 50€/jour - 120€/weekend</p>
+                    <p>Enceinte portable puissante avec jeux de lumière intégrés. Bluetooth, USB, entrée micro. Parfait fêtes 50-100 personnes.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Sono</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location sono sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location sono</strong> sur Lokio est simple : vous recherchez le type d'équipement dont vous avez besoin, vous consultez les annonces de <strong>location de sono</strong> disponibles près de chez vous, vous contactez le propriétaire et réservez. Le paiement de la <strong>location sono</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location sono ou éclairage ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location sono</strong> varie selon la puissance et le matériel. En moyenne, comptez entre 40€ et 80€ par jour pour une paire d'enceintes amplifiées. Un pack sono complet coûte 100€ à 200€ par jour. Un kit <strong>éclairage</strong> est à 60€ à 120€ par jour. Sur Lokio, vous pouvez comparer les prix de <strong>location sono</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location sono est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations sono</strong> sur Lokio sont sécurisées. Une caution est demandée pour garantir le bon état du matériel. Un système d'évaluation permet de vérifier la fiabilité des utilisateurs et l'état de l'équipement.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle puissance de sono pour mon événement ?</div>
+                    <div class="faq-answer">
+                        Pour choisir votre <strong>location sono</strong>, comptez environ 5W par personne en intérieur et 8W par personne en extérieur. Pour 50 personnes, 250-400W suffisent. Pour 100 personnes, prévoyez 500-800W. Pour 200+ personnes, optez pour 1000W et plus. Les loueurs sur Lokio peuvent vous conseiller sur la <strong>location sono</strong> adaptée.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location sono ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location sono</strong> dépendent de votre équipement. Un pack enceintes peut générer 300€ à 800€ par mois. Un kit <strong>éclairage</strong> professionnel rapporte 200€ à 600€ mensuels. Un pack complet sono + lumière peut générer 500€ à 1500€ par mois. Lokio prélève une commission de 15% sur chaque <strong>location sono</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location sono ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location sono</strong> est généralement d'une journée ou un weekend. La plupart des événements nécessitent une <strong>location sono</strong> du vendredi au dimanche. Des tarifs dégressifs sont souvent proposés pour les <strong>locations sono</strong> de plusieurs jours.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location sono ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location sono</strong>, vous êtes protégé par : vérification d'identité des locataires, caution bloquée avant chaque <strong>location de sono</strong>, système d'évaluation, test du matériel avant et après. Vous gardez le contrôle de votre <strong>location sono</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les équipements les plus demandés en location sono ?</div>
+                    <div class="faq-answer">
+                        Les équipements les plus demandés en <strong>location sono</strong> sont les packs complets <strong>enceintes</strong> + mixeur pour mariages, les enceintes Bluetooth portables pour fêtes privées, les kits <strong>éclairage</strong> LED pour soirées, les micros sans fil pour discours et karaoké, et les machines à fumée pour ambiance festive. Le matériel de <strong>location sono</strong> tout-en-un est particulièrement recherché.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Sono : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location sono</strong> pour votre prochain événement, ou que vous souhaitiez rentabiliser votre matériel audio et lumière, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location sono</strong> entre particuliers. Des enceintes portables au pack complet <strong>sono et éclairage</strong>, tout devient simple avec Lokio.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Sono</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

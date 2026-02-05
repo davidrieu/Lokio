@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Matériel Photo entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location matériel photo
+
+Titre SEO:
+Location Matériel Photo entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre matériel de photographie professionnelle sur Lokio. Appareils, objectifs, flashs studio : économisez jusqu'à 70%. Réservez en ligne.
+
+URL/Slug:
+location-materiel-photo
+
+Mots-clés secondaires (séparer par des virgules):
+location objectif, louer matériel photo, location appareil photo, location flash studio, location drone photo
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location matériel photo" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte

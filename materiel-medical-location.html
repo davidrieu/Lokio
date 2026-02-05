@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Matériel Médical entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre matériel médical et de convalescence sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Médical</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Matériel Médical : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location matériel médical</strong> pour une convalescence, un maintien à domicile ou une mobilité temporaire ? Vous possédez du matériel médical inutilisé ? La <strong>location de matériel médical</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer matériel médical</strong> avec les propriétaires d'équipements. Fauteuils roulants, lits médicalisés, déambulateurs, béquilles : notre plateforme de <strong>location matériel médical</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location fauteuil roulant</strong>, d'un <strong>location lit médicalisé</strong> ou d'un <strong>location déambulateur</strong>, Lokio simplifie la <strong>location de matériel médical</strong>.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">55%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">300+</span>
+                    <span class="stat-label">équipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de matériel -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Matériel Médical : Tout l'Équipement Disponible</h2>
+            <p class="intro-text">
+                Notre service de <strong>location matériel médical</strong> propose une large gamme d'équipements pour la mobilité, la convalescence et le maintien à domicile. De la simple <strong>location béquilles</strong> au lit médicalisé complet, découvrez tout l'équipement en location sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🦽</div>
+                    <h3>Location Fauteuil Roulant</h3>
+                    <p><strong>Location fauteuil roulant</strong> : fauteuils manuels, électriques, pliables. Mobilité pour convalescence et déplacements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les fauteuils roulants</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛏️</div>
+                    <h3>Location Lit Médicalisé</h3>
+                    <p><strong>Location lit médicalisé</strong> : lits électriques, matelas anti-escarres, barrières. <strong>Location matériel médical</strong> pour domicile.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un lit médicalisé</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚶</div>
+                    <h3>Location Déambulateur</h3>
+                    <p><strong>Location déambulateur</strong> : déambulateurs pliables, rollators à 4 roues, cadres de marche. Aide à la mobilité sécurisée.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un déambulateur</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🩼</div>
+                    <h3>Location Béquilles et Cannes</h3>
+                    <p>Béquilles axillaires, cannes anglaises, cannes de marche réglables. Complément à votre <strong>location matériel médical</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer des béquilles</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🪜</div>
+                    <h3>Location Rampe d'Accès</h3>
+                    <p>Rampes d'accès portables, rampes pliables PMR. <strong>Location matériel médical</strong> pour accessibilité temporaire.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les rampes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚿</div>
+                    <h3>Location Siège de Douche</h3>
+                    <p>Sièges de douche, tabourets de bain, barres d'appui. <strong>Louer matériel médical</strong> pour sécurité salle de bain.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer siège de douche</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏥</div>
+                    <h3>Location Scooter Électrique PMR</h3>
+                    <p>Scooters de mobilité électriques, autonomie 20-40 km. <strong>Location matériel médical</strong> pour déplacements extérieurs.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les scooters</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💊</div>
+                    <h3>Location Matériel de Rééducation</h3>
+                    <p>Pédaliers, vélos d'appartement adaptés, appareils de kiné. <strong>Location matériel médical</strong> pour rééducation à domicile.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir matériel rééducation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Matériel Médical sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 55%</h3>
+                    <p>La <strong>location matériel médical</strong> entre particuliers vous permet d'économiser par rapport aux pharmacies et loueurs spécialisés. La <strong>location de matériel médical</strong> est plus abordable.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🦽</div>
+                    <h3>Large Choix d'Équipements</h3>
+                    <p>La <strong>location fauteuil roulant</strong>, <strong>location lit médicalisé</strong> et <strong>location déambulateur</strong> offrent un choix adapté à chaque besoin.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximité</h3>
+                    <p>Trouvez de la <strong>location matériel médical</strong> près de chez vous. Évitez les déplacements contraignants en période de convalescence.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">⏰</div>
+                    <h3>Durée Flexible</h3>
+                    <p>La <strong>location matériel médical</strong> s'adapte à votre convalescence : une semaine, un mois ou plusieurs mois selon vos besoins.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">♻️</div>
+                    <h3>Démarche Solidaire</h3>
+                    <p>La <strong>location matériel médical</strong> entre particuliers donne une seconde vie au matériel et aide ceux qui en ont besoin.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toute <strong>location de matériel médical</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Matériel Médical : Trouvez Votre Équipement Maintenant</h2>
+            <p>La <strong style="color: white;">location matériel médical</strong> n'a jamais été aussi simple. Trouvez votre équipement de santé en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🦽 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 40% à 60% moins cher que les pharmacies et loueurs</li>
+                        <li><strong>Besoin temporaire</strong> : Convalescence de quelques semaines sans investir</li>
+                        <li><strong>Matériel de qualité</strong> : Équipements vérifiés et en bon état de fonctionnement</li>
+                        <li><strong>Flexibilité</strong> : Location semaine, mois ou plusieurs mois</li>
+                        <li><strong>Proximité</strong> : Trouvez du matériel près de chez vous ou livraison possible</li>
+                        <li><strong>Disponibilité rapide</strong> : Matériel disponible souvent sous 24-48h</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de matériel médical dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités près de chez vous</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> l'équipement au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Utilisez</strong> et rendez à la fin de votre convalescence</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver du Matériel Médical</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Matériel ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Équipement</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre matériel médical peut rapporter 100€ à 600€ par mois</li>
+                        <li><strong>Amortissez vos achats</strong> : Rentabilisez un fauteuil roulant ou lit médicalisé</li>
+                        <li><strong>Matériel inutilisé</strong> : Après convalescence, votre matériel peut aider d'autres personnes</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Démarche solidaire</strong> : Aidez ceux qui ont besoin de matériel temporairement</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description du matériel</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif hebdomadaire/mensuel</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Matériel Médical sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location matériel médical</strong> proposés sur notre plateforme. Du fauteuil roulant au lit médicalisé, trouvez l'équipement adapté.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Fauteuil Roulant Pliable Léger</h3>
+                    <p><strong>Aluminium - 12 kg - Largeur 45cm</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 40€/semaine - 120€/mois</p>
+                    <p>Fauteuil roulant manuel pliable, léger en aluminium. Freins à tambour, repose-pieds amovibles. Idéal convalescence.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Lit Médicalisé Électrique 3 Plans</h3>
+                    <p><strong>Hauteur Variable - Matelas Inclus</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 150€/mois - 400€/trimestre</p>
+                    <p>Lit médicalisé électrique avec télécommande, hauteur variable, barrières de sécurité. Matelas anti-escarres inclus.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Déambulateur Rollator 4 Roues</h3>
+                    <p><strong>Pliable - Siège Intégré - Panier</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 25€/semaine - 70€/mois</p>
+                    <p>Déambulateur rollator avec siège intégré, panier de rangement, freins. Léger et maniable pour intérieur et extérieur.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Matériel Médical</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location matériel médical sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location matériel médical</strong> sur Lokio est simple : vous recherchez le type d'équipement dont vous avez besoin, vous consultez les annonces de <strong>location de matériel médical</strong> disponibles près de chez vous, vous contactez le propriétaire et réservez. Le paiement de la <strong>location matériel médical</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location matériel médical ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location matériel médical</strong> varie selon l'équipement. En moyenne, comptez entre 25€ et 50€ par semaine pour un <strong>fauteuil roulant</strong> manuel. Un <strong>lit médicalisé</strong> coûte 120€ à 200€ par mois. Un <strong>déambulateur</strong> est à 15€ à 30€ par semaine. Sur Lokio, vous pouvez comparer les prix de <strong>location matériel médical</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location matériel médical est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations matériel médical</strong> sur Lokio sont sécurisées. Une caution est demandée pour garantir le bon état de l'équipement. Un système d'évaluation permet de vérifier la fiabilité des utilisateurs et l'état du matériel.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le matériel médical est-il en bon état et nettoyé ?</div>
+                    <div class="faq-answer">
+                        Les propriétaires de <strong>location matériel médical</strong> sur Lokio s'engagent à fournir du matériel propre, désinfecté et en bon état de fonctionnement. Vous pouvez vérifier les évaluations et photos avant de réserver votre <strong>location de matériel médical</strong>. N'hésitez pas à poser des questions au propriétaire.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location matériel médical ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location matériel médical</strong> dépendent de votre équipement. Un <strong>fauteuil roulant</strong> peut générer 80€ à 200€ par mois. Un <strong>lit médicalisé</strong> peut rapporter 150€ à 400€ mensuels. Un <strong>déambulateur</strong> peut générer 50€ à 120€ par mois. Lokio prélève une commission de 15% sur chaque <strong>location matériel médical</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location matériel médical ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location matériel médical</strong> est généralement d'une semaine. Pour un <strong>lit médicalisé</strong>, la durée minimale est souvent d'un mois. Les <strong>locations matériel médical</strong> longue durée (3-6 mois) bénéficient de tarifs dégressifs très avantageux.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location matériel médical ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location matériel médical</strong>, vous êtes protégé par : vérification d'identité des locataires, caution bloquée avant chaque <strong>location de matériel médical</strong>, système d'évaluation, état des lieux avant et après. Vous gardez le contrôle de votre <strong>location matériel médical</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les équipements les plus demandés en location matériel médical ?</div>
+                    <div class="faq-answer">
+                        Les équipements les plus demandés en <strong>location matériel médical</strong> sont la <strong>location fauteuil roulant</strong> (manuel et électrique), le <strong>lit médicalisé</strong> électrique avec matelas, le <strong>déambulateur</strong> rollator, les béquilles et cannes anglaises, et les sièges de douche. Le matériel de rééducation à domicile est également très recherché en <strong>location matériel médical</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Matériel Médical : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location matériel médical</strong> pour votre convalescence, ou que vous souhaitiez rentabiliser votre équipement après guérison, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location matériel médical</strong> entre particuliers. Du fauteuil roulant au <strong>lit médicalisé</strong>, tout devient simple avec Lokio.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Médical</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

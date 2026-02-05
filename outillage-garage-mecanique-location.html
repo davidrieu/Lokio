@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Outillage Garage et Mécanique entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre outillage garage et mécanique sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer de l'Outillage</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Outillage Mécanique : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location outillage</strong> pour une réparation auto, un entretien moto ou des travaux mécaniques ? Vous possédez de l'outillage garage inutilisé ? La <strong>location d'outillage</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer outillage</strong> avec les propriétaires d'équipements. Crics, compresseurs, clés dynamométriques, ponts élévateurs : notre plateforme de <strong>location outillage</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location compresseur</strong>, d'un <strong>location cric hydraulique</strong> ou d'une <strong>location poste à souder</strong>, Lokio simplifie la <strong>location d'outillage</strong>.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">outils disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'outillage -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Outillage : Tout le Matériel Disponible</h2>
+            <p class="intro-text">
+                Notre service de <strong>location outillage</strong> propose une large gamme d'équipements pour tous vos besoins mécaniques et automobiles. Du simple <strong>location cric hydraulique</strong> à l'outillage professionnel complet, découvrez tout l'équipement en location sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔧</div>
+                    <h3>Location Cric et Chandelles</h3>
+                    <p><strong>Location cric hydraulique</strong> : crics rouleurs 2-3 tonnes, chandelles, crics bouteille. Soulever voiture en sécurité.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les crics</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💨</div>
+                    <h3>Location Compresseur</h3>
+                    <p><strong>Location compresseur</strong> : compresseurs 50-200L, pistolets à peinture, soufflettes. <strong>Location outillage</strong> pneumatique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un compresseur</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔩</div>
+                    <h3>Location Clé Dynamométrique</h3>
+                    <p>Clés dynamométriques, coffrets de douilles, clés à chocs. <strong>Location outillage</strong> de précision pour mécanique auto.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver clés dynamométriques</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">⚡</div>
+                    <h3>Location Poste à Souder</h3>
+                    <p><strong>Location poste à souder</strong> : MIG, TIG, arc. Postes à souder pour réparations carrosserie et mécanique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un poste à souder</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛞</div>
+                    <h3>Location Équilibreuse et Démonte-Pneu</h3>
+                    <p>Démonte-pneus, équilibreuses, clés à chocs pneumatiques. <strong>Louer outillage</strong> pour changement de pneus professionnel.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir l'outillage pneus</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔋</div>
+                    <h3>Location Chargeur et Diagnostic</h3>
+                    <p>Chargeurs de batterie, valises diagnostic OBD, testeurs. <strong>Location outillage</strong> électronique automobile.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer diagnostic auto</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏗️</div>
+                    <h3>Location Pont Élévateur</h3>
+                    <p>Ponts élévateurs 2 colonnes, rampes de levage. <strong>Location outillage</strong> professionnel pour travaux sous véhicule.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les ponts</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🧰</div>
+                    <h3>Location Caisse à Outils Complète</h3>
+                    <p>Servantes d'atelier, coffrets complets 100+ pièces. <strong>Location outillage</strong> mécanique tout-en-un pour garage.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les caisses à outils</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Outillage sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 60%</h3>
+                    <p>La <strong>location outillage</strong> entre particuliers vous permet d'économiser par rapport à l'achat d'outils coûteux. La <strong>location d'outillage</strong> est plus abordable.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔧</div>
+                    <h3>Outillage Professionnel</h3>
+                    <p>La <strong>location compresseur</strong>, <strong>location cric hydraulique</strong> et <strong>location poste à souder</strong> offrent du matériel de qualité pro.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Outillage Proximité</h3>
+                    <p>Trouvez de la <strong>location outillage</strong> près de chez vous. Récupérez facilement vos outils dans votre ville.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🚗</div>
+                    <h3>Réparations Économiques</h3>
+                    <p>La <strong>location outillage</strong> permet de faire vous-même vos réparations auto et moto et d'économiser sur la main-d'oeuvre.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">⏰</div>
+                    <h3>Usage Ponctuel</h3>
+                    <p>La <strong>location outillage</strong> évite d'acheter des outils spécialisés pour un usage unique ou occasionnel.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Outillage Sécurisée</h3>
+                    <p>Toute <strong>location d'outillage</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Outillage : Trouvez Vos Outils Maintenant</h2>
+            <p>La <strong style="color: white;">location outillage</strong> n'a jamais été aussi simple. Trouvez votre équipement mécanique en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🔧 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 50% à 70% moins cher que l'achat d'outillage neuf</li>
+                        <li><strong>Outillage pro</strong> : Accédez à des outils de qualité professionnelle</li>
+                        <li><strong>Pas de stockage</strong> : Plus besoin de stocker des outils encombrants</li>
+                        <li><strong>Flexibilité</strong> : Location jour, weekend ou semaine selon vos travaux</li>
+                        <li><strong>Conseils du propriétaire</strong> : Les mécanos partagent leurs astuces</li>
+                        <li><strong>Faites-le vous-même</strong> : Économisez la main-d'oeuvre garagiste</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type d'outillage dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités près de chez vous</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> l'outillage au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Réparez</strong> et rendez les outils propres à la fin</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver de l'Outillage</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Outillage ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Outillage</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre outillage peut rapporter 150€ à 700€ par mois</li>
+                        <li><strong>Amortissez vos achats</strong> : Rentabilisez compresseur, cric ou poste à souder</li>
+                        <li><strong>Outillage sous-utilisé</strong> : Vos outils restent au garage 90% du temps</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre outillage</li>
+                        <li><strong>Forte demande</strong> : Les outils mécanique sont très recherchés par bricoleurs et passionnés</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description de l'outillage</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location de bricoleurs</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Outillage sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location outillage</strong> proposés sur notre plateforme. Du cric rouleur au poste à souder, trouvez l'outil qu'il vous faut.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Cric Rouleur Hydraulique 3 Tonnes</h3>
+                    <p><strong>Acier - Hauteur 50cm - 2 Chandelles</strong></p>
+                    <p>📍 Toulouse (31)</p>
+                    <p><strong>Prix :</strong> 20€/jour - 60€/weekend</p>
+                    <p>Cric rouleur professionnel 3 tonnes avec 2 chandelles de sécurité. Idéal changement plaquettes, vidange, suspension.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Compresseur 200L + Outillage Pneumatique</h3>
+                    <p><strong>3CV - 10 bars - Kit Clé à Chocs</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 40€/jour - 100€/weekend</p>
+                    <p>Compresseur 200L avec clé à chocs pneumatique, soufflette, pistolet de gonflage. Parfait atelier mécanique.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Poste à Souder MIG 200A</h3>
+                    <p><strong>Semi-automatique - Gaz + Fil Fourré</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 35€/jour - 90€/weekend</p>
+                    <p>Poste à souder MIG professionnel 200A, soudure acier et inox. Masque et gants inclus. Réparation châssis et carrosserie.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Outillage</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location outillage sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location outillage</strong> sur Lokio est simple : vous recherchez le type d'outil dont vous avez besoin, vous consultez les annonces de <strong>location d'outillage</strong> disponibles près de chez vous, vous contactez le propriétaire et réservez. Le paiement de la <strong>location outillage</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location outillage mécanique ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location outillage</strong> varie selon l'équipement. En moyenne, comptez entre 15€ et 30€ par jour pour un <strong>cric hydraulique</strong> avec chandelles. Un <strong>compresseur</strong> coûte 30€ à 50€ par jour. Un <strong>poste à souder</strong> est à 25€ à 45€ par jour. Sur Lokio, vous pouvez comparer les prix de <strong>location outillage</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location outillage est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations outillage</strong> sur Lokio sont sécurisées. Une caution est demandée pour garantir le bon état du matériel. Un système d'évaluation permet de vérifier la fiabilité des utilisateurs et l'état de l'outillage mécanique.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je louer de l'outillage pour une réparation auto spécifique ?</div>
+                    <div class="faq-answer">
+                        Absolument ! La <strong>location outillage</strong> sur Lokio couvre tous les besoins mécaniques : changement de pneus, vidange, freins, suspension, embrayage. Vous pouvez <strong>louer outillage</strong> spécifique comme des arrache-rotules, des extracteurs de roulements ou des clés spéciales selon votre réparation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location outillage ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location outillage</strong> dépendent de vos outils. Un <strong>compresseur</strong> peut générer 200€ à 500€ par mois. Un <strong>poste à souder</strong> peut rapporter 150€ à 400€ mensuels. Un <strong>cric</strong> professionnel peut générer 100€ à 300€ par mois. Lokio prélève une commission de 15% sur chaque <strong>location outillage</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location outillage ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location outillage</strong> est généralement d'une journée. Les locations weekend sont les plus populaires pour les réparations auto. Certains loueurs proposent des forfaits semaine avec tarifs dégressifs pour la <strong>location outillage</strong> de projets plus longs.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location outillage ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location outillage</strong>, vous êtes protégé par : vérification d'identité des locataires, caution bloquée avant chaque <strong>location d'outillage</strong>, système d'évaluation, vérification de l'état avant et après. Vous gardez le contrôle de votre <strong>location outillage</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les outils les plus demandés en location outillage ?</div>
+                    <div class="faq-answer">
+                        Les outils les plus demandés en <strong>location outillage</strong> sont le <strong>cric hydraulique</strong> rouleur avec chandelles, le <strong>compresseur</strong> avec clé à chocs, le <strong>poste à souder</strong> MIG, les clés dynamométriques, les valises de diagnostic OBD, et les coffrets de douilles complets. L'outillage pneumatique professionnel est particulièrement recherché en <strong>location outillage</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Outillage : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location outillage</strong> pour votre prochaine réparation auto, ou que vous souhaitiez rentabiliser votre matériel de garage, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location outillage</strong> entre particuliers. Du cric rouleur au <strong>poste à souder</strong>, tout devient simple avec Lokio.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer de l'Outillage</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

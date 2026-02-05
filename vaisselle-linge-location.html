@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Vaisselle et Linge de Table entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre vaisselle et linge de réception sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer de la Vaisselle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Vaisselle : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location vaisselle</strong> pour un mariage, un anniversaire ou une réception ? Vous possédez de la vaisselle et du linge de table inutilisés ? La <strong>location de vaisselle</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer vaisselle</strong> avec les propriétaires d'équipements de réception. Assiettes, verres, couverts, nappes, serviettes : notre plateforme de <strong>location vaisselle</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location nappes</strong>, d'une <strong>location verres</strong> ou d'une <strong>location couverts</strong>, Lokio simplifie la <strong>location de vaisselle</strong>.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">lots disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de vaisselle -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Vaisselle : Tout le Matériel Disponible</h2>
+            <p class="intro-text">
+                Notre service de <strong>location vaisselle</strong> propose une large gamme d'équipements pour toutes vos réceptions et événements. De la simple <strong>location assiettes</strong> au service complet avec linge de table, découvrez tout l'équipement en location sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍽️</div>
+                    <h3>Location Assiettes</h3>
+                    <p><strong>Location vaisselle</strong> assiettes : plates, creuses, à dessert. Porcelaine, grès, vintage. Lots de 20 à 200 pièces.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les assiettes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🥂</div>
+                    <h3>Location Verres et Flûtes</h3>
+                    <p><strong>Location verres</strong> : verres à vin, flûtes à champagne, verres à eau, coupes cocktail. <strong>Location vaisselle</strong> complète.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer des verres</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍴</div>
+                    <h3>Location Couverts</h3>
+                    <p><strong>Location couverts</strong> : couteaux, fourchettes, cuillères, couverts à dessert. Inox ou argenté pour réceptions élégantes.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver des couverts</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🧵</div>
+                    <h3>Location Nappes et Chemins de Table</h3>
+                    <p><strong>Location nappes</strong> : nappes rondes, rectangulaires, chemins de table. Coton, lin, satin pour <strong>location vaisselle</strong> élégante.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer des nappes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎀</div>
+                    <h3>Location Serviettes en Tissu</h3>
+                    <p>Serviettes en tissu assorties : lin, coton, colorées ou blanches. Complément idéal à votre <strong>location vaisselle</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les serviettes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🫖</div>
+                    <h3>Location Plats de Service</h3>
+                    <p>Plats de présentation, saladiers, soupières, plateaux. <strong>Location vaisselle</strong> de service pour buffets et repas.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer des plats</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">☕</div>
+                    <h3>Location Service à Café et Thé</h3>
+                    <p>Tasses, sous-tasses, théières, cafetières. <strong>Location vaisselle</strong> complète pour brunch et goûters.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les services</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎪</div>
+                    <h3>Location Pack Réception Complet</h3>
+                    <p>Packs tout-en-un : vaisselle + verres + couverts + linge. <strong>Louer vaisselle</strong> complète pour 20 à 200 convives.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les packs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Vaisselle sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 60%</h3>
+                    <p>La <strong>location vaisselle</strong> entre particuliers vous permet d'économiser par rapport aux loueurs professionnels. La <strong>location de vaisselle</strong> est plus abordable.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🍽️</div>
+                    <h3>Large Choix de Vaisselle</h3>
+                    <p>La <strong>location verres</strong>, <strong>location nappes</strong> et <strong>location couverts</strong> offrent un choix immense de styles et quantités.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Vaisselle Proximité</h3>
+                    <p>Trouvez de la <strong>location vaisselle</strong> près de chez vous. Récupérez facilement votre lot dans votre quartier.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🌍</div>
+                    <h3>Démarche Éco-Responsable</h3>
+                    <p>La <strong>location vaisselle</strong> évite le jetable et réduit les déchets. Réceptions zéro déchet grâce à la location entre particuliers.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎨</div>
+                    <h3>Vaisselle Unique et Élégante</h3>
+                    <p>La <strong>location vaisselle</strong> permet d'accéder à de la vaisselle vintage, dépareillée ou haut de gamme pour des tables originales.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Vaisselle Sécurisée</h3>
+                    <p>Toute <strong>location de vaisselle</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Vaisselle : Trouvez Votre Lot Maintenant</h2>
+            <p>La <strong style="color: white;">location vaisselle</strong> n'a jamais été aussi simple. Trouvez votre vaisselle de réception en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🍽️ Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 50% à 70% moins cher que les loueurs professionnels</li>
+                        <li><strong>Vaisselle de qualité</strong> : Porcelaine, cristal, argenterie à prix mini</li>
+                        <li><strong>Zéro déchet</strong> : Fini les assiettes en carton et le plastique jetable</li>
+                        <li><strong>Flexibilité</strong> : Location pour 1 jour, un weekend ou une semaine</li>
+                        <li><strong>Quantité adaptée</strong> : Louez le nombre exact dont vous avez besoin</li>
+                        <li><strong>Linge assorti</strong> : Nappes et serviettes coordonnées pour une belle table</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de vaisselle ou linge dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et quantités disponibles près de chez vous</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> le lot au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> de votre événement et rendez la vaisselle propre</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver de la Vaisselle</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Vaisselle ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Vaisselle</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre vaisselle peut rapporter 100€ à 500€ par mois</li>
+                        <li><strong>Vaisselle inutilisée</strong> : Rentabilisez un service de mariage ou héritage familial</li>
+                        <li><strong>Linge de table dormant</strong> : Vos nappes et serviettes prennent de la valeur</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre vaisselle</li>
+                        <li><strong>Forte demande</strong> : La vaisselle est très recherchée pour mariages et fêtes</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description du lot</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location pour événements</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Vaisselle sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location vaisselle</strong> proposés sur notre plateforme. Du lot de verres au pack réception complet, trouvez l'inspiration.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Pack Vaisselle Mariage 100 Personnes</h3>
+                    <p><strong>Assiettes + Verres + Couverts</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 150€/weekend - 250€/semaine</p>
+                    <p>Lot complet vaisselle blanche porcelaine, 100 sets complets avec verres à vin et flûtes champagne.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Lot 50 Nappes Rondes Blanches</h3>
+                    <p><strong>Diamètre 300cm - Coton</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 80€/weekend - 120€/semaine</p>
+                    <p>Nappes rondes blanches en coton épais, parfaites pour tables de 10 convives. Repassées et prêtes à l'emploi.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>120 Flûtes à Champagne Cristal</h3>
+                    <p><strong>Cristal d'Arques - 16cl</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 60€/weekend - 90€/semaine</p>
+                    <p>Magnifiques flûtes à champagne en cristal, idéales pour cocktails de mariage et événements festifs.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Vaisselle</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location vaisselle sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location vaisselle</strong> sur Lokio est simple : vous recherchez le type de vaisselle ou linge dont vous avez besoin, vous consultez les annonces de <strong>location de vaisselle</strong> disponibles près de chez vous, vous contactez le propriétaire et réservez. Le paiement de la <strong>location vaisselle</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location vaisselle ou linge de table ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location vaisselle</strong> varie selon la quantité et la qualité. En moyenne, comptez entre 1€ et 3€ par couvert complet pour un weekend. La <strong>location nappes</strong> coûte 2€ à 5€ par nappe. Un pack complet 50 personnes revient à 80€ à 150€ le weekend. Sur Lokio, vous pouvez comparer les prix de <strong>location vaisselle</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location vaisselle est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations vaisselle</strong> sur Lokio sont sécurisées. Une caution est demandée pour couvrir la casse éventuelle. Un inventaire précis est réalisé au départ et au retour de la <strong>location vaisselle</strong> pour garantir la bonne gestion du lot.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Faut-il rendre la vaisselle propre ?</div>
+                    <div class="faq-answer">
+                        Cela dépend de chaque annonce de <strong>location vaisselle</strong>. Certains propriétaires demandent un retour propre, d'autres acceptent un retour en état (rincé) moyennant un petit supplément. Vérifiez les conditions de votre <strong>location de vaisselle</strong> avant de réserver.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location vaisselle ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location vaisselle</strong> dépendent de votre lot. Un service complet 100 personnes peut générer 200€ à 500€ par weekend. Un lot de <strong>nappes</strong> de qualité rapporte 80€ à 200€ par location. La saison des mariages (mai-septembre) est particulièrement rentable. Lokio prélève une commission de 15% sur chaque <strong>location vaisselle</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location vaisselle ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location vaisselle</strong> est généralement d'un weekend (vendredi à lundi). Cela permet de préparer la table, profiter de l'événement et ranger sereinement. Certains proposent la <strong>location vaisselle</strong> à la journée pour des événements courts.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location vaisselle ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location vaisselle</strong>, vous êtes protégé par : vérification d'identité des locataires, caution bloquée avant chaque <strong>location de vaisselle</strong>, inventaire détaillé, système d'évaluation. La casse raisonnable est couverte par la caution de votre <strong>location vaisselle</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les articles les plus demandés en location vaisselle ?</div>
+                    <div class="faq-answer">
+                        Les articles les plus demandés en <strong>location vaisselle</strong> sont les packs complets mariage (assiettes + <strong>verres</strong> + <strong>couverts</strong>), les <strong>nappes</strong> blanches ou colorées, les flûtes à champagne en grande quantité, et les services à café/thé pour buffets. Le <strong>linge de table</strong> de qualité (lin, coton épais) est particulièrement recherché.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Vaisselle : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location vaisselle</strong> pour votre prochain événement, ou que vous souhaitiez rentabiliser votre vaisselle de réception, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location vaisselle</strong> entre particuliers. Des assiettes en porcelaine aux <strong>nappes en lin</strong>, tout devient simple avec Lokio.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer de la Vaisselle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Vaisselle et Linge de Table entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location vaisselle
+
+Titre SEO:
+Location Vaisselle et Linge de Table entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre vaisselle et linge de table sur Lokio. Assiettes, verres, nappes, couverts : économisez jusqu'à 60%. Réservez en ligne.
+
+URL/Slug:
+location-vaisselle-linge
+
+Mots-clés secondaires (séparer par des virgules):
+location nappes, louer vaisselle, location verres, location couverts, location linge de table
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location vaisselle" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte
