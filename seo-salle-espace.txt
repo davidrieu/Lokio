@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Salle entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location salle
+
+Titre SEO:
+Location Salle entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre espace et salle sur Lokio. Salles réunion, mariage, anniversaire : économisez jusqu'à 50%. Réservez en ligne.
+
+URL/Slug:
+location-salle
+
+Mots-clés secondaires (séparer par des virgules):
+location espace, louer salle, location salle réunion, location salle anniversaire, location salle mariage
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location salle" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte

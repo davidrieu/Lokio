@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+    
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+    
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Salle entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre espace et salle sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Salle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Salle : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location salle</strong> pour votre événement ? Vous possédez un espace inutilisé ? La <strong>location de salle</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer salle</strong> avec les propriétaires d'espaces. Salles de réunion, salles de mariage, espaces coworking, studios : notre plateforme de <strong>location salle</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location espace</strong>, d'une <strong>location salle réunion</strong> ou d'une <strong>location salle anniversaire</strong>, Lokio simplifie la <strong>location de salle</strong>.
+            </p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">50%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">espaces disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'espaces -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Salle : Tous les Espaces Disponibles</h2>
+            <p class="intro-text">
+                Notre service de <strong>location salle</strong> propose une large gamme d'espaces pour tous vos besoins événementiels et professionnels. De la simple <strong>location salle réunion</strong> au grand espace événementiel, découvrez tous les espaces en location sur Lokio.
+            </p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏢</div>
+                    <h3>Location Salle Réunion</h3>
+                    <p><strong>Location salle réunion</strong> : espaces 8-50 personnes, équipés vidéoprojecteur, wifi. Idéal entreprises et startups.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les salles réunion</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">💒</div>
+                    <h3>Location Salle Mariage</h3>
+                    <p><strong>Location salle mariage</strong> : salles de réception 50-200 personnes, domaines, châteaux. Pour votre grand jour.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer salle mariage</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎉</div>
+                    <h3>Location Salle Anniversaire</h3>
+                    <p><strong>Location salle anniversaire</strong> : espaces festifs 20-100 personnes. Salles des fêtes pour célébrations.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver salle anniversaire</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">💼</div>
+                    <h3>Location Espace Coworking</h3>
+                    <p><strong>Location espace</strong> coworking : bureaux partagés, postes de travail flexibles. <strong>Location salle</strong> professionnelle.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer espace coworking</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎓</div>
+                    <h3>Location Salle Formation</h3>
+                    <p>Salles de formation équipées : 10-40 personnes, tableaux, écrans. <strong>Location salle</strong> pédagogique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir salles formation</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">📸</div>
+                    <h3>Location Studio Photo</h3>
+                    <p>Studios photo/vidéo équipés : fond blanc, éclairages. <strong>Location espace</strong> professionnel création.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer studio photo</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏋️</div>
+                    <h3>Location Salle Sport</h3>
+                    <p>Salles de sport, dojos, studios danse : équipées miroirs, tapis. <strong>Location salle</strong> sportive.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer salles sport</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎨</div>
+                    <h3>Location Loft Événementiel</h3>
+                    <p>Lofts, ateliers industriels : espaces atypiques 50-200m². <strong>Louer salle</strong> événement unique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les lofts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Salle sur Lokio ?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 50%</h3>
+                    <p>La <strong>location salle</strong> entre particuliers vous permet d'économiser par rapport aux salles commerciales. La <strong>location de salle</strong> est plus abordable.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🏢</div>
+                    <h3>Large Choix d'Espaces</h3>
+                    <p>La <strong>location salle réunion</strong>, <strong>location salle mariage</strong> et <strong>location salle anniversaire</strong> offrent un choix immense.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Salle Proximité</h3>
+                    <p>Trouvez de la <strong>location salle</strong> près de chez vous ou de vos invités. Accès facile et parking disponible.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🎯</div>
+                    <h3>Espaces Uniques et Atypiques</h3>
+                    <p>La <strong>location espace</strong> offre des lieux authentiques : lofts, maisons de caractère, espaces industriels.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">⏰</div>
+                    <h3>Flexibilité Horaire</h3>
+                    <p>La <strong>location salle</strong> permet de réserver à l'heure, à la journée ou plusieurs jours selon vos besoins.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Salle Sécurisée</h3>
+                    <p>Toute <strong>location de salle</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Salle : Trouvez Votre Espace Maintenant</h2>
+            <p>La <strong style="color: white;">location salle</strong> n'a jamais été aussi simple. Trouvez votre espace en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🏢 Vous Cherchez à Louer ?</h3>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 40% à 60% moins cher que les salles commerciales</li>
+                        <li><strong>Espaces authentiques</strong> : Lieux uniques avec caractère et charme</li>
+                        <li><strong>Flexibilité</strong> : Location à l'heure, demi-journée, journée, weekend</li>
+                        <li><strong>Proximité</strong> : Trouvez une salle près de chez vous ou de vos invités</li>
+                        <li><strong>Équipements inclus</strong> : Cuisine, mobilier, wifi souvent inclus</li>
+                        <li><strong>Contact direct</strong> : Négociez directement avec le propriétaire</li>
+                    </ul>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de salle dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix, capacités et équipements</li>
+                        <li style="padding-left: 10px;"><strong>Visitez</strong> l'espace avant de réserver si nécessaire</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> de votre événement dans l'espace loué</li>
+                    </ol>
+                    
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Salle</a>
+                    </div>
+                </div>
+                
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Espace ?</h3>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Espace</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre espace peut rapporter 500€ à 3000€ par mois</li>
+                        <li><strong>Valorisez votre bien</strong> : Rentabilisez une pièce, un garage, une grange</li>
+                        <li><strong>Espace inutilisé</strong> : Transformez un local vide en source de revenus</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez dates, horaires, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution et assurance pour protéger votre espace</li>
+                        <li><strong>Forte demande</strong> : Les espaces sont très recherchés pour événements</li>
+                    </ul>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description de l'espace</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif horaire/journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location pour événements</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+                    
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Salle sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location salle</strong> proposés sur notre plateforme. De la salle de réunion au loft événementiel, trouvez l'inspiration.
+            </p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Salle Réunion Équipée Centre-Ville</h3>
+                    <p><strong>Capacité 12 personnes - Vidéoprojecteur</strong></p>
+                    <p>📍 Lyon 2ème (69)</p>
+                    <p><strong>Prix :</strong> 40€/heure - 250€/journée</p>
+                    <p>Salle de réunion moderne, wifi fibre, écran 4K, tableau blanc. Café/thé inclus. Parking à proximité.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Salle Réception Mariage 120 Personnes</h3>
+                    <p><strong>Domaine avec Parc - Traiteur Autorisé</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 1500€/journée - 2500€/weekend</p>
+                    <p>Magnifique salle de réception dans domaine, parc arboré, cuisine équipée, parking 50 places.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Loft Industriel Événementiel</h3>
+                    <p><strong>150m² - Esprit Atelier</strong></p>
+                    <p>📍 Paris 11ème (75)</p>
+                    <p><strong>Prix :</strong> 120€/heure - 800€/journée</p>
+                    <p>Loft atypique 150m², hauteur sous plafond 4m, cuisine ouverte. Idéal cocktails et événements.</p>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Salle</h2>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location salle sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location salle</strong> sur Lokio est simple : vous recherchez le type d'espace dont vous avez besoin, vous consultez les annonces de <strong>location de salle</strong> disponibles, vous contactez le propriétaire et réservez. Le paiement de la <strong>location salle</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location salle ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location salle</strong> varie selon le type et la capacité. En moyenne, comptez entre 30€ et 80€ par heure pour une <strong>salle réunion</strong> 10-20 personnes. Une <strong>salle anniversaire</strong> 50 personnes coûte 200€ à 500€ par jour. Une <strong>salle mariage</strong> 100+ personnes est à 1000€ à 3000€ par jour. Sur Lokio, vous pouvez comparer les prix de <strong>location salle</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">La location salle est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations salle</strong> sur Lokio sont sécurisées. Une caution importante est demandée pour garantir le bon état de l'espace. Un système d'évaluation permet de vérifier la fiabilité des utilisateurs. Pensez à vérifier votre assurance responsabilité civile.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je visiter la salle avant de réserver ?</div>
+                    <div class="faq-answer">
+                        Absolument ! Pour une <strong>location salle</strong> importante (mariage, événement professionnel), il est recommandé de visiter l'espace avant de réserver. Contactez le propriétaire via Lokio pour organiser une visite. Cela vous permet de vérifier la capacité, les équipements et l'ambiance de la <strong>salle</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location salle ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location salle</strong> dépendent de votre espace. Une <strong>salle réunion</strong> peut générer 500€ à 2000€ par mois. Un espace événementiel peut rapporter 1000€ à 5000€ mensuels. Une <strong>salle mariage</strong> peut générer 5000€ à 15000€ pendant la saison (mai-septembre). Lokio prélève une commission de 15% sur chaque <strong>location salle</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location salle ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location salle</strong> dépend du type d'espace. Pour une <strong>salle réunion</strong>, c'est généralement 1-2 heures. Pour une <strong>salle anniversaire</strong>, c'est souvent une demi-journée (4h) ou journée complète. Pour une <strong>salle mariage</strong>, c'est typiquement 1 à 3 jours (préparation + événement + rangement).
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location salle ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location salle</strong>, vous êtes protégé par : vérification d'identité des locataires, caution importante bloquée avant chaque <strong>location de salle</strong>, système d'évaluation, état des lieux obligatoire avant et après. Vous pouvez également demander une attestation d'assurance. Vous gardez le contrôle total de votre <strong>location salle</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les espaces les plus demandés en location salle ?</div>
+                    <div class="faq-answer">
+                        Les espaces les plus demandés en <strong>location salle</strong> sont la <strong>location salle réunion</strong> équipée (10-30 personnes), les espaces coworking flexibles, la <strong>location salle mariage</strong> avec extérieur, les lofts événementiels atypiques, et la <strong>location salle anniversaire</strong> festive. Les studios photo/vidéo équipés sont également très recherchés par les créateurs de contenu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Salle : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location salle</strong> pour votre événement, ou que vous souhaitiez rentabiliser votre espace, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location salle</strong> entre particuliers. De la salle de réunion au loft événementiel, tout devient simple avec Lokio.
+            </p>
+            
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Salle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

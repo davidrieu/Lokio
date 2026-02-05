@@ -1,0 +1,671 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+    
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+    
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Vélo entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre vélo et vélo électrique sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Vélo</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Vélo : La Plateforme N°1</h2>
+            <p class="intro-text">
+                Besoin de <strong>location vélo</strong> pour vos déplacements urbains ou balades ? Vous possédez un vélo inutilisé ? La <strong>location de vélo</strong> entre particuliers est la solution idéale. <strong>Lokio</strong> met en relation ceux qui cherchent à <strong>louer vélo</strong> avec les propriétaires de vélos. Vélos de ville, VTT, vélos électriques, vélos cargo : notre plateforme de <strong>location vélo</strong> vous permet de trouver tout ce dont vous avez besoin. Que vous soyez à la recherche d'une <strong>location vélo électrique</strong>, d'un <strong>location VTT</strong> ou d'un <strong>location vélo ville</strong>, Lokio simplifie la <strong>location de vélo</strong>.
+            </p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">800+</span>
+                    <span class="stat-label">vélos disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de vélos -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Vélo : Tous les Vélos Disponibles</h2>
+            <p class="intro-text">
+                Notre service de <strong>location vélo</strong> propose une large gamme de vélos pour tous vos besoins de mobilité. De la simple <strong>location vélo ville</strong> au vélo électrique performant, découvrez tous les vélos en location sur Lokio.
+            </p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚴</div>
+                    <h3>Location Vélo de Ville</h3>
+                    <p><strong>Location vélo ville</strong> : vélos hollandais, vélos vintage, vélos urbains. Confortables pour trajets quotidiens.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les vélos de ville</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">⚡</div>
+                    <h3>Location Vélo Électrique</h3>
+                    <p><strong>Location vélo électrique</strong> : VAE avec assistance électrique 25 km/h. Batterie longue autonomie 50-100 km.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un vélo électrique</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚵</div>
+                    <h3>Location VTT</h3>
+                    <p><strong>Location VTT</strong> : VTT tout-terrain, VTT électriques (VTTAE). Parfaits pour randonnées et sentiers nature.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un VTT</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚴‍♀️</div>
+                    <h3>Location Vélo de Route</h3>
+                    <p>Vélos de course, vélos de route carbon. <strong>Location vélo</strong> sportif pour longues distances et performance.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un vélo de route</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚲</div>
+                    <h3>Location Vélo Cargo</h3>
+                    <p>Vélos cargo électriques, biporteurs, triporteurs. <strong>Location vélo</strong> pour transport enfants et marchandises.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les vélos cargo</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚸</div>
+                    <h3>Location Vélo Enfant</h3>
+                    <p>Vélos enfants 12" à 24", draisiennes, vélos ados. <strong>Location vélo</strong> adapté à chaque âge et taille.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer vélo enfant</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛴</div>
+                    <h3>Location Trottinette Électrique</h3>
+                    <p>Trottinettes électriques adultes, autonomie 20-40 km. Alternative pratique à la <strong>location vélo</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les trottinettes</a>
+                </div>
+                
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔒</div>
+                    <h3>Location Accessoires Vélo</h3>
+                    <p>Casques, antivols, sacoches, porte-bébés. Accessoires inclus avec votre <strong>location vélo</strong>.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les accessoires</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Vélo sur Lokio ?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 70%</h3>
+                    <p>La <strong>location vélo</strong> entre particuliers vous permet d'économiser par rapport aux loueurs professionnels. La <strong>location de vélo</strong> est plus abordable.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🚴</div>
+                    <h3>Large Choix de Vélos</h3>
+                    <p>La <strong>location vélo électrique</strong>, <strong>location VTT</strong> et <strong>location vélo ville</strong> offrent un choix immense de modèles.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Vélo Proximité</h3>
+                    <p>Trouvez de la <strong>location vélo</strong> près de chez vous. Récupérez facilement votre vélo dans votre quartier.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🌍</div>
+                    <h3>Mobilité Écologique</h3>
+                    <p>La <strong>location vélo</strong> favorise les déplacements verts et réduit votre empreinte carbone en ville.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🔄</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>La <strong>location vélo</strong> permet de tester différents modèles avant d'investir dans votre propre vélo.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Vélo Sécurisée</h3>
+                    <p>Toute <strong>location de vélo</strong> sur Lokio est sécurisée avec caution et système d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Vélo : Trouvez Votre Vélo Maintenant</h2>
+            <p>La <strong style="color: white;">location vélo</strong> n'a jamais été aussi simple. Trouvez votre vélo en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🚴 Vous Cherchez à Louer ?</h3>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 50% à 70% moins cher que les loueurs professionnels</li>
+                        <li><strong>Testez différents vélos</strong> : Trouvez le vélo parfait pour vos besoins</li>
+                        <li><strong>Pas d'investissement</strong> : Roulez sans acheter de vélo coûteux</li>
+                        <li><strong>Flexibilité</strong> : Location jour, semaine, mois selon vos besoins</li>
+                        <li><strong>Proximité</strong> : Récupérez le vélo à quelques minutes de chez vous</li>
+                        <li><strong>Mobilité verte</strong> : Déplacez-vous écologique en ville</li>
+                    </ul>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de vélo dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités près de chez vous</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> le vélo au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Roulez</strong> et rendez à la fin de la période</li>
+                    </ol>
+                    
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Vélo</a>
+                    </div>
+                </div>
+                
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Vélo ?</h3>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Vélo</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre vélo peut rapporter 100€ à 400€ par mois</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre vélo électrique ou VTT</li>
+                        <li><strong>Vélo inutilisé</strong> : Faites profiter votre vélo aux autres cyclistes</li>
+                        <li><strong>Vous gérez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre vélo</li>
+                        <li><strong>Forte demande</strong> : Les vélos sont très recherchés en ville</li>
+                    </ul>
+                    
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos et description du vélo</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et votre tarif journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location de cyclistes</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de manière sécurisée</li>
+                    </ol>
+                    
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Vélo sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de <strong>location vélo</strong> proposés sur notre plateforme. Du vélo de ville au vélo électrique, trouvez l'inspiration.
+            </p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Vélo Électrique Decathlon</h3>
+                    <p><strong>VAE Ville - Autonomie 70 km</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 25€/jour - 120€/semaine</p>
+                    <p>Vélo électrique confortable, batterie récente, panier avant inclus. Parfait trajets urbains quotidiens.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>VTT Électrique Haibike</h3>
+                    <p><strong>VTTAE - Tout Suspendu</strong></p>
+                    <p>📍 Annecy (74)</p>
+                    <p><strong>Prix :</strong> 40€/jour - 200€/semaine</p>
+                    <p>VTT électrique tout-terrain, autonomie 80 km. Idéal randonnées montagne et sentiers techniques.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Vélo Cargo Électrique</h3>
+                    <p><strong>Biporteur - 2 enfants</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 30€/jour - 150€/semaine</p>
+                    <p>Vélo cargo électrique, caisse avant pour 2 enfants. Capote de pluie incluse. Alternative voiture.</p>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes : Location Vélo</h2>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location vélo sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location vélo</strong> sur Lokio est simple : vous recherchez le type de vélo dont vous avez besoin, vous consultez les annonces de <strong>location de vélo</strong> disponibles près de chez vous, vous contactez le propriétaire et réservez. Le paiement de la <strong>location vélo</strong> est sécurisé via notre plateforme.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le coût pour une location vélo ou vélo électrique ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location vélo</strong> varie selon le modèle. En moyenne, comptez entre 10€ et 20€ par jour pour un vélo de ville classique. Un <strong>vélo électrique</strong> coûte 25€ à 40€ par jour. Un <strong>VTT</strong> est à 15€ à 30€ par jour. Sur Lokio, vous pouvez comparer les prix de <strong>location vélo</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">La location vélo est-elle assurée ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations vélo</strong> sur Lokio sont sécurisées. Une caution est demandée pour garantir le bon état du vélo. Un système d'évaluation permet de vérifier la fiabilité des utilisateurs et l'état du vélo.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je louer un vélo pour enfant ?</div>
+                    <div class="faq-answer">
+                        Absolument ! La <strong>location vélo</strong> sur Lokio propose des vélos enfants de toutes tailles, de la draisienne au vélo ado. Vous pouvez <strong>louer vélo</strong> adapté à l'âge et la taille de vos enfants. Casques et protections souvent inclus.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location vélo ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location vélo</strong> dépendent de votre vélo. Un vélo de ville peut générer 150€ à 400€ par an. Un <strong>vélo électrique</strong> peut rapporter 500€ à 1500€ annuels. Un <strong>VTT</strong> peut générer 300€ à 800€ par an. Lokio prélève une commission de 15% sur chaque <strong>location vélo</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quelle durée minimale pour la location vélo ?</div>
+                    <div class="faq-answer">
+                        La durée minimale de <strong>location vélo</strong> est généralement d'une journée. Beaucoup de propriétaires proposent des forfaits semaine ou mois avec tarifs dégressifs. Les <strong>locations vélo</strong> longue durée sont idéales pour tester avant achat ou besoins temporaires.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Comment suis-je protégé pour la location vélo ?</div>
+                    <div class="faq-answer">
+                        En tant que propriétaire de <strong>location vélo</strong>, vous êtes protégé par : vérification d'identité des locataires, caution bloquée avant chaque <strong>location de vélo</strong>, système d'évaluation, état des lieux avant et après. Vous gardez le contrôle de votre <strong>location vélo</strong>.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quels sont les vélos les plus demandés en location vélo ?</div>
+                    <div class="faq-answer">
+                        Les vélos les plus demandés en <strong>location vélo</strong> sont la <strong>location vélo électrique</strong> (VAE urbains), les <strong>VTT</strong> électriques pour randonnées, les vélos de ville confortables, les vélos cargo pour familles, et le <strong>vélo ville</strong> classique pour trajets quotidiens. Les accessoires comme casques et antivols sont très appréciés.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Vélo : Rejoignez Lokio Dès Aujourd'hui</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location vélo</strong> pour vos déplacements urbains, ou que vous souhaitiez rentabiliser votre vélo, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de <strong>location vélo</strong> entre particuliers. Du vélo de ville au <strong>vélo électrique</strong>, tout devient simple avec Lokio.
+            </p>
+            
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Vélo</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

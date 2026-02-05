@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Matériel Camping entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location matériel camping
+
+Titre SEO:
+Location Matériel Camping entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre matériel de camping sur Lokio. Tentes, réchauds, sacs de couchage : économisez jusqu'à 65%. Réservez en ligne.
+
+URL/Slug:
+location-materiel-camping
+
+Mots-clés secondaires (séparer par des virgules):
+location tente, louer matériel camping, location réchaud camping, location sac de couchage
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location matériel camping" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte

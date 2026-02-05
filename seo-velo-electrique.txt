@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Vélo entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location vélo
+
+Titre SEO:
+Location Vélo entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre vélo et vélo électrique sur Lokio. Vélos de ville, VTT, VAE : économisez jusqu'à 70%. Réservez en ligne.
+
+URL/Slug:
+location-velo
+
+Mots-clés secondaires (séparer par des virgules):
+location vélo électrique, louer vélo, location VTT, location vélo ville
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+✅ Densité du mot-clé "location vélo" : ~0.8-1% (OPTIMAL)
+✅ Le mot-clé apparaît plus de 30 fois dans le contenu
+✅ Présent dans H1, H2, meta description, URL
+✅ Mots-clés secondaires bien intégrés dans le texte
