@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Jardin et Terrain entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre jardin ou terrain sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Jardin</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Jardin : Votre Espace Vert avec Lokio</h2>
+            <p class="intro-text">
+                Besoin d'un espace exterieur pour votre evenement ? La <strong>location jardin</strong> entre particuliers est la solution ideale pour organiser fetes, mariages ou reunions en plein air. Sur <strong>Lokio</strong>, trouvez facilement un <strong>jardin</strong> ou un <strong>terrain</strong> pres de chez vous. Que vous cherchiez une <strong>location jardin anniversaire</strong>, une <strong>location terrain evenement</strong> ou une <strong>location jardin mariage</strong>, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location jardin particulier</strong> vous permet de beneficier d'un espace privatise a moindre cout.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">75%</span>
+                    <span class="stat-label">d'economies vs salle</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">espaces disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">delai de reponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'espaces -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Jardin et Terrain : Toutes les Options</h2>
+            <p class="intro-text">
+                Notre service de <strong>location jardin</strong> propose une large gamme d'espaces exterieurs pour tous vos evenements. Du <strong>jardin prive</strong> au <strong>terrain evenementiel</strong>, decouvrez toutes les options sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌳</div>
+                    <h3>Location Jardin Prive</h3>
+                    <p><strong>Location jardin</strong> prive clos avec pelouse, arbres et espace detente. Ideal pour fetes familiales et pique-niques.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les jardins</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎪</div>
+                    <h3>Location Terrain Evenement</h3>
+                    <p><strong>Location terrain</strong> spacieux pour grands evenements : mariages, concerts prives, festivals familiaux.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer terrain</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💒</div>
+                    <h3>Location Jardin Mariage</h3>
+                    <p><strong>Location jardin mariage</strong> : espaces romantiques pour ceremonies et receptions en plein air.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver jardin mariage</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎂</div>
+                    <h3>Location Jardin Anniversaire</h3>
+                    <p><strong>Location jardin anniversaire</strong> : espaces securises pour fetes d'enfants ou adultes avec equipements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer pour anniversaire</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍖</div>
+                    <h3>Location Jardin Barbecue</h3>
+                    <p><strong>Location jardin barbecue</strong> : espaces equipes avec barbecue, plancha et mobilier de jardin.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir jardins barbecue</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏕️</div>
+                    <h3>Location Terrain Camping</h3>
+                    <p><strong>Location terrain camping</strong> : espaces pour planter votre tente ou garer votre camping-car.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer pour camping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Jardin sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Economisez jusqu'a 75%</h3>
+                    <p>La <strong>location jardin particulier</strong> vous permet d'economiser considerablement par rapport aux salles de reception.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🌳</div>
+                    <h3>Espaces Varies</h3>
+                    <p>La <strong>location jardin</strong> offre des espaces de toutes tailles et ambiances pour chaque type d'evenement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximite</h3>
+                    <p>Trouvez une <strong>location jardin</strong> pres de chez vous pour faciliter l'organisation de votre evenement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🌤️</div>
+                    <h3>Plein Air</h3>
+                    <p>La <strong>location jardin</strong> vous offre un cadre naturel et agreable pour vos evenements en exterieur.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔧</div>
+                    <h3>Equipements Inclus</h3>
+                    <p>De nombreuses <strong>locations jardin</strong> incluent mobilier, barbecue et equipements de fete.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Securisee</h3>
+                    <p>Toute <strong>location jardin</strong> sur Lokio est securisee avec caution et systeme d'evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Jardin : Trouvez Votre Espace</h2>
+            <p>La <strong style="color: white;">location jardin</strong> n'a jamais ete aussi simple. Trouvez l'espace ideal pour votre evenement.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🌳 Vous Cherchez a Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Economies importantes</strong> : 50% a 75% moins cher qu'une salle</li>
+                        <li><strong>Cadre naturel</strong> : Profitez du plein air pour votre evenement</li>
+                        <li><strong>Flexibilite</strong> : Location a la journee ou au week-end</li>
+                        <li><strong>Proximite</strong> : Jardin disponible pres de chez vous</li>
+                        <li><strong>Equipements</strong> : Mobilier et barbecue souvent inclus</li>
+                        <li><strong>Intimite</strong> : Espace privatise pour vous et vos invites</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ca Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> un jardin pres de vous</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les espaces et equipements</li>
+                        <li style="padding-left: 10px;"><strong>Reservez</strong> en ligne en toute securite</li>
+                        <li style="padding-left: 10px;"><strong>Organisez</strong> votre evenement</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> de votre journee</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Jardin</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Jardin ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Espace</h4>
+                    <ul>
+                        <li><strong>Generez un revenu</strong> : Votre jardin peut rapporter 200 a 1000 euros par evenement</li>
+                        <li><strong>Espace sous-utilise</strong> : Faites profiter votre jardin aux autres</li>
+                        <li><strong>Vous gerez tout</strong> : Dates, regles et tarifs a votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour proteger votre bien</li>
+                        <li><strong>Forte demande</strong> : Les espaces exterieurs sont tres recherches</li>
+                        <li><strong>Rencontres</strong> : Partagez votre espace avec des personnes sympathiques</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Creez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Definissez</strong> vos disponibilites et regles</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de reservation</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les evenements qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus securises</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Jardin sur Lokio</h2>
+            <p class="intro-text">
+                Decouvrez des exemples de <strong>location jardin</strong> et <strong>location terrain</strong> proposes sur notre plateforme.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Jardin Arbre avec Terrasse</h3>
+                    <p><strong>500m2 - 40 personnes max</strong></p>
+                    <p>📍 Nantes (44)</p>
+                    <p><strong>Prix :</strong> 150 euros/journee</p>
+                    <p>Grand jardin clos avec arbres centenaires, terrasse couverte, barbecue Weber et mobilier de jardin pour 40 personnes.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Parc Prive pour Mariage</h3>
+                    <p><strong>2000m2 - 100 personnes max</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 500 euros/journee</p>
+                    <p>Magnifique parc avec etang, kiosque romantique, parking prive. Ideal ceremonies et receptions de mariage.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Jardin Fete Enfants</h3>
+                    <p><strong>300m2 - 25 personnes max</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 100 euros/demi-journee</p>
+                    <p>Jardin securise ideal anniversaires enfants. Trampoline, toboggan, bac a sable et espace couvert inclus.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Jardin</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location jardin sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location jardin</strong> sur Lokio est simple : recherchez un espace pres de vous, consultez les annonces avec photos et equipements, contactez le proprietaire et reservez. Le paiement est securise via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le cout pour une location jardin ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location jardin</strong> varie selon la taille et les equipements. Comptez 80 a 200 euros pour une journee standard. Un <strong>grand terrain</strong> pour mariage peut couter 300 a 800 euros par jour.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Peut-on faire de la musique dans le jardin ?</div>
+                    <div class="faq-answer">
+                        Cela depend des proprietaires et de la reglementation locale. Certaines <strong>locations jardin</strong> autorisent la musique jusqu'a une certaine heure. Verifiez les conditions dans chaque annonce et respectez le voisinage.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien de personnes peuvent etre invitees ?</div>
+                    <div class="faq-answer">
+                        Chaque <strong>location jardin</strong> indique un nombre maximum de personnes. Respectez cette limite pour le confort de tous. De 20 a 100+ personnes selon la taille du terrain.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec mon jardin ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location jardin</strong> dependent de la taille et de la demande locale. Un <strong>jardin</strong> peut generer 1000 a 5000 euros par an. Un <strong>grand terrain</strong> pour mariages peut rapporter bien plus.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Que faire en cas de mauvais temps ?</div>
+                    <div class="faq-answer">
+                        En cas de mauvais temps, contactez le proprietaire pour discuter des options : report, annulation partielle ou abri disponible. Certaines <strong>locations jardin</strong> disposent d'un espace couvert de secours.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Jardin : Rejoignez Lokio</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location jardin</strong> pour votre evenement ou que vous souhaitiez rentabiliser votre espace exterieur, Lokio est la plateforme ideale. Rejoignez des milliers d'utilisateurs qui font confiance a notre service de <strong>location jardin</strong> entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Jardin</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

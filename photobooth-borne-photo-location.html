@@ -1,0 +1,227 @@
+<style>
+.lokio-landing * { box-sizing: border-box; }
+.lokio-landing { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; }
+.lokio-landing .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.lokio-landing .hero { background: linear-gradient(135deg, #fed801 0%, #ffc107 100%); padding: 80px 0; text-align: center; }
+.lokio-landing h1 { font-size: 48px; color: #333; margin-bottom: 20px; font-weight: 800; }
+.lokio-landing .hero-subtitle { font-size: 24px; color: #555; margin-bottom: 40px; }
+.lokio-landing .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.lokio-landing .btn { padding: 18px 40px; font-size: 18px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.lokio-landing .btn-primary { background: #333; color: #fed801; }
+.lokio-landing .btn-primary:hover { background: #000; transform: translateY(-2px); }
+.lokio-landing .btn-secondary { background: white; color: #333; }
+.lokio-landing .section { padding: 80px 0; }
+.lokio-landing .section-alt { background: #f9f9f9; }
+.lokio-landing h2 { font-size: 36px; color: #333; margin-bottom: 20px; text-align: center; font-weight: 700; }
+.lokio-landing h3 { font-size: 24px; color: #333; margin-bottom: 15px; font-weight: 600; }
+.lokio-landing p { margin-bottom: 15px; }
+.lokio-landing a { text-decoration: none; }
+.lokio-landing .intro-text { font-size: 18px; text-align: center; max-width: 900px; margin: 0 auto 60px; color: #555; line-height: 1.8; }
+.lokio-landing .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.lokio-landing .equipment-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+.lokio-landing .equipment-card:hover { transform: translateY(-5px); }
+.lokio-landing .equipment-icon { font-size: 48px; margin-bottom: 20px; }
+.lokio-landing .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.lokio-landing .benefit-card { text-align: center; }
+.lokio-landing .benefit-number { background: #fed801; color: #333; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 20px; }
+.lokio-landing .two-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; margin-top: 50px; }
+.lokio-landing .column-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.lokio-landing .column-card h3 { color: #fed801; background: #333; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+.lokio-landing ul { list-style: none; padding: 0; }
+.lokio-landing li { padding: 12px 0; padding-left: 30px; position: relative; }
+.lokio-landing ul li:before { content: "✓"; position: absolute; left: 0; color: #fed801; font-weight: bold; font-size: 20px; }
+.lokio-landing .cta-section { background: linear-gradient(135deg, #333 0%, #000 100%); color: white; text-align: center; padding: 80px 20px; margin: 80px 0; }
+.lokio-landing .cta-section h2 { color: #fed801; margin-bottom: 30px; }
+.lokio-landing .cta-section p { font-size: 20px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.lokio-landing .stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 60px 0; }
+.lokio-landing .stat-item { text-align: center; }
+.lokio-landing .stat-number { font-size: 48px; font-weight: bold; color: #fed801; display: block; }
+.lokio-landing .stat-label { font-size: 18px; color: #666; margin-top: 10px; }
+.lokio-landing .faq { max-width: 900px; margin: 50px auto; }
+.lokio-landing .faq-item { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.lokio-landing .faq-question { font-weight: 600; color: #333; font-size: 18px; margin-bottom: 10px; }
+.lokio-landing .faq-answer { color: #666; line-height: 1.8; }
+.lokio-landing .text-center { text-align: center; }
+.lokio-landing strong { color: #333; font-weight: 600; }
+@media (max-width: 768px) { .lokio-landing h1 { font-size: 32px; } .lokio-landing h2 { font-size: 28px; } .lokio-landing .two-columns { grid-template-columns: 1fr; } }
+</style>
+
+<div class="lokio-landing">
+    <section class="hero">
+        <div class="container">
+            <h1>Location Photobooth et Borne Photo entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre photobooth sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Photobooth</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Photobooth : Animez Vos Evenements</h2>
+            <p class="intro-text">
+                Envie d'animer votre evenement avec des photos souvenirs ? La <strong>location photobooth</strong> entre particuliers est la solution ideale pour mariages, anniversaires et fetes. Sur <strong>Lokio</strong>, trouvez facilement un <strong>photobooth</strong> ou une <strong>borne photo</strong> pres de chez vous. Que vous cherchiez une <strong>location borne photo mariage</strong>, une <strong>location photobooth anniversaire</strong> ou une <strong>location photomaton</strong>, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location photobooth particulier</strong> vous permet d'economiser tout en creant des souvenirs inoubliables.
+            </p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">65%</span><span class="stat-label">d'economies en moyenne</span></div>
+                <div class="stat-item"><span class="stat-number">200+</span><span class="stat-label">photobooths disponibles</span></div>
+                <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">delai de reponse moyen</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Photobooth : Tous les Modeles</h2>
+            <p class="intro-text">Notre service de <strong>location photobooth</strong> propose une large gamme d'equipements pour tous vos evenements.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">📸</div>
+                    <h3>Location Photobooth Classique</h3>
+                    <p><strong>Location photobooth</strong> cabine avec rideau, impression instantanee et accessoires fun inclus.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir photobooths</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🪞</div>
+                    <h3>Location Miroir Photo</h3>
+                    <p><strong>Location miroir photobooth</strong> : ecran tactile interactif, animations et messages personnalises.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer miroir photo</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">📱</div>
+                    <h3>Location Borne Selfie</h3>
+                    <p><strong>Location borne selfie</strong> : compacte et moderne, partage instantane sur reseaux sociaux.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver borne selfie</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎥</div>
+                    <h3>Location Borne Video</h3>
+                    <p><strong>Location borne video</strong> : messages video de vos invites, ideal livre d'or numerique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir bornes video</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎭</div>
+                    <h3>Location Accessoires Photo</h3>
+                    <p><strong>Location accessoires photobooth</strong> : malles avec chapeaux, lunettes, pancartes et deguisements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer accessoires</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🖨️</div>
+                    <h3>Location Imprimante Photo</h3>
+                    <p><strong>Location imprimante photo</strong> : impression instantanee format polaroid ou standard.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir imprimantes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Photobooth sur Lokio ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-number">💰</div><h3>Economisez jusqu'a 65%</h3><p>La <strong>location photobooth particulier</strong> coute moins cher que les prestataires pro.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📸</div><h3>Souvenirs Uniques</h3><p>La <strong>location photobooth</strong> cree des souvenirs photos memorables pour vos invites.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🎉</div><h3>Animation Garantie</h3><p>La <strong>location borne photo</strong> anime votre fete et amuse tous les ages.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🎭</div><h3>Accessoires Inclus</h3><p>La plupart des <strong>locations photobooth</strong> incluent accessoires et deguisements.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🖨️</div><h3>Impression Instantanee</h3><p>La <strong>location photobooth</strong> offre des tirages papier a emporter.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🛡️</div><h3>Location Securisee</h3><p>Toute <strong>location photobooth</strong> sur Lokio avec caution et evaluation.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Photobooth : Immortalisez Vos Moments</h2>
+            <p>La <strong style="color: white;">location photobooth</strong> n'a jamais ete aussi simple. Trouvez votre borne photo ideale.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            <div class="two-columns">
+                <div class="column-card">
+                    <h3>📸 Vous Organisez un Evenement ?</h3>
+                    <ul>
+                        <li><strong>Economies</strong> : 50% a 65% moins cher que prestataires</li>
+                        <li><strong>Animation</strong> : Divertissement garanti pour vos invites</li>
+                        <li><strong>Souvenirs</strong> : Photos imprimees a emporter</li>
+                        <li><strong>Accessoires</strong> : Malles de deguisements incluses</li>
+                        <li><strong>Simplicite</strong> : Installation facile expliquee</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Photobooth</a></div>
+                </div>
+                <div class="column-card">
+                    <h3>💰 Vous Possedez un Photobooth ?</h3>
+                    <ul>
+                        <li><strong>Revenus</strong> : 100 a 400 euros par location</li>
+                        <li><strong>Rentabilisez</strong> : Amortissez votre investissement</li>
+                        <li><strong>Forte demande</strong> : Mariages et fetes toute l'annee</li>
+                        <li><strong>Vous gerez</strong> : Tarifs et disponibilites libres</li>
+                        <li><strong>Protection</strong> : Caution pour votre materiel</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Photobooth sur Lokio</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Photobooth Cabine Retro</h3>
+                    <p><strong>Style vintage - Impression illimitee</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 250 euros/soiree</p>
+                    <p>Cabine photobooth vintage avec rideau, 200 impressions, malle 50 accessoires incluse.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Miroir Photo LED</h3>
+                    <p><strong>Ecran tactile - Animations</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 300 euros/soiree</p>
+                    <p>Miroir interactif avec animations, impressions personnalisees aux couleurs de votre evenement.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Borne Selfie Compacte</h3>
+                    <p><strong>Partage reseaux sociaux</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 150 euros/soiree</p>
+                    <p>Borne moderne avec envoi par email/SMS, partage Instagram direct, 100 impressions.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Photobooth</h2>
+            <div class="faq">
+                <div class="faq-item"><div class="faq-question">Comment fonctionne la location photobooth sur Lokio ?</div><div class="faq-answer">La <strong>location photobooth</strong> sur Lokio est simple : recherchez une borne pres de vous, consultez les annonces, contactez le proprietaire et reservez pour la date de votre evenement.</div></div>
+                <div class="faq-item"><div class="faq-question">Quel est le cout d'une location photobooth ?</div><div class="faq-answer">Le prix de <strong>location photobooth</strong> varie selon le modele. Comptez 100 a 200 euros pour une borne selfie simple, 200 a 350 euros pour un photobooth cabine, 300 a 500 euros pour un miroir photo.</div></div>
+                <div class="faq-item"><div class="faq-question">L'installation est-elle compliquee ?</div><div class="faq-answer">La plupart des <strong>locations photobooth</strong> sont faciles a installer. Le proprietaire fournit les instructions et peut parfois assurer la livraison et l'installation pour un supplement.</div></div>
+                <div class="faq-item"><div class="faq-question">Combien puis-je gagner avec mon photobooth ?</div><div class="faq-answer">Les revenus de <strong>location photobooth</strong> sont interessants. Un photobooth peut generer 2000 a 8000 euros par an selon la frequence de location et la saison des mariages.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Photobooth : Rejoignez Lokio</h2>
+            <p class="intro-text">Que vous cherchiez une <strong>location photobooth</strong> pour votre evenement ou que vous souhaitiez rentabiliser votre borne photo, Lokio est la plateforme ideale pour la <strong>location photobooth</strong> entre particuliers.</p>
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Photobooth</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+</div>

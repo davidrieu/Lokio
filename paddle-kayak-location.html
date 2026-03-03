@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Paddle et Kayak entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre paddle ou kayak sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Paddle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Paddle : Glissez sur l'Eau avec Lokio</h2>
+            <p class="intro-text">
+                Envie de naviguer sur l'eau cet ete ? La <strong>location paddle</strong> entre particuliers est la solution ideale pour profiter des lacs, rivieres et plages. Sur <strong>Lokio</strong>, trouvez facilement un <strong>paddle</strong> ou un <strong>kayak</strong> pres de chez vous. Que vous cherchiez une <strong>location kayak</strong> pour une balade en famille, une <strong>location paddle gonflable</strong> pour debuter ou une <strong>location canoe</strong> pour descendre une riviere, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location paddle particulier</strong> vous permet d'economiser et de profiter de l'eau sans investir.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">d'economies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">600+</span>
+                    <span class="stat-label">equipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">delai de reponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'equipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Paddle et Kayak : Tous les Equipements</h2>
+            <p class="intro-text">
+                Notre service de <strong>location paddle</strong> propose une large gamme d'equipements nautiques. Du <strong>paddle gonflable</strong> au <strong>kayak biplace</strong>, decouvrez toutes les options sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏄</div>
+                    <h3>Location Paddle Gonflable</h3>
+                    <p><strong>Location paddle gonflable</strong> : facile a transporter et stocker. Ideal pour debutants et balades tranquilles sur eau calme.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les paddles</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛶</div>
+                    <h3>Location Paddle Rigide</h3>
+                    <p><strong>Location paddle rigide</strong> : meilleures performances et stabilite. Pour paddlers experimentes et randonnees longues.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer paddle rigide</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚣</div>
+                    <h3>Location Kayak Monoplace</h3>
+                    <p><strong>Location kayak</strong> monoplace : sit-on-top ou ferme. Parfait pour exploration solo des cotes et lacs.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un kayak</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">👨‍👩‍👧</div>
+                    <h3>Location Kayak Biplace</h3>
+                    <p><strong>Location kayak biplace</strong> : naviguez a deux pour plus de fun. Ideal couples et familles avec enfant.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer kayak biplace</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌊</div>
+                    <h3>Location Canoe</h3>
+                    <p><strong>Location canoe</strong> : classique et spacieux pour 2-3 personnes. Parfait descentes de riviere en famille.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les canoes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏋️</div>
+                    <h3>Location Paddle XXL</h3>
+                    <p><strong>Location paddle geant</strong> : paddle XXL pour groupe jusqu'a 6 personnes. Activite fun entre amis garantie.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer paddle geant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Paddle sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Economisez jusqu'a 70%</h3>
+                    <p>La <strong>location paddle particulier</strong> vous permet d'economiser considerablement par rapport aux bases nautiques.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏄</div>
+                    <h3>Large Choix d'Equipements</h3>
+                    <p>La <strong>location paddle</strong> gonflable, rigide ou <strong>location kayak</strong> : un choix immense pres de chez vous.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximite</h3>
+                    <p>Trouvez une <strong>location paddle</strong> pres de votre lieu de baignade. Evitez le transport longue distance.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🌊</div>
+                    <h3>Activite Nature</h3>
+                    <p>La <strong>location paddle</strong> vous permet de profiter de la nature, du soleil et de l'eau en toute liberte.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔄</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>La <strong>location kayak</strong> permet de tester differents modeles avant d'investir dans votre propre embarcation.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Securisee</h3>
+                    <p>Toute <strong>location paddle</strong> sur Lokio est securisee avec caution et systeme d'evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Paddle : Trouvez Votre Equipement</h2>
+            <p>La <strong style="color: white;">location paddle</strong> n'a jamais ete aussi simple. Trouvez votre paddle ou kayak en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🏄 Vous Cherchez a Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Economies importantes</strong> : 50% a 70% moins cher que les loueurs pro</li>
+                        <li><strong>Choix varie</strong> : Paddle gonflable, rigide, kayak, canoe</li>
+                        <li><strong>Pas d'investissement</strong> : Pagayez sans acheter d'equipement couteux</li>
+                        <li><strong>Flexibilite</strong> : Location a la journee ou au week-end</li>
+                        <li><strong>Proximite</strong> : Equipement disponible pres de l'eau</li>
+                        <li><strong>Accessoires inclus</strong> : Pagaie, gilet souvent fournis</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ca Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type d'equipement souhaite</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilites</li>
+                        <li style="padding-left: 10px;"><strong>Reservez</strong> en ligne en toute securite</li>
+                        <li style="padding-left: 10px;"><strong>Recuperez</strong> le paddle ou kayak</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> de l'eau et rendez a la fin</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Paddle</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Equipement ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Paddle ou Kayak</h4>
+                    <ul>
+                        <li><strong>Generez un revenu</strong> : Votre paddle peut rapporter 50 a 200 euros par mois en ete</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement</li>
+                        <li><strong>Equipement inutilise</strong> : Faites-le profiter aux autres</li>
+                        <li><strong>Vous gerez tout</strong> : Dates, tarifs et locataires a votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour proteger votre bien</li>
+                        <li><strong>Forte demande estivale</strong> : Les paddles sont tres recherches en ete</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Creez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Definissez</strong> vos disponibilites et tarif</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les reservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus securises</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Paddle sur Lokio</h2>
+            <p class="intro-text">
+                Decouvrez des exemples de <strong>location paddle</strong> et <strong>location kayak</strong> proposes sur notre plateforme. Trouvez l'inspiration pour votre prochaine sortie.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Paddle Gonflable Red Paddle</h3>
+                    <p><strong>10'6" - Polyvalent</strong></p>
+                    <p>📍 Annecy (74)</p>
+                    <p><strong>Prix :</strong> 25 euros/jour - 80 euros/semaine</p>
+                    <p>Paddle gonflable haut de gamme, stable et rigide. Sac de transport, pompe et pagaie inclus. Parfait lac d'Annecy.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Kayak Biplace Sit-on-Top</h3>
+                    <p><strong>4m - Famille</strong></p>
+                    <p>📍 La Rochelle (17)</p>
+                    <p><strong>Prix :</strong> 40 euros/jour - 150 euros/semaine</p>
+                    <p>Kayak biplace stable et confortable, 2 pagaies et gilets inclus. Ideal exploration cotes et iles.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Canoe 3 Places</h3>
+                    <p><strong>Polyethylene - Familial</strong></p>
+                    <p>📍 Dordogne (24)</p>
+                    <p><strong>Prix :</strong> 45 euros/jour - 180 euros/semaine</p>
+                    <p>Canoe familial stable, parfait pour descente de la Dordogne. Pagaies et gilets fournis.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Paddle</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location paddle sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location paddle</strong> sur Lokio est simple : recherchez le type d'equipement souhaite, consultez les annonces disponibles pres de vous, contactez le proprietaire et reservez. Le paiement est securise via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le cout pour une location paddle ou kayak ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location paddle</strong> varie selon l'equipement. Comptez 15 a 30 euros par jour pour un <strong>paddle gonflable</strong>. Un <strong>kayak monoplace</strong> coute 20 a 40 euros par jour. Un <strong>kayak biplace</strong> ou canoe est a 35 a 55 euros par jour.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Les accessoires sont-ils inclus dans la location paddle ?</div>
+                    <div class="faq-answer">
+                        La plupart des <strong>locations paddle</strong> sur Lokio incluent pagaie, leash et parfois gilet de sauvetage. Pour les <strong>kayaks</strong>, pagaies et gilets sont generalement fournis. Verifiez les details dans chaque annonce.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Faut-il un permis pour louer un paddle ou kayak ?</div>
+                    <div class="faq-answer">
+                        Non, aucun permis n'est necessaire pour la <strong>location paddle</strong> ou <strong>kayak</strong>. Ces embarcations sont accessibles a tous. Savoir nager est toutefois recommande et le gilet de sauvetage conseille.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec mon paddle ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location paddle</strong> dependent de la saison et de votre localisation. Un <strong>paddle</strong> peut generer 300 a 800 euros par saison estivale. Un <strong>kayak biplace</strong> peut rapporter 500 a 1200 euros par an.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Paddle gonflable ou rigide : que choisir ?</div>
+                    <div class="faq-answer">
+                        Pour debuter, la <strong>location paddle gonflable</strong> est ideale : facile a transporter et stable. Pour de meilleures performances, optez pour une <strong>location paddle rigide</strong>. Le choix depend de votre niveau et de l'utilisation prevue.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Paddle : Rejoignez Lokio</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location paddle</strong> pour vos vacances ou que vous souhaitiez rentabiliser votre equipement nautique, Lokio est la plateforme ideale. Rejoignez des milliers d'utilisateurs qui font confiance a notre service de <strong>location paddle</strong> et <strong>location kayak</strong> entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Paddle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,30 @@
+TITRE H1 (a mettre sur la page WordPress)
+Location Moto et Scooter entre Particuliers
+
+---
+
+PARAMETRES RANKMATH
+
+Mot-cle principal:
+location moto
+
+Titre SEO:
+Location Moto et Scooter entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre moto ou scooter sur Lokio. Sportive, routiere, cross, 125cc : economisez jusqu'a 65%. Reservez en ligne.
+
+URL/Slug:
+location-moto-scooter
+
+Mots-cles secondaires (separer par des virgules):
+location scooter, location moto particulier, louer moto, location scooter 125, location moto sportive
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densite du mot-cle "location moto" : ~1.4% (OPTIMAL)
+Le mot-cle apparait plus de 35 fois dans le contenu
+Present dans H1, H2, meta description, URL
+Mots-cles secondaires bien integres dans le texte

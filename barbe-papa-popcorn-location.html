@@ -1,0 +1,227 @@
+<style>
+.lokio-landing * { box-sizing: border-box; }
+.lokio-landing { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; }
+.lokio-landing .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.lokio-landing .hero { background: linear-gradient(135deg, #fed801 0%, #ffc107 100%); padding: 80px 0; text-align: center; }
+.lokio-landing h1 { font-size: 48px; color: #333; margin-bottom: 20px; font-weight: 800; }
+.lokio-landing .hero-subtitle { font-size: 24px; color: #555; margin-bottom: 40px; }
+.lokio-landing .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.lokio-landing .btn { padding: 18px 40px; font-size: 18px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.lokio-landing .btn-primary { background: #333; color: #fed801; }
+.lokio-landing .btn-primary:hover { background: #000; transform: translateY(-2px); }
+.lokio-landing .btn-secondary { background: white; color: #333; }
+.lokio-landing .section { padding: 80px 0; }
+.lokio-landing .section-alt { background: #f9f9f9; }
+.lokio-landing h2 { font-size: 36px; color: #333; margin-bottom: 20px; text-align: center; font-weight: 700; }
+.lokio-landing h3 { font-size: 24px; color: #333; margin-bottom: 15px; font-weight: 600; }
+.lokio-landing p { margin-bottom: 15px; }
+.lokio-landing a { text-decoration: none; }
+.lokio-landing .intro-text { font-size: 18px; text-align: center; max-width: 900px; margin: 0 auto 60px; color: #555; line-height: 1.8; }
+.lokio-landing .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.lokio-landing .equipment-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+.lokio-landing .equipment-card:hover { transform: translateY(-5px); }
+.lokio-landing .equipment-icon { font-size: 48px; margin-bottom: 20px; }
+.lokio-landing .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.lokio-landing .benefit-card { text-align: center; }
+.lokio-landing .benefit-number { background: #fed801; color: #333; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 20px; }
+.lokio-landing .two-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; margin-top: 50px; }
+.lokio-landing .column-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.lokio-landing .column-card h3 { color: #fed801; background: #333; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+.lokio-landing ul { list-style: none; padding: 0; }
+.lokio-landing li { padding: 12px 0; padding-left: 30px; position: relative; }
+.lokio-landing ul li:before { content: "✓"; position: absolute; left: 0; color: #fed801; font-weight: bold; font-size: 20px; }
+.lokio-landing .cta-section { background: linear-gradient(135deg, #333 0%, #000 100%); color: white; text-align: center; padding: 80px 20px; margin: 80px 0; }
+.lokio-landing .cta-section h2 { color: #fed801; margin-bottom: 30px; }
+.lokio-landing .cta-section p { font-size: 20px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.lokio-landing .stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 60px 0; }
+.lokio-landing .stat-item { text-align: center; }
+.lokio-landing .stat-number { font-size: 48px; font-weight: bold; color: #fed801; display: block; }
+.lokio-landing .stat-label { font-size: 18px; color: #666; margin-top: 10px; }
+.lokio-landing .faq { max-width: 900px; margin: 50px auto; }
+.lokio-landing .faq-item { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.lokio-landing .faq-question { font-weight: 600; color: #333; font-size: 18px; margin-bottom: 10px; }
+.lokio-landing .faq-answer { color: #666; line-height: 1.8; }
+.lokio-landing .text-center { text-align: center; }
+.lokio-landing strong { color: #333; font-weight: 600; }
+@media (max-width: 768px) { .lokio-landing h1 { font-size: 32px; } .lokio-landing h2 { font-size: 28px; } .lokio-landing .two-columns { grid-template-columns: 1fr; } }
+</style>
+
+<div class="lokio-landing">
+    <section class="hero">
+        <div class="container">
+            <h1>Location Machine Barbe a Papa et Pop-Corn entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre machine barbe a papa sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Machine</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Barbe a Papa : Fetes Gourmandes avec Lokio</h2>
+            <p class="intro-text">
+                Envie d'une ambiance fete foraine ? La <strong>location barbe a papa</strong> entre particuliers est la solution ideale pour emerveiller petits et grands lors de vos evenements. Sur <strong>Lokio</strong>, trouvez facilement une <strong>machine barbe a papa</strong> ou une <strong>machine a pop-corn</strong> pres de chez vous. Que vous cherchiez une <strong>location machine barbe a papa</strong> pour un anniversaire, une <strong>location pop-corn</strong> pour une soiree cinema ou une <strong>location machine a crepes</strong>, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location barbe a papa particulier</strong> vous permet de creer des souvenirs gourmands.
+            </p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">70%</span><span class="stat-label">d'economies en moyenne</span></div>
+                <div class="stat-item"><span class="stat-number">250+</span><span class="stat-label">machines disponibles</span></div>
+                <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">delai de reponse moyen</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Barbe a Papa : Toutes les Machines</h2>
+            <p class="intro-text">Notre service de <strong>location barbe a papa</strong> propose une large gamme de machines gourmandes.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍭</div>
+                    <h3>Location Machine Barbe a Papa</h3>
+                    <p><strong>Location barbe a papa</strong> : machines pro avec dome, sucre colore inclus. Ambiance fete foraine garantie.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir barbe a papa</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍿</div>
+                    <h3>Location Machine a Pop-Corn</h3>
+                    <p><strong>Location pop-corn</strong> : machines style cinema avec chariot. Mais et huile souvent inclus.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer pop-corn</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🧇</div>
+                    <h3>Location Gaufrier</h3>
+                    <p><strong>Location gaufrier</strong> : gaufrier professionnel pour gaufres liegeois ou bruxelloises.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver gaufrier</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🥞</div>
+                    <h3>Location Crepiere</h3>
+                    <p><strong>Location crepiere</strong> : crepiere professionnelle pour crepes party reussie.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir crepieres</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍫</div>
+                    <h3>Location Fontaine Chocolat</h3>
+                    <p><strong>Location fontaine chocolat</strong> : cascade de chocolat fondu pour vos buffets desserts.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer fontaine chocolat</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍩</div>
+                    <h3>Location Machine a Churros</h3>
+                    <p><strong>Location machine churros</strong> : friteuse et poche a churros pour gourmandises espagnoles.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir churros</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Barbe a Papa sur Lokio ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-number">💰</div><h3>Economisez jusqu'a 70%</h3><p>La <strong>location barbe a papa particulier</strong> coute moins cher que les loueurs pro.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🍭</div><h3>Effet Waouh</h3><p>La <strong>location barbe a papa</strong> emerveille enfants et adultes a coup sur.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🎉</div><h3>Ambiance Fete Foraine</h3><p>La <strong>location machine barbe a papa</strong> transforme votre evenement.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📍</div><h3>Proximite</h3><p>Trouvez une <strong>location barbe a papa</strong> pres de chez vous facilement.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🔧</div><h3>Simple a Utiliser</h3><p>La <strong>location barbe a papa</strong> est facile, instructions fournies.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🛡️</div><h3>Location Securisee</h3><p>Toute <strong>location barbe a papa</strong> sur Lokio avec caution.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Barbe a Papa : Trouvez Votre Machine</h2>
+            <p>La <strong style="color: white;">location barbe a papa</strong> n'a jamais ete aussi simple. Trouvez votre machine ideale.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            <div class="two-columns">
+                <div class="column-card">
+                    <h3>🍭 Vous Organisez une Fete ?</h3>
+                    <ul>
+                        <li><strong>Economies</strong> : 50% a 70% moins cher que loueurs</li>
+                        <li><strong>Succes garanti</strong> : Enfants et adultes adorent</li>
+                        <li><strong>Facile</strong> : Instructions d'utilisation fournies</li>
+                        <li><strong>Consommables</strong> : Sucre et mais souvent inclus</li>
+                        <li><strong>Proximite</strong> : Machine pres de chez vous</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Machine</a></div>
+                </div>
+                <div class="column-card">
+                    <h3>💰 Vous Possedez une Machine ?</h3>
+                    <ul>
+                        <li><strong>Revenus</strong> : 30 a 80 euros par location</li>
+                        <li><strong>Rentabilisez</strong> : Amortissez votre achat</li>
+                        <li><strong>Demande forte</strong> : Anniversaires toute l'annee</li>
+                        <li><strong>Vous gerez</strong> : Tarifs et disponibilites libres</li>
+                        <li><strong>Protection</strong> : Caution pour votre materiel</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Barbe a Papa sur Lokio</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Machine Barbe a Papa Pro</h3>
+                    <p><strong>Avec dome et chariot</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 50 euros/jour</p>
+                    <p>Machine pro avec dome protection, 1kg sucre rose et bleu inclus, batons fournis. 100+ portions possibles.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Machine Pop-Corn Cinema</h3>
+                    <p><strong>Style retro avec chariot</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 60 euros/jour</p>
+                    <p>Machine pop-corn style cinema vintage, mais et huile pour 50 portions inclus. Effet cinema garanti.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Pack Fete Foraine Complet</h3>
+                    <p><strong>Barbe a papa + Pop-corn</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 90 euros/jour</p>
+                    <p>Pack complet avec les 2 machines, consommables inclus. Parfait anniversaire enfant ou kermesse.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Barbe a Papa</h2>
+            <div class="faq">
+                <div class="faq-item"><div class="faq-question">Comment fonctionne la location barbe a papa ?</div><div class="faq-answer">La <strong>location barbe a papa</strong> sur Lokio est simple : recherchez une machine pres de vous, contactez le proprietaire, reservez et recuperez le materiel avec instructions et consommables.</div></div>
+                <div class="faq-item"><div class="faq-question">Quel est le cout d'une location barbe a papa ?</div><div class="faq-answer">Le prix de <strong>location barbe a papa</strong> varie. Comptez 30 a 60 euros/jour pour une machine barbe a papa, 40 a 70 euros/jour pour une machine pop-corn. Consommables souvent inclus.</div></div>
+                <div class="faq-item"><div class="faq-question">C'est facile a utiliser ?</div><div class="faq-answer">Oui, la <strong>location barbe a papa</strong> est tres simple. Le proprietaire fournit les instructions. Chauffer, ajouter le sucre, tourner le baton : le tour est joue !</div></div>
+                <div class="faq-item"><div class="faq-question">Combien puis-je gagner avec ma machine ?</div><div class="faq-answer">Les revenus de <strong>location barbe a papa</strong> sont reguliers, surtout au printemps et ete. Une machine peut generer 500 a 1500 euros par an.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Barbe a Papa : Rejoignez Lokio</h2>
+            <p class="intro-text">Que vous cherchiez une <strong>location barbe a papa</strong> pour votre fete ou que vous souhaitiez rentabiliser votre machine, Lokio est la plateforme ideale pour la <strong>location barbe a papa</strong> entre particuliers.</p>
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Machine</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+</div>

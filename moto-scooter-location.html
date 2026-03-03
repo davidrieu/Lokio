@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Moto et Scooter entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre moto ou scooter sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Moto</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Moto : Roulez Libre avec Lokio</h2>
+            <p class="intro-text">
+                Envie de sensations fortes ou de mobilite urbaine ? La <strong>location moto</strong> entre particuliers est la solution ideale pour rouler sans contraintes. Sur <strong>Lokio</strong>, trouvez facilement une <strong>moto</strong> ou un <strong>scooter</strong> pres de chez vous. Que vous cherchiez une <strong>location scooter</strong> pour vos deplacements en ville, une <strong>location moto routiere</strong> pour un road trip ou une <strong>location moto cross</strong> pour le tout-terrain, notre plateforme vous connecte avec des proprietaires passionnes. La <strong>location moto particulier</strong> vous permet d'economiser et de tester differents modeles.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">65%</span>
+                    <span class="stat-label">d'economies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">deux-roues disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">delai de reponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de vehicules -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Moto et Scooter : Tous les Types</h2>
+            <p class="intro-text">
+                Notre service de <strong>location moto</strong> propose une large gamme de deux-roues pour tous vos besoins. Du <strong>scooter 50cc</strong> a la <strong>moto sportive</strong>, decouvrez toutes les options sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛵</div>
+                    <h3>Location Scooter 50cc</h3>
+                    <p><strong>Location scooter</strong> 50cc sans permis : Vespa, Piaggio, MBK. Parfait pour deplacements urbains quotidiens.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les scooters 50</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏍️</div>
+                    <h3>Location Scooter 125cc</h3>
+                    <p><strong>Location scooter 125</strong> : Honda PCX, Yamaha XMAX, BMW C400. Puissants pour ville et peripherie.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer scooter 125</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏁</div>
+                    <h3>Location Moto Sportive</h3>
+                    <p><strong>Location moto sportive</strong> : Yamaha R1, Kawasaki ZX, Honda CBR. Sensations garanties sur circuit ou route.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver une sportive</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛣️</div>
+                    <h3>Location Moto Routiere</h3>
+                    <p><strong>Location moto routiere</strong> : BMW GS, Honda Africa Twin, Triumph Tiger. Ideales longs trajets et voyages.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer routiere</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏜️</div>
+                    <h3>Location Moto Cross / Enduro</h3>
+                    <p><strong>Location moto cross</strong> : KTM, Husqvarna, Yamaha WR. Pour terrains difficiles et sensations off-road.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les cross</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔥</div>
+                    <h3>Location Harley-Davidson</h3>
+                    <p><strong>Location Harley</strong> : Iron 883, Street Glide, Fat Bob. L'experience americaine unique et mythique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer une Harley</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Moto sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Economisez jusqu'a 65%</h3>
+                    <p>La <strong>location moto particulier</strong> vous permet d'economiser considerablement par rapport aux loueurs professionnels.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏍️</div>
+                    <h3>Large Choix de Motos</h3>
+                    <p>La <strong>location moto</strong> sportive, routiere, cross ou <strong>location scooter</strong> : un choix immense de modeles.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximite</h3>
+                    <p>Trouvez une <strong>location moto</strong> pres de chez vous. Recuperez facilement votre deux-roues.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎯</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>La <strong>location moto</strong> permet de tester differents modeles avant d'investir dans votre propre moto.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏆</div>
+                    <h3>Motos Passionnees</h3>
+                    <p>Les proprietaires de <strong>location moto</strong> sur Lokio sont des passionnes qui prennent soin de leurs machines.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Securisee</h3>
+                    <p>Toute <strong>location moto</strong> sur Lokio est securisee avec assurance, caution et systeme d'evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Moto : Trouvez Votre Machine</h2>
+            <p>La <strong style="color: white;">location moto</strong> n'a jamais ete aussi simple. Trouvez votre deux-roues ideal en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous les Motards</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🏍️ Vous Cherchez a Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Economies importantes</strong> : 50% a 65% moins cher que les loueurs pro</li>
+                        <li><strong>Testez differentes motos</strong> : Sportive, routiere, cross, custom</li>
+                        <li><strong>Pas d'investissement</strong> : Roulez sans acheter une moto couteuse</li>
+                        <li><strong>Flexibilite</strong> : Location journee, week-end ou semaine</li>
+                        <li><strong>Proximite</strong> : Moto disponible pres de chez vous</li>
+                        <li><strong>Equipement possible</strong> : Casque et gants parfois inclus</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ca Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de moto ou scooter souhaite</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilites</li>
+                        <li style="padding-left: 10px;"><strong>Reservez</strong> en ligne en toute securite</li>
+                        <li style="padding-left: 10px;"><strong>Recuperez</strong> la moto au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Roulez</strong> et rendez a la fin de la periode</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Moto</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Moto ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Moto</h4>
+                    <ul>
+                        <li><strong>Generez un revenu</strong> : Votre moto peut rapporter 200 a 800 euros par mois</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement moto</li>
+                        <li><strong>Moto peu utilisee</strong> : Faites-la profiter a d'autres motards</li>
+                        <li><strong>Vous gerez tout</strong> : Dates, tarifs et locataires a votre choix</li>
+                        <li><strong>Protection incluse</strong> : Assurance et caution pour votre moto</li>
+                        <li><strong>Forte demande</strong> : Les motos sont tres recherchees</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Creez</strong> votre annonce avec photos de la moto</li>
+                        <li style="padding-left: 10px;"><strong>Definissez</strong> vos disponibilites et tarif journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de motards</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les reservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus securises</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Moto sur Lokio</h2>
+            <p class="intro-text">
+                Decouvrez des exemples de <strong>location moto</strong> et <strong>location scooter</strong> proposes sur notre plateforme. Trouvez l'inspiration pour votre prochaine balade.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Yamaha MT-07</h3>
+                    <p><strong>Roadster 689cc - Permis A2</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 75 euros/jour - 350 euros/semaine</p>
+                    <p>Moto polyvalente et facile, parfaite pour debuter ou se faire plaisir. Entretenue avec soin, pneus neufs.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>BMW R1250 GS Adventure</h3>
+                    <p><strong>Trail 1254cc - Grand Tourisme</strong></p>
+                    <p>📍 Grenoble (38)</p>
+                    <p><strong>Prix :</strong> 130 euros/jour - 650 euros/semaine</p>
+                    <p>La reference des trails, equipee pour longs voyages. Top-case, valises laterales, GPS inclus.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Vespa Primavera 125</h3>
+                    <p><strong>Scooter retro - Permis B</strong></p>
+                    <p>📍 Nice (06)</p>
+                    <p><strong>Prix :</strong> 45 euros/jour - 200 euros/semaine</p>
+                    <p>Scooter iconique italien, parfait pour decouvrir la Cote d'Azur avec style. Casque inclus.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Moto</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location moto sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location moto</strong> sur Lokio est simple : recherchez le type de moto souhaite, consultez les annonces disponibles, contactez le proprietaire et reservez. Le paiement de la <strong>location moto</strong> est securise via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le cout pour une location moto ou scooter ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location moto</strong> varie selon le modele. Comptez 30 a 50 euros par jour pour un <strong>scooter 125</strong>. Une <strong>moto roadster</strong> coute 60 a 100 euros par jour. Une <strong>moto sportive</strong> ou trail haut de gamme est a 100 a 150 euros par jour.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel permis faut-il pour la location moto ?</div>
+                    <div class="faq-answer">
+                        Pour un <strong>scooter 50cc</strong>, le BSR ou permis AM suffit. Pour un <strong>scooter 125cc</strong>, le permis B avec formation 7h ou le permis A1. Pour les motos de plus de 125cc, le permis A2 (bridees) ou A est necessaire selon la puissance.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location moto est-elle assuree ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations moto</strong> sur Lokio doivent etre assurees. Verifiez les conditions d'assurance avec chaque proprietaire. Une caution est demandee pour garantir le bon etat de la moto.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec ma moto ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location moto</strong> dependent du modele et de la frequence. Un <strong>scooter 125</strong> peut generer 1000 a 3000 euros par an. Une <strong>moto sportive</strong> ou trail peut rapporter 3000 a 8000 euros annuels.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le casque est-il inclus dans la location moto ?</div>
+                    <div class="faq-answer">
+                        Cela depend des proprietaires. Certaines <strong>locations moto</strong> incluent casque, gants et blouson. D'autres demandent d'apporter son propre equipement. Verifiez les details dans chaque annonce de <strong>location moto</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Moto : Rejoignez Lokio</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location moto</strong> pour un week-end de balade ou que vous souhaitiez rentabiliser votre deux-roues, Lokio est la plateforme ideale. Rejoignez des milliers de motards qui font confiance a notre service de <strong>location moto</strong> et <strong>location scooter</strong> entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Moto</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

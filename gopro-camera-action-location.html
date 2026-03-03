@@ -1,0 +1,227 @@
+<style>
+.lokio-landing * { box-sizing: border-box; }
+.lokio-landing { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; }
+.lokio-landing .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.lokio-landing .hero { background: linear-gradient(135deg, #fed801 0%, #ffc107 100%); padding: 80px 0; text-align: center; }
+.lokio-landing h1 { font-size: 48px; color: #333; margin-bottom: 20px; font-weight: 800; }
+.lokio-landing .hero-subtitle { font-size: 24px; color: #555; margin-bottom: 40px; }
+.lokio-landing .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.lokio-landing .btn { padding: 18px 40px; font-size: 18px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.lokio-landing .btn-primary { background: #333; color: #fed801; }
+.lokio-landing .btn-primary:hover { background: #000; transform: translateY(-2px); }
+.lokio-landing .btn-secondary { background: white; color: #333; }
+.lokio-landing .section { padding: 80px 0; }
+.lokio-landing .section-alt { background: #f9f9f9; }
+.lokio-landing h2 { font-size: 36px; color: #333; margin-bottom: 20px; text-align: center; font-weight: 700; }
+.lokio-landing h3 { font-size: 24px; color: #333; margin-bottom: 15px; font-weight: 600; }
+.lokio-landing p { margin-bottom: 15px; }
+.lokio-landing a { text-decoration: none; }
+.lokio-landing .intro-text { font-size: 18px; text-align: center; max-width: 900px; margin: 0 auto 60px; color: #555; line-height: 1.8; }
+.lokio-landing .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.lokio-landing .equipment-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+.lokio-landing .equipment-card:hover { transform: translateY(-5px); }
+.lokio-landing .equipment-icon { font-size: 48px; margin-bottom: 20px; }
+.lokio-landing .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.lokio-landing .benefit-card { text-align: center; }
+.lokio-landing .benefit-number { background: #fed801; color: #333; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 20px; }
+.lokio-landing .two-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; margin-top: 50px; }
+.lokio-landing .column-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.lokio-landing .column-card h3 { color: #fed801; background: #333; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+.lokio-landing ul { list-style: none; padding: 0; }
+.lokio-landing li { padding: 12px 0; padding-left: 30px; position: relative; }
+.lokio-landing ul li:before { content: "✓"; position: absolute; left: 0; color: #fed801; font-weight: bold; font-size: 20px; }
+.lokio-landing .cta-section { background: linear-gradient(135deg, #333 0%, #000 100%); color: white; text-align: center; padding: 80px 20px; margin: 80px 0; }
+.lokio-landing .cta-section h2 { color: #fed801; margin-bottom: 30px; }
+.lokio-landing .cta-section p { font-size: 20px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.lokio-landing .stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 60px 0; }
+.lokio-landing .stat-item { text-align: center; }
+.lokio-landing .stat-number { font-size: 48px; font-weight: bold; color: #fed801; display: block; }
+.lokio-landing .stat-label { font-size: 18px; color: #666; margin-top: 10px; }
+.lokio-landing .faq { max-width: 900px; margin: 50px auto; }
+.lokio-landing .faq-item { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.lokio-landing .faq-question { font-weight: 600; color: #333; font-size: 18px; margin-bottom: 10px; }
+.lokio-landing .faq-answer { color: #666; line-height: 1.8; }
+.lokio-landing .text-center { text-align: center; }
+.lokio-landing strong { color: #333; font-weight: 600; }
+@media (max-width: 768px) { .lokio-landing h1 { font-size: 32px; } .lokio-landing h2 { font-size: 28px; } .lokio-landing .two-columns { grid-template-columns: 1fr; } }
+</style>
+
+<div class="lokio-landing">
+    <section class="hero">
+        <div class="container">
+            <h1>Location GoPro et Camera Action entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre GoPro sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une GoPro</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location GoPro : Capturez l'Action avec Lokio</h2>
+            <p class="intro-text">
+                Envie de filmer vos aventures sportives ? La <strong>location GoPro</strong> entre particuliers est la solution ideale pour capturer vos moments d'action sans investir. Sur <strong>Lokio</strong>, trouvez facilement une <strong>GoPro</strong> ou une <strong>camera action</strong> pres de chez vous. Que vous cherchiez une <strong>location GoPro Hero</strong> pour le ski, une <strong>location camera etanche</strong> pour la plongee ou une <strong>location camera sport</strong> pour le VTT, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location GoPro particulier</strong> vous permet de filmer en 4K vos exploits.
+            </p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">70%</span><span class="stat-label">d'economies en moyenne</span></div>
+                <div class="stat-item"><span class="stat-number">200+</span><span class="stat-label">cameras disponibles</span></div>
+                <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">delai de reponse moyen</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location GoPro : Tous les Modeles</h2>
+            <p class="intro-text">Notre service de <strong>location GoPro</strong> propose une large gamme de cameras action.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">📷</div>
+                    <h3>Location GoPro Hero</h3>
+                    <p><strong>Location GoPro Hero</strong> : dernier modele 5.3K, stabilisation HyperSmooth. La reference des cameras action.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir GoPro Hero</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎬</div>
+                    <h3>Location GoPro Max 360</h3>
+                    <p><strong>Location GoPro Max</strong> : camera 360 degres pour videos immersives et recentrage en post-prod.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer GoPro Max</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🤿</div>
+                    <h3>Location Caisson Plongee</h3>
+                    <p><strong>Location caisson etanche</strong> : plongee jusqu'a 60m avec votre GoPro. Ideal snorkeling et plongee.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver caisson</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏂</div>
+                    <h3>Location Kit Ski/Snowboard</h3>
+                    <p><strong>Location kit ski GoPro</strong> : fixation casque, perche et batteries pour sports d'hiver.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir kit ski</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚴</div>
+                    <h3>Location Kit VTT/Velo</h3>
+                    <p><strong>Location kit velo GoPro</strong> : fixation guidon, poitrine et casque pour cyclisme.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer kit velo</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">📹</div>
+                    <h3>Location DJI Action</h3>
+                    <p><strong>Location DJI Action</strong> : alternative a GoPro avec ecran avant et excellente stabilisation.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir DJI Action</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location GoPro sur Lokio ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-number">💰</div><h3>Economisez jusqu'a 70%</h3><p>La <strong>location GoPro particulier</strong> coute moins cher que l'achat ou loueurs pro.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📷</div><h3>Qualite 4K/5K</h3><p>La <strong>location GoPro</strong> offre des videos ultra HD de qualite professionnelle.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🏄</div><h3>Sports Extremes</h3><p>La <strong>location camera action</strong> est parfaite pour tous les sports outdoor.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📍</div><h3>Proximite</h3><p>Trouvez une <strong>location GoPro</strong> pres de chez vous ou de votre destination.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🔧</div><h3>Accessoires Inclus</h3><p>La <strong>location GoPro</strong> inclut souvent fixations et batteries supplementaires.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🛡️</div><h3>Location Securisee</h3><p>Toute <strong>location GoPro</strong> sur Lokio avec caution et evaluation.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location GoPro : Trouvez la Votre</h2>
+            <p>La <strong style="color: white;">location GoPro</strong> n'a jamais ete aussi simple. Trouvez votre camera ideale.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            <div class="two-columns">
+                <div class="column-card">
+                    <h3>📷 Vous Partez a l'Aventure ?</h3>
+                    <ul>
+                        <li><strong>Economies</strong> : 50% a 70% moins cher que l'achat</li>
+                        <li><strong>4K/5K</strong> : Videos ultra HD de vos exploits</li>
+                        <li><strong>Accessoires</strong> : Fixations adaptees a votre sport</li>
+                        <li><strong>Etanche</strong> : Cameras resistantes eau et chocs</li>
+                        <li><strong>Complet</strong> : Batteries et cartes memoire incluses</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une GoPro</a></div>
+                </div>
+                <div class="column-card">
+                    <h3>💰 Vous Possedez une GoPro ?</h3>
+                    <ul>
+                        <li><strong>Revenus</strong> : 20 a 60 euros par location</li>
+                        <li><strong>Rentabilisez</strong> : Amortissez votre investissement</li>
+                        <li><strong>Demande forte</strong> : Vacances, sports, evenements</li>
+                        <li><strong>Vous gerez</strong> : Tarifs et disponibilites libres</li>
+                        <li><strong>Protection</strong> : Caution pour votre materiel</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location GoPro sur Lokio</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>GoPro Hero 12 Black</h3>
+                    <p><strong>5.3K - HyperSmooth 6.0</strong></p>
+                    <p>📍 Chamonix (74)</p>
+                    <p><strong>Prix :</strong> 25 euros/jour - 100 euros/semaine</p>
+                    <p>GoPro derniere generation, 3 batteries, carte 128Go, kit ski complet avec fixation casque.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>GoPro Max 360</h3>
+                    <p><strong>Video 360 - 5.6K</strong></p>
+                    <p>📍 Nice (06)</p>
+                    <p><strong>Prix :</strong> 35 euros/jour - 140 euros/semaine</p>
+                    <p>Camera 360 degres, perche invisible, 2 batteries. Parfait voyage et vlogs immersifs.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Kit GoPro Plongee Complet</h3>
+                    <p><strong>Hero 11 + Caisson 60m</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 40 euros/jour - 160 euros/semaine</p>
+                    <p>GoPro Hero 11, caisson plongee 60m, filtre rouge, eclairage sous-marin. Kit complet snorkeling/plongee.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location GoPro</h2>
+            <div class="faq">
+                <div class="faq-item"><div class="faq-question">Comment fonctionne la location GoPro ?</div><div class="faq-answer">La <strong>location GoPro</strong> sur Lokio est simple : recherchez une camera pres de vous ou de votre destination, contactez le proprietaire, reservez et recuperez le materiel pret a l'emploi.</div></div>
+                <div class="faq-item"><div class="faq-question">Quel est le cout d'une location GoPro ?</div><div class="faq-answer">Le prix de <strong>location GoPro</strong> varie. Comptez 15 a 30 euros/jour pour une GoPro Hero, 25 a 40 euros/jour pour une GoPro Max 360. Accessoires souvent inclus.</div></div>
+                <div class="faq-item"><div class="faq-question">Les accessoires sont-ils fournis ?</div><div class="faq-answer">La plupart des <strong>locations GoPro</strong> incluent batteries supplementaires, cartes memoire et fixations de base. Des kits sport specifiques sont disponibles (ski, plongee, velo).</div></div>
+                <div class="faq-item"><div class="faq-question">Combien puis-je gagner avec ma GoPro ?</div><div class="faq-answer">Les revenus de <strong>location GoPro</strong> sont reguliers, surtout en saison touristique. Une GoPro peut generer 500 a 2000 euros par an selon la localisation.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location GoPro : Rejoignez Lokio</h2>
+            <p class="intro-text">Que vous cherchiez une <strong>location GoPro</strong> pour vos aventures ou que vous souhaitiez rentabiliser votre camera, Lokio est la plateforme ideale pour la <strong>location GoPro</strong> entre particuliers.</p>
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une GoPro</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+</div>

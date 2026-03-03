@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Remorque entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre remorque sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Remorque</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Remorque : La Solution Pratique avec Lokio</h2>
+            <p class="intro-text">
+                Besoin de transporter des objets volumineux ? La <strong>location remorque</strong> entre particuliers est la solution economique pour vos demenagements, travaux ou transport de materiaux. Sur <strong>Lokio</strong>, trouvez facilement une <strong>remorque</strong> pres de chez vous. Que vous cherchiez une <strong>location remorque porte-voiture</strong>, une <strong>location remorque bagagere</strong> ou une <strong>location remorque plateau</strong>, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location remorque particulier</strong> vous permet d'economiser tout en trouvant exactement ce qu'il vous faut.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">d'economies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">800+</span>
+                    <span class="stat-label">remorques disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">delai de reponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de remorques -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Remorque : Tous les Types Disponibles</h2>
+            <p class="intro-text">
+                Notre service de <strong>location remorque</strong> propose une large gamme de remorques pour tous vos besoins de transport. De la <strong>remorque bagagere</strong> a la <strong>remorque porte-voiture</strong>, decouvrez toutes les options sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">📦</div>
+                    <h3>Location Remorque Bagagere</h3>
+                    <p><strong>Location remorque bagagere</strong> : remorques fermees ou bachees. Ideales pour demenagement, transport de cartons et meubles proteges.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les bagageres</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚗</div>
+                    <h3>Location Remorque Porte-Voiture</h3>
+                    <p><strong>Location remorque porte-voiture</strong> : transport de vehicules, motos, quads. Rampes d'acces et sangles incluses.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer porte-voiture</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏗️</div>
+                    <h3>Location Remorque Plateau</h3>
+                    <p><strong>Location remorque plateau</strong> : surface plane pour charges volumineuses. Transport de materiaux de construction, palettes.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un plateau</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🐴</div>
+                    <h3>Location Remorque Van Chevaux</h3>
+                    <p><strong>Location remorque chevaux</strong> : vans 1 a 3 places pour transport equins. Securise et confortable pour vos animaux.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer van chevaux</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚤</div>
+                    <h3>Location Remorque Bateau</h3>
+                    <p><strong>Location remorque bateau</strong> : mise a l'eau facile pour voiliers, bateaux a moteur, jet-skis. Differentes capacites.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir remorques bateau</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏍️</div>
+                    <h3>Location Remorque Moto</h3>
+                    <p><strong>Location remorque moto</strong> : transport securise de 1 a 3 motos. Bloque-roues et sangles fournis.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer remorque moto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Remorque sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Economisez jusqu'a 60%</h3>
+                    <p>La <strong>location remorque particulier</strong> vous permet d'economiser considerablement par rapport aux loueurs professionnels.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📦</div>
+                    <h3>Tous Types de Remorques</h3>
+                    <p>La <strong>location remorque</strong> bagagere, plateau, porte-voiture : un choix complet pour chaque besoin de transport.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximite</h3>
+                    <p>Trouvez une <strong>location remorque</strong> pres de chez vous. Recuperez facilement sans faire des kilometres.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">⏰</div>
+                    <h3>Disponibilite Immediate</h3>
+                    <p>La <strong>location remorque</strong> entre particuliers offre plus de flexibilite sur les horaires et disponibilites.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔧</div>
+                    <h3>Equipement Complet</h3>
+                    <p>La <strong>location remorque</strong> inclut souvent sangles, baches et accessoires necessaires au transport.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Securisee</h3>
+                    <p>Toute <strong>location remorque</strong> sur Lokio est securisee avec caution et systeme d'evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Remorque : Trouvez la Votre</h2>
+            <p>La <strong style="color: white;">location remorque</strong> n'a jamais ete aussi simple. Trouvez votre remorque en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>📦 Vous Cherchez a Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Economies importantes</strong> : 40% a 60% moins cher que les loueurs pro</li>
+                        <li><strong>Choix varie</strong> : Bagagere, plateau, porte-voiture, van chevaux</li>
+                        <li><strong>Pas d'investissement</strong> : Louez ponctuellement sans acheter</li>
+                        <li><strong>Flexibilite</strong> : Location a la journee ou semaine</li>
+                        <li><strong>Proximite</strong> : Remorque disponible pres de chez vous</li>
+                        <li><strong>Equipement inclus</strong> : Sangles et accessoires souvent fournis</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ca Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de remorque dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilites</li>
+                        <li style="padding-left: 10px;"><strong>Reservez</strong> en ligne en toute securite</li>
+                        <li style="padding-left: 10px;"><strong>Recuperez</strong> la remorque au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Utilisez</strong> et rendez a la fin de la periode</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Remorque</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Remorque ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Remorque</h4>
+                    <ul>
+                        <li><strong>Generez un revenu</strong> : Votre remorque peut rapporter 50 a 300 euros par mois</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement</li>
+                        <li><strong>Remorque inutilisee</strong> : Faites-la profiter aux autres</li>
+                        <li><strong>Vous gerez tout</strong> : Dates, tarifs et locataires a votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour proteger votre bien</li>
+                        <li><strong>Forte demande</strong> : Les remorques sont tres recherchees</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Creez</strong> votre annonce avec photos et caracteristiques</li>
+                        <li style="padding-left: 10px;"><strong>Definissez</strong> vos disponibilites et tarif</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les reservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus securises</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Remorque sur Lokio</h2>
+            <p class="intro-text">
+                Decouvrez des exemples de <strong>location remorque</strong> proposes sur notre plateforme. Trouvez l'inspiration pour votre transport.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Remorque Bagagere Bache 750kg</h3>
+                    <p><strong>Dimensions : 2m x 1.3m</strong></p>
+                    <p>📍 Toulouse (31)</p>
+                    <p><strong>Prix :</strong> 25 euros/jour - 100 euros/semaine</p>
+                    <p>Remorque bagagere bachee, ideale demenagement. Charge utile 500kg, roue de secours incluse, facile a tracter.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Remorque Porte-Voiture 2000kg</h3>
+                    <p><strong>PTAC 2 tonnes - Freinee</strong></p>
+                    <p>📍 Nantes (44)</p>
+                    <p><strong>Prix :</strong> 55 euros/jour - 250 euros/semaine</p>
+                    <p>Remorque porte-voiture avec rampes, sangles et treuil. Transport voiture, quad ou moto en toute securite.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Remorque Plateau Basculant</h3>
+                    <p><strong>3m x 1.5m - 1500kg</strong></p>
+                    <p>📍 Strasbourg (67)</p>
+                    <p><strong>Prix :</strong> 40 euros/jour - 180 euros/semaine</p>
+                    <p>Remorque plateau basculant, parfaite pour materiaux de construction, bois, gravats. Ridelles amovibles.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Remorque</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location remorque sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location remorque</strong> sur Lokio est simple : recherchez le type de remorque souhaite, consultez les annonces disponibles, contactez le proprietaire et reservez. Le paiement est securise via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le cout pour une location remorque ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location remorque</strong> varie selon le type. Comptez 20 a 35 euros par jour pour une <strong>remorque bagagere</strong>. Une <strong>remorque porte-voiture</strong> coute 45 a 70 euros par jour. Une <strong>remorque plateau</strong> est a 30 a 50 euros par jour.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel permis faut-il pour tracter une remorque ?</div>
+                    <div class="faq-answer">
+                        Le permis B suffit pour tracter une remorque si l'ensemble vehicule + remorque ne depasse pas 3500 kg. Au-dela, le permis BE ou une formation B96 est necessaire. Verifiez le PTAC de la remorque avant la <strong>location remorque</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location remorque inclut-elle les accessoires ?</div>
+                    <div class="faq-answer">
+                        La plupart des <strong>locations remorque</strong> sur Lokio incluent sangles, baches et accessoires de base. Verifiez les details dans chaque annonce pour connaitre l'equipement fourni.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec ma remorque ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location remorque</strong> dependent du type et de la frequence. Une <strong>remorque bagagere</strong> peut generer 500 a 1500 euros par an. Une <strong>remorque porte-voiture</strong> peut rapporter 1000 a 3000 euros annuels.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Ma voiture peut-elle tracter cette remorque ?</div>
+                    <div class="faq-answer">
+                        Verifiez la capacite de remorquage de votre vehicule dans la carte grise (case F3). Assurez-vous que votre attelage est compatible. En cas de doute, demandez conseil au proprietaire lors de la <strong>location remorque</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Remorque : Rejoignez Lokio</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location remorque</strong> pour votre demenagement ou que vous souhaitiez rentabiliser votre remorque, Lokio est la plateforme ideale. Rejoignez des milliers d'utilisateurs qui font confiance a notre service de <strong>location remorque</strong> entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Remorque</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

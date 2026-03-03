@@ -1,0 +1,30 @@
+TITRE H1 (a mettre sur la page WordPress)
+Location Jacuzzi et Spa Gonflable entre Particuliers
+
+---
+
+PARAMETRES RANKMATH
+
+Mot-cle principal:
+location jacuzzi
+
+Titre SEO:
+Location Jacuzzi et Spa Gonflable entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre jacuzzi gonflable sur Lokio. Spa 4-6 places, jets massants : economisez jusqu'a 80%. Reservez votre detente.
+
+URL/Slug:
+location-jacuzzi-spa-gonflable
+
+Mots-cles secondaires (separer par des virgules):
+location spa gonflable, location jacuzzi particulier, louer jacuzzi, location hot tub, location spa portable
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densite du mot-cle "location jacuzzi" : ~1.4% (OPTIMAL)
+Le mot-cle apparait plus de 30 fois dans le contenu
+Present dans H1, H2, meta description, URL
+Mots-cles secondaires bien integres dans le texte

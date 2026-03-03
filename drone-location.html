@@ -1,0 +1,227 @@
+<style>
+.lokio-landing * { box-sizing: border-box; }
+.lokio-landing { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; }
+.lokio-landing .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.lokio-landing .hero { background: linear-gradient(135deg, #fed801 0%, #ffc107 100%); padding: 80px 0; text-align: center; }
+.lokio-landing h1 { font-size: 48px; color: #333; margin-bottom: 20px; font-weight: 800; }
+.lokio-landing .hero-subtitle { font-size: 24px; color: #555; margin-bottom: 40px; }
+.lokio-landing .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.lokio-landing .btn { padding: 18px 40px; font-size: 18px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.lokio-landing .btn-primary { background: #333; color: #fed801; }
+.lokio-landing .btn-primary:hover { background: #000; transform: translateY(-2px); }
+.lokio-landing .btn-secondary { background: white; color: #333; }
+.lokio-landing .section { padding: 80px 0; }
+.lokio-landing .section-alt { background: #f9f9f9; }
+.lokio-landing h2 { font-size: 36px; color: #333; margin-bottom: 20px; text-align: center; font-weight: 700; }
+.lokio-landing h3 { font-size: 24px; color: #333; margin-bottom: 15px; font-weight: 600; }
+.lokio-landing p { margin-bottom: 15px; }
+.lokio-landing a { text-decoration: none; }
+.lokio-landing .intro-text { font-size: 18px; text-align: center; max-width: 900px; margin: 0 auto 60px; color: #555; line-height: 1.8; }
+.lokio-landing .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.lokio-landing .equipment-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+.lokio-landing .equipment-card:hover { transform: translateY(-5px); }
+.lokio-landing .equipment-icon { font-size: 48px; margin-bottom: 20px; }
+.lokio-landing .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.lokio-landing .benefit-card { text-align: center; }
+.lokio-landing .benefit-number { background: #fed801; color: #333; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 20px; }
+.lokio-landing .two-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; margin-top: 50px; }
+.lokio-landing .column-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.lokio-landing .column-card h3 { color: #fed801; background: #333; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+.lokio-landing ul { list-style: none; padding: 0; }
+.lokio-landing li { padding: 12px 0; padding-left: 30px; position: relative; }
+.lokio-landing ul li:before { content: "✓"; position: absolute; left: 0; color: #fed801; font-weight: bold; font-size: 20px; }
+.lokio-landing .cta-section { background: linear-gradient(135deg, #333 0%, #000 100%); color: white; text-align: center; padding: 80px 20px; margin: 80px 0; }
+.lokio-landing .cta-section h2 { color: #fed801; margin-bottom: 30px; }
+.lokio-landing .cta-section p { font-size: 20px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.lokio-landing .stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 60px 0; }
+.lokio-landing .stat-item { text-align: center; }
+.lokio-landing .stat-number { font-size: 48px; font-weight: bold; color: #fed801; display: block; }
+.lokio-landing .stat-label { font-size: 18px; color: #666; margin-top: 10px; }
+.lokio-landing .faq { max-width: 900px; margin: 50px auto; }
+.lokio-landing .faq-item { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.lokio-landing .faq-question { font-weight: 600; color: #333; font-size: 18px; margin-bottom: 10px; }
+.lokio-landing .faq-answer { color: #666; line-height: 1.8; }
+.lokio-landing .text-center { text-align: center; }
+.lokio-landing strong { color: #333; font-weight: 600; }
+@media (max-width: 768px) { .lokio-landing h1 { font-size: 32px; } .lokio-landing h2 { font-size: 28px; } .lokio-landing .two-columns { grid-template-columns: 1fr; } }
+</style>
+
+<div class="lokio-landing">
+    <section class="hero">
+        <div class="container">
+            <h1>Location Drone entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre drone sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Drone</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Drone : Filmez du Ciel avec Lokio</h2>
+            <p class="intro-text">
+                Envie de prises de vue aeriennes spectaculaires ? La <strong>location drone</strong> entre particuliers est la solution ideale pour capturer des images uniques sans investir dans du materiel couteux. Sur <strong>Lokio</strong>, trouvez facilement un <strong>drone</strong> pres de chez vous. Que vous cherchiez une <strong>location drone DJI</strong> pour un mariage, une <strong>location drone camera</strong> pour vos vacances ou une <strong>location drone professionnel</strong> pour un projet video, notre plateforme vous connecte avec des proprietaires passionnes. La <strong>location drone particulier</strong> vous permet de realiser des videos et photos aeriennes exceptionnelles.
+            </p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">65%</span><span class="stat-label">d'economies en moyenne</span></div>
+                <div class="stat-item"><span class="stat-number">150+</span><span class="stat-label">drones disponibles</span></div>
+                <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">delai de reponse moyen</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Drone : Tous les Modeles</h2>
+            <p class="intro-text">Notre service de <strong>location drone</strong> propose une large gamme de drones pour tous vos projets.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚁</div>
+                    <h3>Location Drone DJI Mini</h3>
+                    <p><strong>Location drone DJI Mini</strong> : compact et leger, moins de 250g. Parfait debutants et voyages.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir DJI Mini</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">📹</div>
+                    <h3>Location Drone DJI Mavic</h3>
+                    <p><strong>Location drone Mavic</strong> : 4K 60fps, detection obstacles. Qualite pro pour videos et photos.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer Mavic</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎬</div>
+                    <h3>Location Drone DJI Air</h3>
+                    <p><strong>Location drone Air</strong> : capteur 1 pouce, autonomie 34 min. Ideal projets creatifs.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver Air</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎥</div>
+                    <h3>Location Drone Cinema</h3>
+                    <p><strong>Location drone pro</strong> : DJI Inspire, camera interchangeable. Productions cinematographiques.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir drones pro</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏎️</div>
+                    <h3>Location Drone FPV</h3>
+                    <p><strong>Location drone FPV</strong> : pilotage immersif avec lunettes. Sensations et prises de vue dynamiques.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer FPV</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔋</div>
+                    <h3>Location Batteries Drone</h3>
+                    <p><strong>Location batteries supplementaires</strong> : prolongez vos sessions de vol avec batteries extra.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir batteries</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Drone sur Lokio ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-number">💰</div><h3>Economisez jusqu'a 65%</h3><p>La <strong>location drone particulier</strong> coute moins cher que l'achat ou loueurs pro.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📹</div><h3>Qualite Professionnelle</h3><p>La <strong>location drone</strong> offre des prises de vue 4K exceptionnelles.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🎯</div><h3>Testez Avant d'Acheter</h3><p>La <strong>location drone DJI</strong> permet de tester differents modeles.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📍</div><h3>Proximite</h3><p>Trouvez une <strong>location drone</strong> pres de chez vous facilement.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🔧</div><h3>Pret a Voler</h3><p>La <strong>location drone</strong> inclut batteries, telecommande, tout est configure.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🛡️</div><h3>Location Securisee</h3><p>Toute <strong>location drone</strong> sur Lokio avec assurance et caution.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Drone : Trouvez le Votre</h2>
+            <p>La <strong style="color: white;">location drone</strong> n'a jamais ete aussi simple. Trouvez votre drone ideal.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            <div class="two-columns">
+                <div class="column-card">
+                    <h3>🚁 Vous Cherchez a Filmer ?</h3>
+                    <ul>
+                        <li><strong>Economies</strong> : 50% a 65% moins cher que loueurs</li>
+                        <li><strong>Qualite 4K</strong> : Images aeriennes professionnelles</li>
+                        <li><strong>Facile</strong> : Drones configures, prets a voler</li>
+                        <li><strong>Conseils</strong> : Proprietaires passionnes vous guident</li>
+                        <li><strong>Complet</strong> : Batteries, cartes memoire incluses</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Drone</a></div>
+                </div>
+                <div class="column-card">
+                    <h3>💰 Vous Possedez un Drone ?</h3>
+                    <ul>
+                        <li><strong>Revenus</strong> : 50 a 200 euros par location</li>
+                        <li><strong>Rentabilisez</strong> : Amortissez votre investissement</li>
+                        <li><strong>Demande forte</strong> : Mariages, vacances, evenements</li>
+                        <li><strong>Vous gerez</strong> : Tarifs et disponibilites libres</li>
+                        <li><strong>Protection</strong> : Assurance et caution</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Drone sur Lokio</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>DJI Mini 3 Pro</h3>
+                    <p><strong>4K 60fps - 34 min autonomie</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 60 euros/jour - 200 euros/semaine</p>
+                    <p>Drone compact moins de 250g, 3 batteries, sac transport, carte 64Go. Parfait voyages et vacances.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>DJI Mavic 3</h3>
+                    <p><strong>5.1K - Capteur Hasselblad</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 120 euros/jour - 400 euros/semaine</p>
+                    <p>Drone haut de gamme, qualite cinema. 4 batteries, filtres ND, formation utilisation incluse.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>DJI FPV Combo</h3>
+                    <p><strong>Pilotage immersif - 140 km/h</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 80 euros/jour - 280 euros/semaine</p>
+                    <p>Drone FPV avec lunettes et radiocommande. Sensations garanties, formation pilotage proposee.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Drone</h2>
+            <div class="faq">
+                <div class="faq-item"><div class="faq-question">Faut-il un permis pour piloter un drone loue ?</div><div class="faq-answer">Pour les drones de moins de 250g, aucune formation n'est obligatoire. Pour les drones plus lourds, une formation en ligne gratuite est necessaire. Respectez les zones de vol autorisees.</div></div>
+                <div class="faq-item"><div class="faq-question">Quel est le cout d'une location drone ?</div><div class="faq-answer">Le prix de <strong>location drone</strong> varie selon le modele. Comptez 40 a 80 euros/jour pour un DJI Mini, 80 a 150 euros/jour pour un Mavic, 150 a 300 euros/jour pour un drone pro.</div></div>
+                <div class="faq-item"><div class="faq-question">La location drone est-elle assuree ?</div><div class="faq-answer">La plupart des <strong>locations drone</strong> incluent une assurance RC obligatoire. Une caution est demandee. Verifiez les conditions avec chaque proprietaire.</div></div>
+                <div class="faq-item"><div class="faq-question">Combien puis-je gagner avec mon drone ?</div><div class="faq-answer">Les revenus de <strong>location drone</strong> dependent du modele. Un DJI Mini peut generer 1000-3000 euros/an. Un Mavic haut de gamme peut rapporter 3000-8000 euros annuels.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Drone : Rejoignez Lokio</h2>
+            <p class="intro-text">Que vous cherchiez une <strong>location drone</strong> pour vos projets ou que vous souhaitiez rentabiliser votre drone, Lokio est la plateforme ideale pour la <strong>location drone</strong> entre particuliers.</p>
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Drone</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+</div>

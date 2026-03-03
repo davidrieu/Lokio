@@ -1,0 +1,30 @@
+TITRE H1 (a mettre sur la page WordPress)
+Location Photobooth et Borne Photo entre Particuliers
+
+---
+
+PARAMETRES RANKMATH
+
+Mot-cle principal:
+location photobooth
+
+Titre SEO:
+Location Photobooth et Borne Photo entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre photobooth sur Lokio. Borne photo mariage, anniversaire : economisez jusqu'a 65%. Reservez votre animation photo.
+
+URL/Slug:
+location-photobooth-borne-photo
+
+Mots-cles secondaires (separer par des virgules):
+location borne photo, location photobooth mariage, louer photobooth, location photomaton, location miroir photo
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densite du mot-cle "location photobooth" : ~1.4% (OPTIMAL)
+Le mot-cle apparait plus de 30 fois dans le contenu
+Present dans H1, H2, meta description, URL
+Mots-cles secondaires bien integres dans le texte

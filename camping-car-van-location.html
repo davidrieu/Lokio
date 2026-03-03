@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Camping-Car et Van Amenage entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre camping-car ou van amenage sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Camping-Car</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Camping-Car : Partez a l'Aventure avec Lokio</h2>
+            <p class="intro-text">
+                Vous revez de partir en road trip ? La <strong>location camping-car</strong> entre particuliers est la solution ideale pour voyager en toute liberte. Sur <strong>Lokio</strong>, trouvez facilement un <strong>camping-car</strong> ou un <strong>van amenage</strong> pres de chez vous. Que vous cherchiez une <strong>location van amenage</strong> pour un week-end romantique ou une <strong>location camping-car</strong> familial pour les vacances, notre plateforme vous connecte avec des proprietaires de confiance. La <strong>location camping-car particulier</strong> vous permet d'economiser tout en vivant une experience unique sur la route.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">d'economies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">vehicules disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">delai de reponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de vehicules -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Camping-Car et Van : Tous les Vehicules</h2>
+            <p class="intro-text">
+                Notre service de <strong>location camping-car</strong> propose une large gamme de vehicules pour tous vos projets d'evasion. Du <strong>van amenage</strong> compact au camping-car familial, decouvrez tous les vehicules en location sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚐</div>
+                    <h3>Location Van Amenage</h3>
+                    <p><strong>Location van amenage</strong> : Volkswagen California, Mercedes Marco Polo, Renault Trafic amenage. Compacts et maniables pour deux personnes.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les vans</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏕️</div>
+                    <h3>Location Camping-Car Capucine</h3>
+                    <p><strong>Location camping-car</strong> capucine : lit au-dessus de la cabine, ideal pour familles avec enfants. 4 a 6 couchages confortables.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un capucine</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚌</div>
+                    <h3>Location Camping-Car Profile</h3>
+                    <p><strong>Location camping-car profile</strong> : design aerodynamique, consommation reduite. Parfait compromis entre confort et maniabilite.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un profile</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏠</div>
+                    <h3>Location Camping-Car Integral</h3>
+                    <p><strong>Location camping-car integral</strong> : le summum du confort sur roues. Grand espace de vie, tout equipe pour longs voyages.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un integral</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚗</div>
+                    <h3>Location Fourgon Amenage</h3>
+                    <p><strong>Location fourgon amenage</strong> : Fiat Ducato, Citroen Jumper amenages. Plus spacieux qu'un van, plus compact qu'un camping-car.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les fourgons</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">⛺</div>
+                    <h3>Location Combi Volkswagen</h3>
+                    <p><strong>Location combi VW</strong> : vintage et mythique. T2, T3, T4 ou California moderne pour road trips inoubliables.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un combi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Camping-Car sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Economisez jusqu'a 70%</h3>
+                    <p>La <strong>location camping-car particulier</strong> vous permet d'economiser considerablement par rapport aux agences professionnelles. Profitez de tarifs avantageux.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🚐</div>
+                    <h3>Large Choix de Vehicules</h3>
+                    <p>La <strong>location van amenage</strong>, <strong>location camping-car</strong> profile ou integral : un choix immense de vehicules pres de chez vous.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximite</h3>
+                    <p>Trouvez une <strong>location camping-car</strong> pres de chez vous. Recuperez facilement votre vehicule sans faire des kilometres.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🌍</div>
+                    <h3>Liberte Totale</h3>
+                    <p>La <strong>location camping-car</strong> vous offre une liberte incomparable : partez ou vous voulez, quand vous voulez.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔄</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>La <strong>location van amenage</strong> permet de tester differents modeles avant d'investir dans votre propre vehicule.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Securisee</h3>
+                    <p>Toute <strong>location camping-car</strong> sur Lokio est securisee avec assurance, caution et systeme d'evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Camping-Car : Trouvez Votre Vehicule</h2>
+            <p>La <strong style="color: white;">location camping-car</strong> n'a jamais ete aussi simple. Trouvez votre van ou camping-car en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🚐 Vous Cherchez a Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Economies importantes</strong> : 50% a 70% moins cher que les loueurs professionnels</li>
+                        <li><strong>Testez differents vehicules</strong> : Van, fourgon, capucine, integral</li>
+                        <li><strong>Pas d'investissement</strong> : Voyagez sans acheter un camping-car couteux</li>
+                        <li><strong>Flexibilite</strong> : Location week-end, semaine ou mois selon vos besoins</li>
+                        <li><strong>Proximite</strong> : Recuperez le vehicule pres de chez vous</li>
+                        <li><strong>Equipement complet</strong> : Vaisselle, literie souvent inclus</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ca Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de vehicule dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilites</li>
+                        <li style="padding-left: 10px;"><strong>Reservez</strong> en ligne en toute securite</li>
+                        <li style="padding-left: 10px;"><strong>Recuperez</strong> le camping-car au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Partez</strong> a l'aventure et rendez a la fin</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Camping-Car</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Vehicule ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Camping-Car</h4>
+                    <ul>
+                        <li><strong>Generez un revenu</strong> : Votre camping-car peut rapporter 500 euros a 2000 euros par mois</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement</li>
+                        <li><strong>Vehicule inutilise</strong> : Faites profiter votre camping-car aux voyageurs</li>
+                        <li><strong>Vous gerez tout</strong> : Vous choisissez vos dates, tarifs et locataires</li>
+                        <li><strong>Protection incluse</strong> : Assurance et caution pour proteger votre bien</li>
+                        <li><strong>Forte demande</strong> : Les camping-cars sont tres recherches</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Creez</strong> votre annonce avec photos et description</li>
+                        <li style="padding-left: 10px;"><strong>Definissez</strong> vos disponibilites et votre tarif journalier</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les reservations qui vous conviennent</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus de maniere securisee</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Camping-Car sur Lokio</h2>
+            <p class="intro-text">
+                Decouvrez des exemples de <strong>location camping-car</strong> et <strong>location van amenage</strong> proposes sur notre plateforme. Trouvez l'inspiration pour votre prochain voyage.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Volkswagen California T6</h3>
+                    <p><strong>Van amenage - 4 places</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 95 euros/jour - 550 euros/semaine</p>
+                    <p>Van amenage tout equipe : toit relevable, cuisine integree, chauffage. Ideal couple ou petite famille pour road trip.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Camping-Car Capucine Chausson</h3>
+                    <p><strong>6 couchages - Famille</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 120 euros/jour - 700 euros/semaine</p>
+                    <p>Camping-car familial spacieux, lit capucine + dinette convertible. Douche, WC, cuisine complete. Parfait grandes familles.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Fourgon Amenage Fiat Ducato</h3>
+                    <p><strong>2-3 places - Compact</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 85 euros/jour - 480 euros/semaine</p>
+                    <p>Fourgon amenage professionnel, lit fixe arriere, cuisine, douche. Compact et facile a conduire, passe partout.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Camping-Car</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location camping-car sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location camping-car</strong> sur Lokio est simple : vous recherchez le type de vehicule souhaite, consultez les annonces disponibles pres de chez vous, contactez le proprietaire et reservez. Le paiement de la <strong>location camping-car</strong> est securise via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le cout pour une location camping-car ou van amenage ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location camping-car</strong> varie selon le modele. En moyenne, comptez 60 a 90 euros par jour pour un <strong>van amenage</strong>. Un <strong>camping-car capucine</strong> coute 100 a 150 euros par jour. Un <strong>camping-car integral</strong> est a 130 a 200 euros par jour. Des tarifs degressifs s'appliquent pour les locations longue duree.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La location camping-car est-elle assuree ?</div>
+                    <div class="faq-answer">
+                        Oui, toutes les <strong>locations camping-car</strong> sur Lokio sont couvertes par une assurance. Une caution est demandee pour garantir le bon etat du vehicule. Verifiez les conditions d'assurance avec chaque proprietaire.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel permis faut-il pour la location camping-car ?</div>
+                    <div class="faq-answer">
+                        Pour la plupart des <strong>locations camping-car</strong>, le permis B suffit (vehicules de moins de 3,5 tonnes). Les camping-cars plus lourds necessitent le permis C. Les <strong>vans amenages</strong> se conduisent tous avec un simple permis B.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec la location camping-car ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location camping-car</strong> dependent de votre vehicule et de sa disponibilite. Un <strong>van amenage</strong> peut generer 3000 a 8000 euros par an. Un <strong>camping-car</strong> familial peut rapporter 5000 a 15000 euros annuels en haute saison.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le camping-car est-il equipe ?</div>
+                    <div class="faq-answer">
+                        La plupart des <strong>locations camping-car</strong> sur Lokio incluent l'equipement de base : vaisselle, literie, ustensiles de cuisine. Verifiez les details dans chaque annonce. Certains proprietaires proposent des options supplementaires comme velo, barbecue ou equipement bebe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Camping-Car : Rejoignez Lokio</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location camping-car</strong> pour vos vacances ou que vous souhaitiez rentabiliser votre vehicule, Lokio est la plateforme ideale. Rejoignez des milliers d'utilisateurs qui font confiance a notre service de <strong>location camping-car</strong> et <strong>location van amenage</strong> entre particuliers. L'aventure vous attend !
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Camping-Car</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

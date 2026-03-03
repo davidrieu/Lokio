@@ -1,0 +1,30 @@
+TITRE H1 (a mettre sur la page WordPress)
+Location Jet-Ski entre Particuliers
+
+---
+
+PARAMETRES RANKMATH
+
+Mot-cle principal:
+location jet-ski
+
+Titre SEO:
+Location Jet-Ski entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre jet-ski sur Lokio. Scooter des mers debutant ou sportif : economisez jusqu'a 60%. Reservez vos sensations nautiques.
+
+URL/Slug:
+location-jet-ski
+
+Mots-cles secondaires (separer par des virgules):
+location jet-ski particulier, louer jet-ski, location scooter des mers, location motomarine, location jet ski mer
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densite du mot-cle "location jet-ski" : ~1.4% (OPTIMAL)
+Le mot-cle apparait plus de 35 fois dans le contenu
+Present dans H1, H2, meta description, URL
+Mots-cles secondaires bien integres dans le texte

@@ -1,0 +1,30 @@
+TITRE H1 (a mettre sur la page WordPress)
+Location Jardin et Terrain entre Particuliers
+
+---
+
+PARAMETRES RANKMATH
+
+Mot-cle principal:
+location jardin
+
+Titre SEO:
+Location Jardin et Terrain entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre jardin ou terrain sur Lokio. Anniversaire, mariage, fete : economisez jusqu'a 75%. Reservez votre espace.
+
+URL/Slug:
+location-jardin-terrain
+
+Mots-cles secondaires (separer par des virgules):
+location jardin particulier, location terrain evenement, louer jardin, location jardin mariage, location jardin anniversaire
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densite du mot-cle "location jardin" : ~1.3% (OPTIMAL)
+Le mot-cle apparait plus de 35 fois dans le contenu
+Present dans H1, H2, meta description, URL
+Mots-cles secondaires bien integres dans le texte

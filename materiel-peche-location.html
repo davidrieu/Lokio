@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Materiel Peche entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre materiel de peche sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Materiel</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Materiel Peche : Pechez sans Investir</h2>
+            <p class="intro-text">
+                Envie de taquiner le poisson ? La <strong>location materiel peche</strong> entre particuliers est la solution ideale pour pratiquer sans investir dans un equipement couteux. Sur <strong>Lokio</strong>, trouvez facilement du <strong>materiel de peche</strong> pres de chez vous. Que vous cherchiez une <strong>location canne a peche</strong> pour debuter, une <strong>location float tube</strong> pour la peche en lac ou une <strong>location bateau peche</strong>, notre plateforme vous connecte avec des pecheurs passionnes. La <strong>location materiel peche particulier</strong> vous permet d'economiser et de tester differentes techniques.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">65%</span>
+                    <span class="stat-label">d'economies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">equipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">delai de reponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'equipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Materiel Peche : Tous les Equipements</h2>
+            <p class="intro-text">
+                Notre service de <strong>location materiel peche</strong> propose une large gamme d'equipements pour toutes les techniques. De la <strong>canne a peche</strong> au <strong>float tube</strong>, decouvrez toutes les options sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎣</div>
+                    <h3>Location Canne a Peche</h3>
+                    <p><strong>Location canne a peche</strong> : spinning, casting, mouche. Tous types de cannes pour toutes les techniques de peche.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les cannes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛟</div>
+                    <h3>Location Float Tube</h3>
+                    <p><strong>Location float tube</strong> : embarcation individuelle pour peche en lac. Ideal pour atteindre les postes inaccessibles.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer float tube</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚤</div>
+                    <h3>Location Bateau Peche</h3>
+                    <p><strong>Location bateau peche</strong> : barques, bass boats, bateaux moteur. Pour pecher sur de grandes etendues d'eau.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un bateau</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">📦</div>
+                    <h3>Location Kit Complet Peche</h3>
+                    <p><strong>Location kit peche</strong> : ensemble complet avec canne, moulinet, epuisette, boite de leurres. Pret a pecher.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer kit complet</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🦐</div>
+                    <h3>Location Materiel Carpe</h3>
+                    <p><strong>Location materiel carpe</strong> : cannes carpe, detecteurs, rod pod, bedchair. Pour sessions carpistes reussies.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir materiel carpe</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🪰</div>
+                    <h3>Location Materiel Mouche</h3>
+                    <p><strong>Location materiel mouche</strong> : cannes a mouche, waders, gilet. Pour peche a la mouche en riviere ou reservoir.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer materiel mouche</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Materiel Peche sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Economisez jusqu'a 65%</h3>
+                    <p>La <strong>location materiel peche</strong> entre particuliers vous permet d'economiser par rapport a l'achat de materiel neuf.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎣</div>
+                    <h3>Large Choix d'Equipements</h3>
+                    <p>La <strong>location materiel peche</strong> offre cannes, moulinets, float tubes et bateaux pour toutes les techniques.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Location Proximite</h3>
+                    <p>Trouvez du <strong>materiel peche</strong> pres de votre lieu de peche. Evitez de transporter du materiel encombrant.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎯</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>La <strong>location materiel peche</strong> permet de tester differents equipements avant d'investir dans votre propre materiel.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏆</div>
+                    <h3>Conseils de Pecheurs</h3>
+                    <p>Les proprietaires de <strong>location materiel peche</strong> sont des passionnes qui peuvent partager leurs spots et techniques.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Securisee</h3>
+                    <p>Toute <strong>location materiel peche</strong> sur Lokio est securisee avec caution et systeme d'evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Materiel Peche : Trouvez Votre Equipement</h2>
+            <p>La <strong style="color: white;">location materiel peche</strong> n'a jamais ete aussi simple. Trouvez votre equipement en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous les Pecheurs</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🎣 Vous Cherchez a Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Economies importantes</strong> : 50% a 65% moins cher que l'achat</li>
+                        <li><strong>Choix varie</strong> : Cannes, moulinets, float tubes, bateaux</li>
+                        <li><strong>Pas d'investissement</strong> : Pechez sans acheter de materiel couteux</li>
+                        <li><strong>Flexibilite</strong> : Location a la journee ou au week-end</li>
+                        <li><strong>Proximite</strong> : Materiel disponible pres des spots de peche</li>
+                        <li><strong>Conseils inclus</strong> : Spots et techniques partages par les proprietaires</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ca Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le materiel dont vous avez besoin</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilites</li>
+                        <li style="padding-left: 10px;"><strong>Reservez</strong> en ligne en toute securite</li>
+                        <li style="padding-left: 10px;"><strong>Recuperez</strong> le materiel au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Pechez</strong> et rendez a la fin de la periode</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver du Materiel</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Materiel ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Equipement</h4>
+                    <ul>
+                        <li><strong>Generez un revenu</strong> : Votre materiel peut rapporter 50 a 300 euros par mois</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement peche</li>
+                        <li><strong>Materiel peu utilise</strong> : Faites-le profiter a d'autres pecheurs</li>
+                        <li><strong>Vous gerez tout</strong> : Dates, tarifs et locataires a votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour proteger votre bien</li>
+                        <li><strong>Communaute</strong> : Rencontrez d'autres passionnes de peche</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Creez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Definissez</strong> vos disponibilites et tarif</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de pecheurs</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les reservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus securises</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Materiel Peche sur Lokio</h2>
+            <p class="intro-text">
+                Decouvrez des exemples de <strong>location materiel peche</strong> proposes sur notre plateforme. Trouvez l'inspiration pour votre prochaine session.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Float Tube Seven Bass</h3>
+                    <p><strong>Modele Armada 170</strong></p>
+                    <p>📍 Lac du Bourget (73)</p>
+                    <p><strong>Prix :</strong> 35 euros/jour - 120 euros/semaine</p>
+                    <p>Float tube haut de gamme avec palmes, pompe et sac de transport. Parfait pour peche aux carnassiers en lac.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Kit Complet Carpe</h3>
+                    <p><strong>3 cannes + detecteurs + bedchair</strong></p>
+                    <p>📍 Etang de la Foret (77)</p>
+                    <p><strong>Prix :</strong> 50 euros/jour - 200 euros/semaine</p>
+                    <p>Kit carpiste complet : 3 cannes 12 pieds, moulinets, rod pod, detecteurs, bedchair. Sessions 48-72h possibles.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Barque Alu 4m avec Moteur</h3>
+                    <p><strong>Barque peche - 4 personnes</strong></p>
+                    <p>📍 Lac de Serre-Poncon (05)</p>
+                    <p><strong>Prix :</strong> 80 euros/jour - 350 euros/semaine</p>
+                    <p>Barque aluminium avec moteur 6cv, sondeur, vivier. Ideale pour peche au lancer ou a la traine.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Materiel Peche</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Comment fonctionne la location materiel peche sur Lokio ?</div>
+                    <div class="faq-answer">
+                        La <strong>location materiel peche</strong> sur Lokio est simple : recherchez le materiel souhaite, consultez les annonces disponibles, contactez le proprietaire et reservez. Le paiement est securise via notre plateforme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le cout pour une location materiel peche ?</div>
+                    <div class="faq-answer">
+                        Le prix de <strong>location materiel peche</strong> varie selon l'equipement. Comptez 15 a 30 euros par jour pour une <strong>canne avec moulinet</strong>. Un <strong>float tube</strong> coute 30 a 50 euros par jour. Un <strong>bateau peche</strong> est a 60 a 120 euros par jour.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Faut-il un permis de peche pour louer du materiel ?</div>
+                    <div class="faq-answer">
+                        La <strong>location materiel peche</strong> ne necessite pas de permis specifique. En revanche, vous devez posseder une carte de peche valide pour pecher en eau douce en France. Achetez-la sur cartedepeche.fr.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le materiel est-il adapte a mon niveau ?</div>
+                    <div class="faq-answer">
+                        Les proprietaires de <strong>location materiel peche</strong> proposent du materiel pour tous niveaux. Debutants ou confirmes, precisez votre niveau lors de la reservation pour recevoir des conseils adaptes.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner avec mon materiel de peche ?</div>
+                    <div class="faq-answer">
+                        Les revenus de <strong>location materiel peche</strong> dependent de l'equipement. Un <strong>float tube</strong> peut generer 500 a 1500 euros par an. Un <strong>bateau peche</strong> peut rapporter 2000 a 5000 euros annuels.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Les leurres et appats sont-ils inclus ?</div>
+                    <div class="faq-answer">
+                        Cela depend des proprietaires. Certaines <strong>locations materiel peche</strong> incluent une boite de leurres de base. Pour les appats, vous devrez generalement les acheter vous-meme. Verifiez les details dans chaque annonce.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Materiel Peche : Rejoignez Lokio</h2>
+            <p class="intro-text">
+                Que vous cherchiez une <strong>location materiel peche</strong> pour tester une nouvelle technique ou que vous souhaitiez rentabiliser votre equipement, Lokio est la plateforme ideale. Rejoignez des milliers de pecheurs qui font confiance a notre service de <strong>location materiel peche</strong> entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Materiel</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

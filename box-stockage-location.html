@@ -1,0 +1,227 @@
+<style>
+.lokio-landing * { box-sizing: border-box; }
+.lokio-landing { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; }
+.lokio-landing .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.lokio-landing .hero { background: linear-gradient(135deg, #fed801 0%, #ffc107 100%); padding: 80px 0; text-align: center; }
+.lokio-landing h1 { font-size: 48px; color: #333; margin-bottom: 20px; font-weight: 800; }
+.lokio-landing .hero-subtitle { font-size: 24px; color: #555; margin-bottom: 40px; }
+.lokio-landing .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.lokio-landing .btn { padding: 18px 40px; font-size: 18px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.lokio-landing .btn-primary { background: #333; color: #fed801; }
+.lokio-landing .btn-primary:hover { background: #000; transform: translateY(-2px); }
+.lokio-landing .btn-secondary { background: white; color: #333; }
+.lokio-landing .section { padding: 80px 0; }
+.lokio-landing .section-alt { background: #f9f9f9; }
+.lokio-landing h2 { font-size: 36px; color: #333; margin-bottom: 20px; text-align: center; font-weight: 700; }
+.lokio-landing h3 { font-size: 24px; color: #333; margin-bottom: 15px; font-weight: 600; }
+.lokio-landing p { margin-bottom: 15px; }
+.lokio-landing a { text-decoration: none; }
+.lokio-landing .intro-text { font-size: 18px; text-align: center; max-width: 900px; margin: 0 auto 60px; color: #555; line-height: 1.8; }
+.lokio-landing .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.lokio-landing .equipment-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+.lokio-landing .equipment-card:hover { transform: translateY(-5px); }
+.lokio-landing .equipment-icon { font-size: 48px; margin-bottom: 20px; }
+.lokio-landing .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.lokio-landing .benefit-card { text-align: center; }
+.lokio-landing .benefit-number { background: #fed801; color: #333; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 20px; }
+.lokio-landing .two-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; margin-top: 50px; }
+.lokio-landing .column-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.lokio-landing .column-card h3 { color: #fed801; background: #333; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+.lokio-landing ul { list-style: none; padding: 0; }
+.lokio-landing li { padding: 12px 0; padding-left: 30px; position: relative; }
+.lokio-landing ul li:before { content: "✓"; position: absolute; left: 0; color: #fed801; font-weight: bold; font-size: 20px; }
+.lokio-landing .cta-section { background: linear-gradient(135deg, #333 0%, #000 100%); color: white; text-align: center; padding: 80px 20px; margin: 80px 0; }
+.lokio-landing .cta-section h2 { color: #fed801; margin-bottom: 30px; }
+.lokio-landing .cta-section p { font-size: 20px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.lokio-landing .stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 60px 0; }
+.lokio-landing .stat-item { text-align: center; }
+.lokio-landing .stat-number { font-size: 48px; font-weight: bold; color: #fed801; display: block; }
+.lokio-landing .stat-label { font-size: 18px; color: #666; margin-top: 10px; }
+.lokio-landing .faq { max-width: 900px; margin: 50px auto; }
+.lokio-landing .faq-item { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.lokio-landing .faq-question { font-weight: 600; color: #333; font-size: 18px; margin-bottom: 10px; }
+.lokio-landing .faq-answer { color: #666; line-height: 1.8; }
+.lokio-landing .text-center { text-align: center; }
+.lokio-landing strong { color: #333; font-weight: 600; }
+@media (max-width: 768px) { .lokio-landing h1 { font-size: 32px; } .lokio-landing h2 { font-size: 28px; } .lokio-landing .two-columns { grid-template-columns: 1fr; } }
+</style>
+
+<div class="lokio-landing">
+    <section class="hero">
+        <div class="container">
+            <h1>Location Box et Stockage entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre espace de stockage sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Box</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Box : Stockez Malin avec Lokio</h2>
+            <p class="intro-text">
+                Besoin d'espace de rangement ? La <strong>location box</strong> entre particuliers est la solution ideale pour stocker vos affaires a moindre cout. Sur <strong>Lokio</strong>, trouvez facilement un <strong>box de stockage</strong> ou un <strong>garage</strong> pres de chez vous. Que vous cherchiez une <strong>location box particulier</strong> pour un demenagement, une <strong>location garage stockage</strong> pour vos meubles ou une <strong>location cave</strong>, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location box stockage</strong> vous permet d'economiser considerablement par rapport aux garde-meubles professionnels.
+            </p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">60%</span><span class="stat-label">d'economies en moyenne</span></div>
+                <div class="stat-item"><span class="stat-number">500+</span><span class="stat-label">espaces disponibles</span></div>
+                <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">delai de reponse moyen</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Box : Tous les Types d'Espaces</h2>
+            <p class="intro-text">Notre service de <strong>location box</strong> propose une large gamme d'espaces de stockage pour tous vos besoins.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">📦</div>
+                    <h3>Location Box Stockage</h3>
+                    <p><strong>Location box stockage</strong> : espaces securises de 1 a 20m2. Ideal pour meubles, cartons et affaires personnelles.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les box</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚗</div>
+                    <h3>Location Garage</h3>
+                    <p><strong>Location garage stockage</strong> : garages prives pour voiture, moto ou stockage. Acces facile et securise.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer garage</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍷</div>
+                    <h3>Location Cave</h3>
+                    <p><strong>Location cave</strong> : espaces souterrains pour stockage long terme. Temperature stable, ideal vins et archives.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver cave</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏠</div>
+                    <h3>Location Grenier</h3>
+                    <p><strong>Location grenier</strong> : espaces sous combles pour affaires peu utilisees. Acces periodique possible.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir greniers</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏢</div>
+                    <h3>Location Local Commercial</h3>
+                    <p><strong>Location local stockage</strong> : espaces professionnels pour stock marchandises et materiel entreprise.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer local</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🚜</div>
+                    <h3>Location Hangar</h3>
+                    <p><strong>Location hangar</strong> : grands espaces pour vehicules, bateaux ou materiel agricole. Acces large vehicules.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir hangars</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Box sur Lokio ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-number">💰</div><h3>Economisez jusqu'a 60%</h3><p>La <strong>location box particulier</strong> coute bien moins cher que les garde-meubles professionnels.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📦</div><h3>Toutes Tailles</h3><p>La <strong>location box</strong> de 1m2 a 100m2 selon vos besoins de stockage.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📍</div><h3>Proximite</h3><p>Trouvez une <strong>location box stockage</strong> pres de chez vous pour un acces facile.</p></div>
+                <div class="benefit-card"><div class="benefit-number">⏰</div><h3>Flexibilite</h3><p>La <strong>location box</strong> au mois sans engagement longue duree.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🔒</div><h3>Securite</h3><p>Espaces de <strong>location box stockage</strong> securises avec cadenas et surveillance.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🛡️</div><h3>Confiance</h3><p>Toute <strong>location box</strong> sur Lokio avec evaluation et verification.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Box : Trouvez Votre Espace</h2>
+            <p>La <strong style="color: white;">location box</strong> n'a jamais ete aussi simple. Trouvez votre espace de stockage ideal.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            <div class="two-columns">
+                <div class="column-card">
+                    <h3>📦 Vous Cherchez a Stocker ?</h3>
+                    <ul>
+                        <li><strong>Economies</strong> : 40% a 60% moins cher que garde-meubles</li>
+                        <li><strong>Flexibilite</strong> : Location au mois sans engagement</li>
+                        <li><strong>Proximite</strong> : Box disponible pres de chez vous</li>
+                        <li><strong>Toutes tailles</strong> : Du petit box au hangar</li>
+                        <li><strong>Acces</strong> : Horaires flexibles selon proprietaires</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Box</a></div>
+                </div>
+                <div class="column-card">
+                    <h3>💰 Vous Avez un Espace Libre ?</h3>
+                    <ul>
+                        <li><strong>Revenus</strong> : Votre box peut rapporter 50 a 300 euros par mois</li>
+                        <li><strong>Rentabilisez</strong> : Garage, cave ou grenier inutilise</li>
+                        <li><strong>Vous gerez</strong> : Tarifs et conditions a votre choix</li>
+                        <li><strong>Securite</strong> : Contrat et caution pour proteger</li>
+                        <li><strong>Demande forte</strong> : Les espaces de stockage sont recherches</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Box sur Lokio</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Box 10m2 Securise</h3>
+                    <p><strong>Acces 7j/7 - RDC</strong></p>
+                    <p>📍 Paris 15e (75)</p>
+                    <p><strong>Prix :</strong> 120 euros/mois</p>
+                    <p>Box ferme au cadenas, acces digicode 24h/24. Ideal demenagement ou stockage meubles.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Garage Double 30m2</h3>
+                    <p><strong>Porte motorisee</strong></p>
+                    <p>📍 Lyon 3e (69)</p>
+                    <p><strong>Prix :</strong> 180 euros/mois</p>
+                    <p>Grand garage pour voiture + stockage ou 2 vehicules. Electricite disponible.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Cave 8m2 Ventilee</h3>
+                    <p><strong>Temperature stable</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 60 euros/mois</p>
+                    <p>Cave seche et ventilee, parfaite pour vins ou archives. Acces sur RDV.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Box</h2>
+            <div class="faq">
+                <div class="faq-item"><div class="faq-question">Comment fonctionne la location box sur Lokio ?</div><div class="faq-answer">La <strong>location box</strong> sur Lokio est simple : recherchez un espace pres de vous, consultez les annonces, contactez le proprietaire et reservez. Le paiement mensuel est securise via notre plateforme.</div></div>
+                <div class="faq-item"><div class="faq-question">Quel est le cout d'une location box ?</div><div class="faq-answer">Le prix de <strong>location box</strong> varie selon la taille et la localisation. Comptez 40 a 80 euros/mois pour un petit box (1-5m2), 80 a 150 euros/mois pour un box moyen (5-15m2), 150 a 300 euros/mois pour un grand espace.</div></div>
+                <div class="faq-item"><div class="faq-question">Mes affaires sont-elles en securite ?</div><div class="faq-answer">Les espaces de <strong>location box</strong> sur Lokio sont chez des particuliers. Verifiez les conditions de securite dans chaque annonce (cadenas, digicode, assurance). Une caution protege le proprietaire.</div></div>
+                <div class="faq-item"><div class="faq-question">Combien puis-je gagner avec mon espace ?</div><div class="faq-answer">Les revenus de <strong>location box</strong> dependent de la taille et localisation. Une <strong>cave</strong> peut generer 500-1000 euros/an. Un <strong>garage</strong> peut rapporter 1500-3000 euros annuels.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Box : Rejoignez Lokio</h2>
+            <p class="intro-text">Que vous cherchiez une <strong>location box</strong> pour stocker ou que vous souhaitiez rentabiliser votre espace, Lokio est la plateforme ideale pour la <strong>location box stockage</strong> entre particuliers.</p>
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Box</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+</div>

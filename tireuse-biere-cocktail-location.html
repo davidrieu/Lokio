@@ -1,0 +1,227 @@
+<style>
+.lokio-landing * { box-sizing: border-box; }
+.lokio-landing { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; }
+.lokio-landing .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.lokio-landing .hero { background: linear-gradient(135deg, #fed801 0%, #ffc107 100%); padding: 80px 0; text-align: center; }
+.lokio-landing h1 { font-size: 48px; color: #333; margin-bottom: 20px; font-weight: 800; }
+.lokio-landing .hero-subtitle { font-size: 24px; color: #555; margin-bottom: 40px; }
+.lokio-landing .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.lokio-landing .btn { padding: 18px 40px; font-size: 18px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.lokio-landing .btn-primary { background: #333; color: #fed801; }
+.lokio-landing .btn-primary:hover { background: #000; transform: translateY(-2px); }
+.lokio-landing .btn-secondary { background: white; color: #333; }
+.lokio-landing .section { padding: 80px 0; }
+.lokio-landing .section-alt { background: #f9f9f9; }
+.lokio-landing h2 { font-size: 36px; color: #333; margin-bottom: 20px; text-align: center; font-weight: 700; }
+.lokio-landing h3 { font-size: 24px; color: #333; margin-bottom: 15px; font-weight: 600; }
+.lokio-landing p { margin-bottom: 15px; }
+.lokio-landing a { text-decoration: none; }
+.lokio-landing .intro-text { font-size: 18px; text-align: center; max-width: 900px; margin: 0 auto 60px; color: #555; line-height: 1.8; }
+.lokio-landing .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+.lokio-landing .equipment-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+.lokio-landing .equipment-card:hover { transform: translateY(-5px); }
+.lokio-landing .equipment-icon { font-size: 48px; margin-bottom: 20px; }
+.lokio-landing .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.lokio-landing .benefit-card { text-align: center; }
+.lokio-landing .benefit-number { background: #fed801; color: #333; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 20px; }
+.lokio-landing .two-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px; margin-top: 50px; }
+.lokio-landing .column-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.lokio-landing .column-card h3 { color: #fed801; background: #333; padding: 15px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+.lokio-landing ul { list-style: none; padding: 0; }
+.lokio-landing li { padding: 12px 0; padding-left: 30px; position: relative; }
+.lokio-landing ul li:before { content: "✓"; position: absolute; left: 0; color: #fed801; font-weight: bold; font-size: 20px; }
+.lokio-landing .cta-section { background: linear-gradient(135deg, #333 0%, #000 100%); color: white; text-align: center; padding: 80px 20px; margin: 80px 0; }
+.lokio-landing .cta-section h2 { color: #fed801; margin-bottom: 30px; }
+.lokio-landing .cta-section p { font-size: 20px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+.lokio-landing .stats { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; margin: 60px 0; }
+.lokio-landing .stat-item { text-align: center; }
+.lokio-landing .stat-number { font-size: 48px; font-weight: bold; color: #fed801; display: block; }
+.lokio-landing .stat-label { font-size: 18px; color: #666; margin-top: 10px; }
+.lokio-landing .faq { max-width: 900px; margin: 50px auto; }
+.lokio-landing .faq-item { background: white; padding: 25px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.lokio-landing .faq-question { font-weight: 600; color: #333; font-size: 18px; margin-bottom: 10px; }
+.lokio-landing .faq-answer { color: #666; line-height: 1.8; }
+.lokio-landing .text-center { text-align: center; }
+.lokio-landing strong { color: #333; font-weight: 600; }
+@media (max-width: 768px) { .lokio-landing h1 { font-size: 32px; } .lokio-landing h2 { font-size: 28px; } .lokio-landing .two-columns { grid-template-columns: 1fr; } }
+</style>
+
+<div class="lokio-landing">
+    <section class="hero">
+        <div class="container">
+            <h1>Location Tireuse a Biere et Machine a Cocktail entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre tireuse a biere sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Tireuse</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Tireuse a Biere : Vos Fetes Reussies</h2>
+            <p class="intro-text">
+                Envie d'une biere pression comme au bar ? La <strong>location tireuse a biere</strong> entre particuliers est la solution ideale pour vos fetes et evenements. Sur <strong>Lokio</strong>, trouvez facilement une <strong>tireuse a biere</strong> ou une <strong>machine a cocktail</strong> pres de chez vous. Que vous cherchiez une <strong>location pompe a biere</strong> pour un anniversaire, une <strong>location tireuse biere mariage</strong> ou une <strong>location machine cocktail</strong>, notre plateforme vous connecte avec des proprietaires locaux. La <strong>location tireuse biere particulier</strong> vous permet d'economiser et d'impressionner vos invites.
+            </p>
+            <div class="stats">
+                <div class="stat-item"><span class="stat-number">70%</span><span class="stat-label">d'economies en moyenne</span></div>
+                <div class="stat-item"><span class="stat-number">300+</span><span class="stat-label">equipements disponibles</span></div>
+                <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">delai de reponse moyen</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Location Tireuse a Biere : Tous les Equipements</h2>
+            <p class="intro-text">Notre service de <strong>location tireuse a biere</strong> propose une large gamme d'equipements pour vos soirees.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍺</div>
+                    <h3>Location Tireuse a Biere</h3>
+                    <p><strong>Location tireuse a biere</strong> professionnelle : 1 ou 2 becs, refroidissement inclus. Biere pression parfaite.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir tireuses</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍹</div>
+                    <h3>Location Machine a Cocktail</h3>
+                    <p><strong>Location machine cocktail</strong> : fontaine a cocktails, distribution automatique pour vos fetes.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer machine cocktail</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🧊</div>
+                    <h3>Location Tireuse Perfectdraft</h3>
+                    <p><strong>Location Perfectdraft</strong> : tireuse compacte compatible futs 6L. Ideal petites soirees.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver Perfectdraft</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🥂</div>
+                    <h3>Location Fontaine a Champagne</h3>
+                    <p><strong>Location fontaine champagne</strong> : pyramide de coupes et fontaine a bulles pour mariages.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir fontaines</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍸</div>
+                    <h3>Location Bar Mobile</h3>
+                    <p><strong>Location bar mobile</strong> : comptoir de bar pliable avec rangements pour vos evenements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer bar mobile</a>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">❄️</div>
+                    <h3>Location Machine a Glace Pilee</h3>
+                    <p><strong>Location machine glace</strong> : glace pilee pour cocktails et boissons fraiches.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir machines glace</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Choisir la Location Tireuse a Biere sur Lokio ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card"><div class="benefit-number">💰</div><h3>Economisez jusqu'a 70%</h3><p>La <strong>location tireuse biere particulier</strong> coute moins cher que les loueurs pro.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🍺</div><h3>Biere Pression</h3><p>La <strong>location tireuse a biere</strong> offre une biere parfaite comme au bar.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🎉</div><h3>Fetes Reussies</h3><p>La <strong>location pompe a biere</strong> impressionne vos invites a coup sur.</p></div>
+                <div class="benefit-card"><div class="benefit-number">📍</div><h3>Proximite</h3><p>Trouvez une <strong>location tireuse a biere</strong> pres de chez vous facilement.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🔧</div><h3>Simple a Utiliser</h3><p>La <strong>location tireuse a biere</strong> est facile, instructions fournies.</p></div>
+                <div class="benefit-card"><div class="benefit-number">🛡️</div><h3>Location Securisee</h3><p>Toute <strong>location tireuse a biere</strong> sur Lokio avec caution.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Location Tireuse a Biere : Trouvez la Votre</h2>
+            <p>La <strong style="color: white;">location tireuse a biere</strong> n'a jamais ete aussi simple. Trouvez votre equipement ideal.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+            <div class="two-columns">
+                <div class="column-card">
+                    <h3>🍺 Vous Organisez une Fete ?</h3>
+                    <ul>
+                        <li><strong>Economies</strong> : 50% a 70% moins cher que loueurs</li>
+                        <li><strong>Biere parfaite</strong> : Pression fraiche comme au bar</li>
+                        <li><strong>Facile</strong> : Instructions d'utilisation fournies</li>
+                        <li><strong>Choix</strong> : Tireuses 1 ou 2 becs disponibles</li>
+                        <li><strong>Proximite</strong> : Equipement pres de chez vous</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Tireuse</a></div>
+                </div>
+                <div class="column-card">
+                    <h3>💰 Vous Possedez une Tireuse ?</h3>
+                    <ul>
+                        <li><strong>Revenus</strong> : 30 a 100 euros par location</li>
+                        <li><strong>Rentabilisez</strong> : Amortissez votre achat</li>
+                        <li><strong>Demande forte</strong> : Fetes et evenements toute l'annee</li>
+                        <li><strong>Vous gerez</strong> : Tarifs et disponibilites libres</li>
+                        <li><strong>Protection</strong> : Caution pour votre materiel</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;"><a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Location Tireuse a Biere sur Lokio</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Tireuse Pro 2 Becs</h3>
+                    <p><strong>Refroidissement integre</strong></p>
+                    <p>📍 Lille (59)</p>
+                    <p><strong>Prix :</strong> 80 euros/week-end</p>
+                    <p>Tireuse professionnelle 2 becs, futs 20L ou 30L compatibles. Kit CO2 et tuyaux inclus.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Machine a Cocktail Automatique</h3>
+                    <p><strong>8 recettes programmees</strong></p>
+                    <p>📍 Toulouse (31)</p>
+                    <p><strong>Prix :</strong> 120 euros/soiree</p>
+                    <p>Machine a cocktails professionnelle, mojito, margarita, cosmopolitan. 200 cocktails possibles.</p>
+                </div>
+                <div class="equipment-card">
+                    <h3>Perfectdraft + 2 Futs</h3>
+                    <p><strong>Compacte - 6L</strong></p>
+                    <p>📍 Nantes (44)</p>
+                    <p><strong>Prix :</strong> 45 euros/week-end</p>
+                    <p>Tireuse Perfectdraft avec 2 futs 6L au choix (blonde, blanche). Ideal petites soirees.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;"><a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Frequentes : Location Tireuse a Biere</h2>
+            <div class="faq">
+                <div class="faq-item"><div class="faq-question">Comment fonctionne la location tireuse a biere ?</div><div class="faq-answer">La <strong>location tireuse a biere</strong> sur Lokio est simple : recherchez une tireuse pres de vous, contactez le proprietaire, reservez et recuperez le materiel avec les instructions d'utilisation.</div></div>
+                <div class="faq-item"><div class="faq-question">Quel est le cout d'une location tireuse a biere ?</div><div class="faq-answer">Le prix de <strong>location tireuse a biere</strong> varie. Comptez 30 a 50 euros/jour pour une Perfectdraft, 50 a 100 euros/jour pour une tireuse pro. Les futs sont generalement a acheter separement.</div></div>
+                <div class="faq-item"><div class="faq-question">Ou trouver les futs de biere ?</div><div class="faq-answer">Les futs peuvent etre achetes en grande surface (futs 5-6L), chez des grossistes boissons ou brasseries locales (futs 20-30L). Certains proprietaires peuvent vous conseiller.</div></div>
+                <div class="faq-item"><div class="faq-question">Combien puis-je gagner avec ma tireuse ?</div><div class="faq-answer">Les revenus de <strong>location tireuse a biere</strong> sont reguliers. Une tireuse peut generer 500 a 2000 euros par an selon la frequence de location.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Location Tireuse a Biere : Rejoignez Lokio</h2>
+            <p class="intro-text">Que vous cherchiez une <strong>location tireuse a biere</strong> pour votre fete ou que vous souhaitiez rentabiliser votre equipement, Lokio est la plateforme ideale pour la <strong>location tireuse a biere</strong> entre particuliers.</p>
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Tireuse</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+</div>
