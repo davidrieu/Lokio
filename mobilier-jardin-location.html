@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Mobilier de Jardin entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre mobilier de jardin sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Mobilier de Jardin</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Mobilier de Jardin : Équipez Vos Événements</h2>
+            <p class="intro-text">
+                Vous organisez une fête dans votre jardin et manquez de tables et chaises ? Vous possédez du mobilier de jardin inutilisé ? La <strong>location mobilier de jardin</strong> entre particuliers sur Lokio est la solution parfaite. Notre plateforme met en relation ceux qui cherchent à louer des meubles d'extérieur avec les propriétaires d'équipements. Tables, chaises, salons de jardin : recevez vos invités avec style.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">300+</span>
+                    <span class="stat-label">équipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'équipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tous les Types de Mobilier d'Extérieur</h2>
+            <p class="intro-text">
+                Notre service propose une large gamme de mobilier pour tous vos événements en plein air. Des chaises pliantes aux salons de jardin haut de gamme, découvrez les options disponibles sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🪑</div>
+                    <h3>Tables et Chaises Pliantes</h3>
+                    <p>Tables rectangulaires et chaises pliantes pour réceptions. Pratiques, légères et faciles à installer pour tous vos événements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les tables pliantes</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛋️</div>
+                    <h3>Salon de Jardin</h3>
+                    <p>Salons de jardin en résine tressée, bois ou métal. Canapés, fauteuils et tables basses pour espaces lounge extérieurs.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un salon de jardin</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍽️</div>
+                    <h3>Table de Réception</h3>
+                    <p>Grandes tables de réception 8 à 12 places. Tables rondes ou rectangulaires pour mariages et événements élégants.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver une table réception</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏖️</div>
+                    <h3>Transats et Bains de Soleil</h3>
+                    <p>Transats, bains de soleil et chilienne pour bronzer en toute détente. Mobilier de plage et piscine de qualité.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les transats</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🍸</div>
+                    <h3>Mange-Debout et Bar</h3>
+                    <p>Tables hautes mange-debout, bars de jardin et tabourets. Parfaits pour cocktails et réceptions debout.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer des mange-debout</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎄</div>
+                    <h3>Décorations et Accessoires</h3>
+                    <p>Housses de chaises, nappes, guirlandes lumineuses, parasols. Tout pour décorer et équiper votre espace extérieur.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les accessoires</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Louer du Mobilier de Jardin sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 70%</h3>
+                    <p>La location entre particuliers permet d'économiser considérablement par rapport aux loueurs professionnels d'événementiel.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🪑</div>
+                    <h3>Mobilier de Qualité</h3>
+                    <p>Accédez à du mobilier bien entretenu et élégant. Des chaises pliantes aux salons design, trouvez ce qu'il vous faut.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Proximité Garantie</h3>
+                    <p>Trouvez du mobilier disponible près de chez vous. Simplifiez le transport et récupérez facilement avant votre événement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎉</div>
+                    <h3>Pour Tous les Événements</h3>
+                    <p>Mariages, anniversaires, garden-parties, barbecues : équipez tous vos événements en extérieur.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏠</div>
+                    <h3>Pas de Stockage</h3>
+                    <p>Louez uniquement pour vos événements. Pas de mobilier encombrant à stocker toute l'année dans votre garage.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toutes les locations sur Lokio sont sécurisées avec caution et système d'évaluation des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Trouvez Votre Mobilier de Jardin</h2>
+            <p>Des centaines de tables, chaises et salons de jardin disponibles partout en France. Réservez en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🪑 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 60% à 70% moins cher que les loueurs pros</li>
+                        <li><strong>Large choix</strong> : Tous styles et quantités disponibles</li>
+                        <li><strong>Pas d'investissement</strong> : Recevez vos invités sans achat coûteux</li>
+                        <li><strong>Flexibilité</strong> : Location weekend ou semaine selon vos besoins</li>
+                        <li><strong>Proximité</strong> : Récupérez le mobilier près de chez vous</li>
+                        <li><strong>Lots complets</strong> : Tables et chaises assorties souvent disponibles</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de mobilier souhaité</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> le mobilier au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> et rendez après l'événement</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver du Mobilier</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Mobilier ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Équipement</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre mobilier peut rapporter 200€ à 600€ par saison</li>
+                        <li><strong>Amortissez vos achats</strong> : Rentabilisez votre salon de jardin</li>
+                        <li><strong>Mobilier inutilisé</strong> : Faites profiter vos chaises aux autres</li>
+                        <li><strong>Vous gérez tout</strong> : Dates, tarifs et locataires à votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Le mobilier est très recherché pour les fêtes</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et tarifs</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus sécurisés</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Mobilier Disponible sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples d'équipements proposés sur notre plateforme. Des chaises pliantes au salon de jardin design, trouvez l'inspiration.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Lot 30 Chaises + 5 Tables</h3>
+                    <p><strong>Mobilier pliable blanc</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 80€/jour - 200€/weekend</p>
+                    <p>Lot complet : 30 chaises pliantes blanches + 5 tables rectangulaires 180cm. Idéal pour réceptions jusqu'à 30 personnes.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Salon de Jardin Résine Tressée</h3>
+                    <p><strong>Canapé + 2 fauteuils + table</strong></p>
+                    <p>📍 Nice (06)</p>
+                    <p><strong>Prix :</strong> 50€/jour - 150€/weekend</p>
+                    <p>Salon lounge en résine tressée gris anthracite. Coussins confortables inclus. Parfait pour espace détente.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>6 Mange-Debout + Tabourets</h3>
+                    <p><strong>Tables hautes cocktail</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 60€/jour - 180€/weekend</p>
+                    <p>6 tables mange-debout 110cm hauteur avec housses blanches. 12 tabourets hauts assortis. Idéal cocktails.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Combien de chaises par table prévoir ?</div>
+                    <div class="faq-answer">
+                        Pour une table rectangulaire 180cm, comptez 8-10 chaises. Pour une table ronde 150cm, 8 chaises maximum. Pour les mange-debout, 3-4 personnes peuvent se tenir autour. Prévoyez toujours quelques chaises supplémentaires.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le mobilier peut-il rester dehors la nuit ?</div>
+                    <div class="faq-answer">
+                        Le mobilier de jardin est conçu pour l'extérieur, mais rentrez-le en cas de pluie prévue ou protégez-le avec des bâches. Les coussins de salon de jardin doivent être rentrés à l'abri pour éviter l'humidité.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment transporter beaucoup de chaises ?</div>
+                    <div class="faq-answer">
+                        Les chaises pliantes s'empilent facilement. Un break peut transporter 20-30 chaises pliées. Pour de grandes quantités, certains propriétaires proposent la livraison moyennant un supplément. Vérifiez les options dans l'annonce.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Les housses et nappes sont-elles incluses ?</div>
+                    <div class="faq-answer">
+                        Cela dépend des propriétaires. Certains incluent housses de chaises et nappes, d'autres les proposent en option. Vérifiez la description de l'annonce ou demandez au propriétaire avant de réserver.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Dois-je nettoyer le mobilier après utilisation ?</div>
+                    <div class="faq-answer">
+                        Un nettoyage basique est généralement demandé : essuyer les tables, replier correctement les chaises. Les propriétaires précisent leurs attentes dans l'annonce. Un dépôt de garantie protège contre les dommages.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner en louant mon mobilier ?</div>
+                    <div class="faq-answer">
+                        Un lot de tables et chaises peut générer 200€ à 600€ pendant la saison estivale. Un salon de jardin haut de gamme peut rapporter 150€ à 400€. Lokio prélève une commission de 15% sur chaque transaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Prêt à Équiper Votre Événement ?</h2>
+            <p class="intro-text">
+                Que vous cherchiez du mobilier pour un événement ou que vous souhaitiez rentabiliser votre équipement, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de location entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Mobilier</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

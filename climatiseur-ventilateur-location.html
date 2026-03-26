@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Climatiseur Mobile et Ventilateur entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre climatiseur mobile sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Climatiseur</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Climatiseur Mobile : Fraîcheur Immédiate</h2>
+            <p class="intro-text">
+                La canicule arrive et vous n'avez pas de climatisation ? Vous possédez un climatiseur mobile inutilisé une partie de l'année ? La <strong>location climatiseur mobile</strong> entre particuliers sur Lokio est la solution idéale. Notre plateforme met en relation ceux qui cherchent à louer un appareil de rafraîchissement avec les propriétaires d'équipements. Climatiseurs mobiles, ventilateurs puissants, rafraîchisseurs d'air : restez au frais pendant les fortes chaleurs.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">65%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">220+</span>
+                    <span class="stat-label">équipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'équipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tous les Équipements de Rafraîchissement</h2>
+            <p class="intro-text">
+                Notre service propose une large gamme d'appareils pour vous rafraîchir pendant l'été. Du simple ventilateur au climatiseur puissant, découvrez les options disponibles sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">❄️</div>
+                    <h3>Climatiseur Mobile Monobloc</h3>
+                    <p>Climatiseurs portables avec évacuation d'air. Puissances de 7000 à 14000 BTU pour pièces de 15 à 40m².</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les climatiseurs mobiles</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌀</div>
+                    <h3>Climatiseur Split Portable</h3>
+                    <p>Climatiseurs avec unité extérieure mobile, plus silencieux et performants. Idéaux pour chambre ou bureau.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un split portable</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💨</div>
+                    <h3>Ventilateur sur Pied</h3>
+                    <p>Ventilateurs puissants sur pied ou colonne. Oscillation, télécommande, plusieurs vitesses. Solution économique.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un ventilateur</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌊</div>
+                    <h3>Rafraîchisseur d'Air</h3>
+                    <p>Refroidisseurs évaporatifs avec réservoir d'eau. Baisse de 5-10°C sans gaine d'évacuation. Écologiques et silencieux.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les rafraîchisseurs</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏭</div>
+                    <h3>Climatiseur Événementiel</h3>
+                    <p>Climatiseurs grande capacité pour tentes, barnums et événements. Refroidissement de grands espaces.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un clim événementiel</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔧</div>
+                    <h3>Accessoires</h3>
+                    <p>Gaines d'évacuation, kits fenêtre, rallonges électriques. Tout le nécessaire pour installer votre climatiseur.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les accessoires</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Louer un Climatiseur sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 65%</h3>
+                    <p>La location entre particuliers permet d'économiser significativement par rapport à l'achat ou aux loueurs professionnels.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">❄️</div>
+                    <h3>Fraîcheur Rapide</h3>
+                    <p>Trouvez un climatiseur disponible rapidement pendant les canicules. Récupérez l'appareil et profitez du frais immédiatement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Proximité Garantie</h3>
+                    <p>Trouvez un climatiseur disponible près de chez vous. Transport facile et installation rapide dans votre logement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🌡️</div>
+                    <h3>Pour Toutes les Situations</h3>
+                    <p>Canicule ponctuelle, événement, travaux, grossesse : louez uniquement quand vous en avez besoin.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏠</div>
+                    <h3>Pas de Stockage</h3>
+                    <p>Louez uniquement pendant les périodes de chaleur. Pas d'appareil encombrant à stocker le reste de l'année.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toutes les locations sur Lokio sont sécurisées avec caution et système d'évaluation des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Trouvez Votre Climatiseur</h2>
+            <p>Des centaines de climatiseurs et ventilateurs disponibles partout en France. Réservez en quelques clics avant la canicule.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>❄️ Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 55% à 65% moins cher que l'achat</li>
+                        <li><strong>Disponibilité rapide</strong> : Trouvez un appareil pendant la canicule</li>
+                        <li><strong>Pas d'investissement</strong> : Restez au frais sans achat coûteux</li>
+                        <li><strong>Flexibilité</strong> : Location semaine ou mois selon la durée des chaleurs</li>
+                        <li><strong>Proximité</strong> : Récupérez l'appareil près de chez vous</li>
+                        <li><strong>Conseils d'installation</strong> : Les propriétaires partagent leurs astuces</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de climatiseur souhaité</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et puissances</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> l'appareil au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> et rendez après utilisation</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Climatiseur</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Équipement ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Climatiseur</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre climatiseur peut rapporter 200€ à 500€ par été</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement</li>
+                        <li><strong>Appareil inutilisé</strong> : Faites profiter votre clim aux autres</li>
+                        <li><strong>Vous gérez tout</strong> : Dates, tarifs et locataires à votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Les climatiseurs sont très recherchés l'été</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et tarifs</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus sécurisés</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Climatiseurs Disponibles sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples d'équipements proposés sur notre plateforme. Du ventilateur au climatiseur puissant, trouvez l'inspiration.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Climatiseur Mobile 12000 BTU</h3>
+                    <p><strong>Monobloc - Pièce 30m²</strong></p>
+                    <p>📍 Paris (75)</p>
+                    <p><strong>Prix :</strong> 20€/jour - 100€/semaine</p>
+                    <p>Climatiseur mobile puissant pour pièces jusqu'à 30m². Kit fenêtre inclus, télécommande. Classe A, silencieux.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Rafraîchisseur d'Air 60L</h3>
+                    <p><strong>Évaporatif - Sans évacuation</strong></p>
+                    <p>📍 Lyon (69)</p>
+                    <p><strong>Prix :</strong> 12€/jour - 60€/semaine</p>
+                    <p>Rafraîchisseur grande capacité, réservoir 60L. Baisse jusqu'à 8°C. Silencieux, économique en électricité.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Ventilateur Colonne Dyson</h3>
+                    <p><strong>Design - Sans pales</strong></p>
+                    <p>📍 Bordeaux (33)</p>
+                    <p><strong>Prix :</strong> 8€/jour - 40€/semaine</p>
+                    <p>Ventilateur Dyson sans pales, sécurisé pour enfants. Télécommande, oscillation 180°. Design et silencieux.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Quelle puissance de climatiseur pour ma pièce ?</div>
+                    <div class="faq-answer">
+                        Comptez environ 100 BTU par m² bien isolé, 130 BTU par m² mal isolé ou ensoleillé. Ainsi, une pièce de 20m² nécessite environ 7000-9000 BTU. Pour 30m², optez pour 10000-12000 BTU. Les propriétaires peuvent vous conseiller selon votre situation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment évacuer l'air chaud d'un climatiseur mobile ?</div>
+                    <div class="faq-answer">
+                        Un climatiseur mobile nécessite une évacuation de l'air chaud par une fenêtre. Un kit fenêtre (souvent inclus) permet de fixer la gaine tout en laissant la fenêtre entrouverte. Certains modèles disposent d'une seconde gaine pour l'entrée d'air.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Climatiseur ou rafraîchisseur d'air ?</div>
+                    <div class="faq-answer">
+                        Le climatiseur refroidit vraiment l'air (jusqu'à -15°C) mais nécessite une évacuation. Le rafraîchisseur baisse de 5-8°C sans évacuation mais est moins efficace par forte humidité. Pour une canicule intense, préférez le climatiseur.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le climatiseur consomme-t-il beaucoup d'électricité ?</div>
+                    <div class="faq-answer">
+                        Un climatiseur 10000 BTU consomme environ 1 kW/h en fonctionnement. Comptez 3-5€ par jour d'utilisation intensive. Choisissez un appareil classe A ou A+ pour limiter la consommation. Les rafraîchisseurs consomment moins (100-200W).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le climatiseur est-il bruyant ?</div>
+                    <div class="faq-answer">
+                        Les climatiseurs mobiles font généralement 50-65 dB, équivalent à une conversation normale. C'est audible mais supportable. Pour une chambre, préférez un modèle silencieux (moins de 55 dB) ou un split portable plus discret.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner en louant mon climatiseur ?</div>
+                    <div class="faq-answer">
+                        Un climatiseur de qualité peut générer 200€ à 500€ pendant l'été. La demande explose pendant les canicules, permettant des tarifs plus élevés. Lokio prélève une commission de 15% sur chaque transaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Prêt à Rester au Frais cet Été ?</h2>
+            <p class="intro-text">
+                Que vous cherchiez un climatiseur pour affronter la canicule ou que vous souhaitiez rentabiliser votre équipement, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de location entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Climatiseur</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

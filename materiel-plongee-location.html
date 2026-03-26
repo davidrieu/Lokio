@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Matériel de Plongée entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre équipement de plongée sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Plongée</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Matériel Plongée : Explorez les Fonds Marins</h2>
+            <p class="intro-text">
+                Vous partez en vacances près de la mer et souhaitez plonger ? Vous possédez du matériel de plongée inutilisé ? La <strong>location matériel plongée</strong> entre particuliers sur Lokio est la solution idéale. Notre plateforme met en relation ceux qui cherchent à louer un équipement avec les propriétaires de matériel. Masques, combinaisons, détendeurs : trouvez tout ce qu'il faut pour explorer les profondeurs.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">55%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">250+</span>
+                    <span class="stat-label">équipements disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'équipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tous les Équipements de Plongée</h2>
+            <p class="intro-text">
+                Notre service propose une large gamme d'équipements pour toutes vos activités sous-marines. Du masque de snorkeling au kit complet de plongée bouteille, découvrez les options disponibles sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🤿</div>
+                    <h3>Kit Masque Tuba Palmes</h3>
+                    <p>Kits de snorkeling complets pour découvrir les fonds marins en surface. Idéaux pour randonnée palmée en famille.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les kits snorkeling</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">👔</div>
+                    <h3>Combinaison Plongée</h3>
+                    <p>Combinaisons néoprène 3mm à 7mm selon la température de l'eau. Protection thermique pour plongées confortables.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer une combinaison</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">⚙️</div>
+                    <h3>Détendeur</h3>
+                    <p>Détendeurs de plongée révisés et fiables. Équipements essentiels pour respirer sous l'eau en toute sécurité.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un détendeur</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎽</div>
+                    <h3>Gilet Stabilisateur</h3>
+                    <p>Gilets stab de différentes tailles pour contrôler votre flottabilité. Équipements confortables et bien entretenus.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les gilets stab</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🔦</div>
+                    <h3>Lampe et Accessoires</h3>
+                    <p>Lampes de plongée, ordinateurs, boussoles et couteaux. Tous les accessoires pour des plongées sécurisées.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les accessoires</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">📦</div>
+                    <h3>Pack Complet Plongée</h3>
+                    <p>Packs tout inclus : combinaison, gilet, détendeur, masque. Tout le nécessaire pour plonger directement.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les packs complets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Louer du Matériel de Plongée sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 55%</h3>
+                    <p>La location entre particuliers permet d'économiser par rapport aux centres de plongée ou à l'achat d'équipement coûteux.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🤿</div>
+                    <h3>Matériel de Qualité</h3>
+                    <p>Accédez à du matériel de grandes marques : Aqualung, Mares, Scubapro. Des équipements révisés et bien entretenus.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Proche des Sites</h3>
+                    <p>Trouvez du matériel disponible près de vos sites de plongée. Méditerranée, Atlantique ou outre-mer.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">✈️</div>
+                    <h3>Voyage Léger</h3>
+                    <p>Plus besoin de transporter votre équipement encombrant. Louez directement sur place pour vos vacances plongée.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎯</div>
+                    <h3>Testez le Matériel</h3>
+                    <p>Essayez différentes marques et modèles avant d'investir. Trouvez l'équipement qui vous convient.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toutes les locations sur Lokio sont sécurisées avec caution et système d'évaluation des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Trouvez Votre Équipement de Plongée</h2>
+            <p>Des centaines d'équipements disponibles près des plus beaux sites de plongée français. Réservez en quelques clics.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🤿 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 40% à 55% moins cher que les centres</li>
+                        <li><strong>Matériel varié</strong> : Toutes les tailles et marques disponibles</li>
+                        <li><strong>Pas d'investissement</strong> : Plongez sans acheter d'équipement coûteux</li>
+                        <li><strong>Flexibilité</strong> : Location journée, semaine ou séjour</li>
+                        <li><strong>Proximité</strong> : Récupérez le matériel près de votre spot</li>
+                        <li><strong>Conseils inclus</strong> : Les propriétaires connaissent les sites locaux</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de matériel souhaité</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> l'équipement au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Plongez</strong> et rendez après utilisation</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver du Matériel</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Équipement ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Matériel</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre équipement peut rapporter 300€ à 800€ par saison</li>
+                        <li><strong>Amortissez vos achats</strong> : Rentabilisez votre investissement plongée</li>
+                        <li><strong>Matériel inutilisé</strong> : Faites profiter votre équipement aux autres</li>
+                        <li><strong>Vous gérez tout</strong> : Dates, tarifs et locataires à votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Les équipements sont très recherchés l'été</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et tarifs</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus sécurisés</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples d'Équipements Disponibles sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples d'équipements proposés sur notre plateforme. Du kit snorkeling au pack complet, trouvez l'inspiration pour vos plongées.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Pack Complet Plongée</h3>
+                    <p><strong>Stab + Détendeur + Combi 5mm</strong></p>
+                    <p>📍 Nice (06)</p>
+                    <p><strong>Prix :</strong> 45€/jour - 200€/semaine</p>
+                    <p>Pack complet Aqualung révisé. Gilet stab taille M/L, détendeur Titan, combinaison 5mm. Parfait pour Méditerranée.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Kit Snorkeling Premium</h3>
+                    <p><strong>Masque + Tuba + Palmes</strong></p>
+                    <p>📍 Marseille (13)</p>
+                    <p><strong>Prix :</strong> 15€/jour - 60€/semaine</p>
+                    <p>Kit Mares complet : masque panoramique, tuba sec, palmes réglables. Idéal pour découvrir les calanques.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Combinaison Semi-Étanche 7mm</h3>
+                    <p><strong>Combinaison eaux froides</strong></p>
+                    <p>📍 Brest (29)</p>
+                    <p><strong>Prix :</strong> 25€/jour - 100€/semaine</p>
+                    <p>Combinaison Scubapro semi-étanche pour eaux froides bretonnes. Taille L. Cagoule et gants disponibles en option.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Ai-je besoin d'un certificat pour plonger ?</div>
+                    <div class="faq-answer">
+                        Pour la plongée bouteille, un niveau de certification (PADI, FFESSM ou équivalent) est généralement requis. Pour le snorkeling et la randonnée palmée, aucune certification n'est nécessaire. Vérifiez les conditions avec le propriétaire.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le détendeur est-il révisé et sécurisé ?</div>
+                    <div class="faq-answer">
+                        Les propriétaires sérieux font réviser régulièrement leur matériel. Vérifiez dans l'annonce la date de dernière révision. Un détendeur doit être révisé chaque année ou tous les 100-150 plongées.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quelle épaisseur de combinaison choisir ?</div>
+                    <div class="faq-answer">
+                        L'épaisseur dépend de la température de l'eau : 3mm pour eaux chaudes (25°C+), 5mm pour Méditerranée été, 7mm pour Atlantique et eaux froides. Demandez conseil au propriétaire selon votre destination.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Les bouteilles de plongée sont-elles disponibles ?</div>
+                    <div class="faq-answer">
+                        Les bouteilles (blocs) sont rarement proposées car elles nécessitent un gonflage spécifique. Vous les trouverez généralement dans les centres de plongée locaux. Lokio propose principalement le matériel personnel.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment savoir si la taille me convient ?</div>
+                    <div class="faq-answer">
+                        Les annonces précisent généralement les tailles disponibles. Indiquez votre taille et poids au propriétaire qui vous conseillera. Une combinaison doit être ajustée sans comprimer ni laisser trop d'eau circuler.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner en louant mon matériel ?</div>
+                    <div class="faq-answer">
+                        Un pack complet de plongée peut générer 300€ à 800€ pendant la saison estivale. Un kit snorkeling rapporte moins mais se loue plus fréquemment. Lokio prélève une commission de 15% sur chaque transaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Prêt à Explorer les Fonds Marins ?</h2>
+            <p class="intro-text">
+                Que vous cherchiez du matériel pour vos vacances ou que vous souhaitiez rentabiliser votre équipement, Lokio est la plateforme idéale. Rejoignez des milliers de plongeurs qui font confiance à notre service de location entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer du Matériel Plongée</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Trampoline entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre trampoline sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Trampoline</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Trampoline : Amusement Garanti</h2>
+            <p class="intro-text">
+                Vous organisez une fête et cherchez une animation qui plaît à tous ? Vous possédez un trampoline inutilisé une partie de l'année ? La <strong>location trampoline</strong> entre particuliers sur Lokio est la solution parfaite. Notre plateforme met en relation ceux qui cherchent à louer un trampoline avec les propriétaires d'équipements. Du petit trampoline enfant au grand modèle familial, trouvez le trampoline idéal pour vos événements.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">65%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">trampolines disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'équipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tous les Types de Trampolines</h2>
+            <p class="intro-text">
+                Notre service propose une large gamme de trampolines pour tous les âges et tous les jardins. Du modèle compact au grand trampoline avec filet, découvrez les options disponibles sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎪</div>
+                    <h3>Trampoline Rond Classique</h3>
+                    <p>Trampolines ronds 2,5m à 4,5m de diamètre. Modèles familiaux avec filet de sécurité. Les plus populaires pour jardins.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les trampolines ronds</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">📐</div>
+                    <h3>Trampoline Rectangulaire</h3>
+                    <p>Trampolines rectangulaires pour rebonds plus puissants. Idéaux pour acrobaties et utilisateurs sportifs.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un trampoline rectangle</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">👶</div>
+                    <h3>Mini Trampoline Enfant</h3>
+                    <p>Petits trampolines avec poignée pour les tout-petits. Sécurisés et adaptés aux enfants de 2 à 6 ans.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un mini trampoline</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏋️</div>
+                    <h3>Trampoline Fitness</h3>
+                    <p>Trampolines de fitness avec barre de maintien. Parfaits pour exercices cardio et renforcement musculaire.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les trampolines fitness</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">⬇️</div>
+                    <h3>Trampoline Enterré</h3>
+                    <p>Trampolines au niveau du sol, esthétiques et sécurisés. Intégration parfaite dans le jardin.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un trampoline enterré</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛡️</div>
+                    <h3>Accessoires Sécurité</h3>
+                    <p>Filets de protection, coussins de ressorts, échelles d'accès. Tout pour des sauts en toute sécurité.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les accessoires</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Louer un Trampoline sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 65%</h3>
+                    <p>La location entre particuliers permet d'économiser considérablement par rapport à l'achat d'un trampoline neuf.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎉</div>
+                    <h3>Animation Parfaite</h3>
+                    <p>Le trampoline est l'animation préférée des enfants. Succès garanti pour anniversaires et fêtes de famille.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Proximité Garantie</h3>
+                    <p>Trouvez un trampoline disponible près de chez vous. Simplifiez le transport et l'installation.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🔄</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>Essayez différentes tailles avant d'investir. Vérifiez si le trampoline convient à votre jardin et vos enfants.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏠</div>
+                    <h3>Pas de Stockage</h3>
+                    <p>Louez uniquement pour vos événements. Pas de trampoline encombrant à stocker toute l'année.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toutes les locations sur Lokio sont sécurisées avec caution et système d'évaluation des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Trouvez Votre Trampoline</h2>
+            <p>Des centaines de trampolines disponibles partout en France. Réservez en quelques clics pour votre prochain événement.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🎪 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 55% à 65% moins cher que l'achat</li>
+                        <li><strong>Large choix</strong> : Toutes tailles et types disponibles</li>
+                        <li><strong>Pas d'investissement</strong> : Animation sans achat coûteux</li>
+                        <li><strong>Flexibilité</strong> : Location weekend ou semaine selon vos besoins</li>
+                        <li><strong>Proximité</strong> : Récupérez le trampoline près de chez vous</li>
+                        <li><strong>Aide au montage</strong> : Certains propriétaires proposent leur aide</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> la taille de trampoline souhaitée</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> et montez le trampoline</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> et rendez après utilisation</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver un Trampoline</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Trampoline ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Équipement</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre trampoline peut rapporter 200€ à 500€ par saison</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement</li>
+                        <li><strong>Équipement inutilisé</strong> : Faites profiter votre trampoline aux autres</li>
+                        <li><strong>Vous gérez tout</strong> : Dates, tarifs et locataires à votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Les trampolines sont très recherchés pour les fêtes</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et tarifs</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus sécurisés</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Trampolines Disponibles sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de trampolines proposés sur notre plateforme. Du petit modèle au grand trampoline familial, trouvez l'inspiration pour vos événements.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Trampoline Rond 3,70m + Filet</h3>
+                    <p><strong>Modèle familial - 150 kg max</strong></p>
+                    <p>📍 Lille (59)</p>
+                    <p><strong>Prix :</strong> 40€/jour - 150€/semaine</p>
+                    <p>Trampoline rond avec filet de sécurité et échelle. Parfait pour enfants de 6 à 14 ans. Montage 30 min à 2 personnes.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Grand Trampoline 4,30m</h3>
+                    <p><strong>XXL avec filet renforcé</strong></p>
+                    <p>📍 Toulouse (31)</p>
+                    <p><strong>Prix :</strong> 55€/jour - 200€/semaine</p>
+                    <p>Grand trampoline pour toute la famille. Filet haute sécurité, coussin protection. Peut accueillir plusieurs enfants.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Mini Trampoline Enfant 1,40m</h3>
+                    <p><strong>Petit modèle - 3-6 ans</strong></p>
+                    <p>📍 Nantes (44)</p>
+                    <p><strong>Prix :</strong> 20€/jour - 80€/semaine</p>
+                    <p>Mini trampoline avec poignée de maintien. Sécurisé pour les tout-petits. Montage rapide en 10 minutes.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Quelle taille de trampoline pour mon jardin ?</div>
+                    <div class="faq-answer">
+                        Prévoyez un espace dégagé autour du trampoline (2m minimum). Un trampoline 3m convient aux petits jardins, 4m pour jardins moyens, et 4,5m+ pour grands espaces. Vérifiez l'absence d'obstacles en hauteur (branches, fils).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le montage est-il compliqué ?</div>
+                    <div class="faq-answer">
+                        Le montage prend généralement 30 minutes à 1 heure à deux personnes selon la taille. Aucun outil spécial n'est nécessaire. Certains propriétaires proposent leur aide pour le montage et démontage.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien d'enfants peuvent sauter en même temps ?</div>
+                    <div class="faq-answer">
+                        Pour des raisons de sécurité, il est recommandé qu'un seul enfant saute à la fois. Sur les grands modèles (4m+), deux enfants de poids similaire peuvent sauter ensemble, mais avec vigilance.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le trampoline peut-il rester dehors s'il pleut ?</div>
+                    <div class="faq-answer">
+                        Oui, les trampolines sont conçus pour rester en extérieur. Cependant, n'utilisez pas le trampoline par temps de pluie (surface glissante) ni par vent fort. Une bâche de protection peut être fournie.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Y a-t-il une limite de poids ?</div>
+                    <div class="faq-answer">
+                        Oui, chaque trampoline a une charge maximale (généralement 100 à 150 kg). Vérifiez cette information dans l'annonce. Les adultes peuvent généralement utiliser les grands modèles, mais respectez toujours les limites indiquées.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner en louant mon trampoline ?</div>
+                    <div class="faq-answer">
+                        Un trampoline de qualité peut générer 200€ à 500€ pendant la saison estivale. Les grands modèles avec filet de sécurité sont les plus demandés. Lokio prélève une commission de 15% sur chaque transaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Prêt à Faire Sauter de Joie Vos Enfants ?</h2>
+            <p class="intro-text">
+                Que vous cherchiez un trampoline pour un anniversaire ou que vous souhaitiez rentabiliser votre équipement, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de location entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Trampoline</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

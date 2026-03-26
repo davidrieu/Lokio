@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Matériel de Plongée entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location matériel plongée
+
+Titre SEO:
+Location Matériel de Plongée entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre matériel de plongée sur Lokio. Combinaison, détendeur, gilet stab : économisez jusqu'à 55%. Plongez sans investir.
+
+URL/Slug:
+location-materiel-plongee
+
+Mots-clés secondaires (séparer par des virgules):
+location combinaison plongée, louer équipement plongée, location détendeur, location gilet stab, location kit snorkeling
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location matériel plongée" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 20 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

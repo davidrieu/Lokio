@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Surf et Bodyboard entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre planche de surf sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Surf</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Surf : Attrapez les Vagues</h2>
+            <p class="intro-text">
+                Vous passez vos vacances sur la côte et rêvez de glisser sur les vagues ? Vous possédez des planches de surf inutilisées ? La <strong>location surf</strong> entre particuliers sur Lokio est la solution idéale. Notre plateforme met en relation ceux qui cherchent à louer une planche avec les propriétaires d'équipements. Shortboards, longboards, bodyboards : trouvez la planche parfaite pour rider les vagues.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">planches disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'équipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tous les Types de Planches de Surf</h2>
+            <p class="intro-text">
+                Notre service propose une large gamme de planches pour tous les niveaux. Du bodyboard débutant au shortboard de compétition, découvrez les options disponibles sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏄</div>
+                    <h3>Longboard</h3>
+                    <p>Longboards 9' et plus, planches stables et polyvalentes. Parfaites pour débuter et pour un style de glisse fluide et élégant.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les longboards</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌊</div>
+                    <h3>Shortboard</h3>
+                    <p>Shortboards 5'6" à 6'6", planches maniables et réactives. Pour les surfeurs intermédiaires et confirmés en quête de performance.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un shortboard</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🛹</div>
+                    <h3>Funboard / Mini-Malibu</h3>
+                    <p>Planches intermédiaires 7' à 8', bon compromis stabilité et maniabilité. Idéales pour progression et surf polyvalent.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver un funboard</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏊</div>
+                    <h3>Bodyboard</h3>
+                    <p>Bodyboards toutes tailles, planches accessibles et fun. Glissez allongé sur les vagues, idéal pour débutants et sensations garanties.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les bodyboards</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🧸</div>
+                    <h3>Planche Mousse Débutant</h3>
+                    <p>Softboards en mousse, sécurisantes et stables. Parfaites pour initiation et premières sessions en toute sécurité.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer une softboard</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">👔</div>
+                    <h3>Combinaisons et Accessoires</h3>
+                    <p>Combinaisons néoprène, leashes, housses de transport. Tout le nécessaire pour des sessions confortables.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les accessoires</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Louer un Surf sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 60%</h3>
+                    <p>La location entre particuliers permet d'économiser significativement par rapport aux surf shops ou à l'achat d'une planche.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏄</div>
+                    <h3>Planches de Qualité</h3>
+                    <p>Accédez à des planches de grandes marques : Channel Islands, Torq, NSP. Du matériel bien entretenu pour rider les vagues.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Proche des Spots</h3>
+                    <p>Trouvez une planche disponible près de votre spot de vacances. Récupérez facilement le matériel sur place.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎯</div>
+                    <h3>Testez Avant d'Acheter</h3>
+                    <p>Essayez différentes tailles et shapes de planches avant d'investir. Trouvez le surf qui correspond à votre niveau.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">✈️</div>
+                    <h3>Voyage Léger</h3>
+                    <p>Plus besoin de transporter votre planche en avion. Louez directement sur place pour vos vacances surf.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toutes les locations sur Lokio sont sécurisées avec caution et système d'évaluation des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Trouvez Votre Planche de Surf</h2>
+            <p>Des centaines de planches disponibles sur toutes les côtes françaises. Réservez en quelques clics pour vos sessions.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>🏄 Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 50% à 60% moins cher que les surf shops</li>
+                        <li><strong>Matériel varié</strong> : Toutes les tailles et shapes disponibles</li>
+                        <li><strong>Pas d'investissement</strong> : Surfez sans acheter une planche coûteuse</li>
+                        <li><strong>Flexibilité</strong> : Location journée, semaine ou mois</li>
+                        <li><strong>Proximité</strong> : Récupérez la planche près de votre spot</li>
+                        <li><strong>Conseils locaux</strong> : Les propriétaires connaissent les meilleurs spots</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> le type de planche souhaité</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> la planche au lieu convenu</li>
+                        <li style="padding-left: 10px;"><strong>Surfez</strong> et rendez après utilisation</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Planche</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Planche ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Vos Planches</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre surf peut rapporter 200€ à 600€ par saison</li>
+                        <li><strong>Amortissez vos achats</strong> : Rentabilisez votre quiver de planches</li>
+                        <li><strong>Planches inutilisées</strong> : Faites profiter vos surfs aux autres riders</li>
+                        <li><strong>Vous gérez tout</strong> : Dates, tarifs et locataires à votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Les planches sont très recherchées l'été</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et tarifs</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus sécurisés</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Planches Disponibles sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de planches proposées sur notre plateforme. Du longboard au bodyboard, trouvez l'inspiration pour vos sessions.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Longboard Torq 9'</h3>
+                    <p><strong>Planche débutant/intermédiaire</strong></p>
+                    <p>📍 Biarritz (64)</p>
+                    <p><strong>Prix :</strong> 25€/jour - 120€/semaine</p>
+                    <p>Longboard stable et facile, idéal pour débuter ou cruiser. Leash et housse inclus. Parfait pour les vagues de la côte basque.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Shortboard Channel Islands 6'2"</h3>
+                    <p><strong>Performance - Surfeur confirmé</strong></p>
+                    <p>📍 Hossegor (40)</p>
+                    <p><strong>Prix :</strong> 35€/jour - 180€/semaine</p>
+                    <p>Shortboard polyvalent pour vagues creuses. Parfait pour rider les beach breaks landais. Leash fourni.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Pack Bodyboard + Palmes</h3>
+                    <p><strong>Bodyboard 42" + Palmes</strong></p>
+                    <p>📍 Lacanau (33)</p>
+                    <p><strong>Prix :</strong> 15€/jour - 70€/semaine</p>
+                    <p>Bodyboard premium avec palmes ajustables. Sensations garanties dans les vagues girondines. Leash poignet inclus.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Quelle taille de planche pour débuter le surf ?</div>
+                    <div class="faq-answer">
+                        Pour débuter, privilégiez une planche volumineuse et stable : longboard 8'-9' ou softboard en mousse. Plus la planche est grande, plus elle est stable. Les funboards 7'-8' conviennent aussi aux débutants sportifs.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le prix moyen pour louer une planche de surf ?</div>
+                    <div class="faq-answer">
+                        Le prix varie selon le type de planche. Comptez 15€ à 25€ par jour pour un longboard ou softboard, 20€ à 35€ par jour pour un shortboard, et 10€ à 15€ par jour pour un bodyboard. Des forfaits semaine sont généralement proposés avec réductions.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le leash et la housse sont-ils inclus ?</div>
+                    <div class="faq-answer">
+                        Souvent oui. La plupart des propriétaires incluent le leash de sécurité et parfois une housse de transport. Vérifiez la description de l'annonce ou demandez au propriétaire avant de réserver.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je louer une combinaison avec la planche ?</div>
+                    <div class="faq-answer">
+                        Certains propriétaires proposent des combinaisons néoprène en complément. Vérifiez les options disponibles dans l'annonce. Pensez à préciser votre taille lors de la réservation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment transporter une planche de surf ?</div>
+                    <div class="faq-answer">
+                        Les planches se transportent sur le toit de la voiture avec des sangles ou barres de toit. Une housse de protection est recommandée. Certains propriétaires proposent la livraison sur votre lieu de vacances.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner en louant mes planches ?</div>
+                    <div class="faq-answer">
+                        Une planche de qualité peut générer 200€ à 600€ pendant la saison estivale. Un shortboard performant ou un longboard premium peuvent rapporter davantage. Lokio prélève une commission de 15% sur chaque transaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Prêt à Rider les Vagues ?</h2>
+            <p class="intro-text">
+                Que vous cherchiez une planche pour vos vacances ou que vous souhaitiez rentabiliser votre quiver, Lokio est la plateforme idéale. Rejoignez des milliers de surfeurs qui font confiance à notre service de location entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer un Surf</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

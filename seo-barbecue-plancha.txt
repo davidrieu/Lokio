@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Barbecue et Plancha entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location barbecue
+
+Titre SEO:
+Location Barbecue et Plancha entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre barbecue sur Lokio. Barbecue gaz, charbon, plancha : économisez jusqu'à 70%. Réservez pour vos grillades estivales.
+
+URL/Slug:
+location-barbecue-plancha
+
+Mots-clés secondaires (séparer par des virgules):
+location plancha, louer barbecue, location barbecue gaz, location barbecue particulier, location fumoir
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location barbecue" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 25 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

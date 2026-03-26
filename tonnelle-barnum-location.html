@@ -1,0 +1,643 @@
+<style>
+.lokio-landing * {
+    box-sizing: border-box;
+}
+
+.lokio-landing {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.lokio-landing .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lokio-landing .hero {
+    background: linear-gradient(135deg, #fed801 0%, #ffc107 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.lokio-landing h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.lokio-landing .hero-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.lokio-landing .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lokio-landing .btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.lokio-landing .btn-primary {
+    background: #333;
+    color: #fed801;
+}
+
+.lokio-landing .btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.lokio-landing .btn-secondary {
+    background: white;
+    color: #333;
+}
+
+.lokio-landing .btn-secondary:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.lokio-landing .section {
+    padding: 80px 0;
+}
+
+.lokio-landing .section-alt {
+    background: #f9f9f9;
+}
+
+.lokio-landing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lokio-landing h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lokio-landing p {
+    margin-bottom: 15px;
+}
+
+.lokio-landing a {
+    text-decoration: none;
+}
+
+.lokio-landing .intro-text {
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.lokio-landing .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lokio-landing .equipment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lokio-landing .equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lokio-landing .equipment-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.lokio-landing .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lokio-landing .benefit-card {
+    text-align: center;
+}
+
+.lokio-landing .benefit-number {
+    background: #fed801;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.lokio-landing .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.lokio-landing .column-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lokio-landing .column-card h3 {
+    color: #fed801;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lokio-landing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lokio-landing ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.lokio-landing li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.lokio-landing ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #fed801;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lokio-landing .cta-section {
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 80px 0;
+}
+
+.lokio-landing .cta-section h2 {
+    color: #fed801;
+    margin-bottom: 30px;
+}
+
+.lokio-landing .cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.lokio-landing .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.lokio-landing .stat-item {
+    text-align: center;
+}
+
+.lokio-landing .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fed801;
+    display: block;
+}
+
+.lokio-landing .stat-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.lokio-landing .faq {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.lokio-landing .faq-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.lokio-landing .faq-question {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lokio-landing .faq-answer {
+    color: #666;
+    line-height: 1.8;
+}
+
+.lokio-landing .text-center {
+    text-align: center;
+}
+
+.lokio-landing strong {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lokio-landing h1 {
+        font-size: 32px;
+    }
+
+    .lokio-landing h2 {
+        font-size: 28px;
+    }
+
+    .lokio-landing .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .lokio-landing .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="lokio-landing">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Location Tonnelle et Barnum entre Particuliers</h1>
+            <p class="hero-subtitle">Louez ou mettez en location votre tonnelle ou barnum sur Lokio</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Tonnelle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Mettre en Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>Location Tonnelle : Protégez Vos Événements</h2>
+            <p class="intro-text">
+                Vous organisez une fête en extérieur et cherchez un abri ? Vous possédez un barnum inutilisé ? La <strong>location tonnelle</strong> entre particuliers sur Lokio est la solution parfaite. Notre plateforme met en relation ceux qui cherchent à louer une tonnelle avec les propriétaires de structures d'accueil. Barnums, tentes de réception, pergolas : trouvez l'abri idéal pour vos événements estivaux.
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">75%</span>
+                    <span class="stat-label">d'économies en moyenne</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">280+</span>
+                    <span class="stat-label">structures disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">délai de réponse moyen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types d'équipements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tous les Types de Tonnelles et Barnums</h2>
+            <p class="intro-text">
+                Notre service propose une large gamme de structures pour tous vos événements en extérieur. De la petite tonnelle de jardin au grand barnum de réception, découvrez les options disponibles sur Lokio.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">⛺</div>
+                    <h3>Tonnelle de Jardin</h3>
+                    <p>Tonnelles 3x3m à 4x4m, structures légères et pratiques. Parfaites pour petites réunions familiales et apéritifs.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les tonnelles</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🎪</div>
+                    <h3>Barnum Professionnel</h3>
+                    <p>Barnums 6x3m à 6x12m, structures renforcées avec parois latérales. Idéaux pour mariages et grands événements.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer un barnum</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🏕️</div>
+                    <h3>Tente de Réception</h3>
+                    <p>Tentes pagodes et chapiteaux élégants. Structures premium pour événements haut de gamme jusqu'à 100 personnes.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Trouver une tente</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">☀️</div>
+                    <h3>Pergola Démontable</h3>
+                    <p>Pergolas en aluminium ou bois, toiles rétractables. Élégance et protection solaire pour terrasses et jardins.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Louer une pergola</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">🌧️</div>
+                    <h3>Barnum Imperméable</h3>
+                    <p>Structures étanches certifiées, parois complètes. Protection garantie contre pluie et intempéries.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Voir les modèles étanches</a>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">💡</div>
+                    <h3>Accessoires et Éclairage</h3>
+                    <p>Poids de lestage, éclairages LED, chauffages d'appoint. Tout le nécessaire pour équiper votre structure.</p>
+                    <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary" style="margin-top: 20px; padding: 12px 30px; font-size: 16px;">Explorer les accessoires</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir Lokio -->
+    <section class="section">
+        <div class="container">
+            <h2>Pourquoi Louer une Tonnelle sur Lokio ?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">💰</div>
+                    <h3>Économisez jusqu'à 75%</h3>
+                    <p>La location entre particuliers permet d'économiser considérablement par rapport aux loueurs professionnels ou à l'achat d'un barnum.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎪</div>
+                    <h3>Toutes les Tailles</h3>
+                    <p>De la petite tonnelle au grand chapiteau de 100 places, trouvez la structure adaptée à votre nombre d'invités.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">📍</div>
+                    <h3>Proximité Garantie</h3>
+                    <p>Trouvez une tonnelle disponible près de chez vous. Simplifiez le transport et le montage de votre structure.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🎉</div>
+                    <h3>Pour Tous les Événements</h3>
+                    <p>Mariages, anniversaires, garden-parties, fêtes de quartier : louez l'abri parfait pour chaque occasion.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🏠</div>
+                    <h3>Pas de Stockage</h3>
+                    <p>Louez uniquement quand vous en avez besoin. Pas de structure encombrante à stocker chez vous toute l'année.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">🛡️</div>
+                    <h3>Location Sécurisée</h3>
+                    <p>Toutes les locations sur Lokio sont sécurisées avec caution et système d'évaluation des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Mid-page -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Trouvez Votre Tonnelle Maintenant</h2>
+            <p>Des centaines de tonnelles et barnums disponibles partout en France. Réservez en quelques clics pour votre prochain événement.</p>
+            <div class="cta-buttons">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-secondary">Parcourir les Annonces</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour les loueurs et locataires -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Lokio : La Solution Pour Tous</h2>
+
+            <div class="two-columns">
+                <div id="louer" class="column-card">
+                    <h3>⛺ Vous Cherchez à Louer ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Les Avantages de Louer sur Lokio</h4>
+                    <ul>
+                        <li><strong>Économies importantes</strong> : 65% à 75% moins cher que les loueurs pros</li>
+                        <li><strong>Structures de qualité</strong> : Barnums et tonnelles bien entretenus</li>
+                        <li><strong>Pas d'investissement</strong> : Protégez vos invités sans achat coûteux</li>
+                        <li><strong>Flexibilité</strong> : Location weekend, semaine selon vos besoins</li>
+                        <li><strong>Proximité</strong> : Récupérez la structure près de chez vous</li>
+                        <li><strong>Aide au montage</strong> : Certains propriétaires proposent leur aide</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Comment Ça Marche ?</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Recherchez</strong> la taille de structure souhaitée</li>
+                        <li style="padding-left: 10px;"><strong>Comparez</strong> les prix et disponibilités</li>
+                        <li style="padding-left: 10px;"><strong>Réservez</strong> en ligne en toute sécurité</li>
+                        <li style="padding-left: 10px;"><strong>Récupérez</strong> et montez la structure</li>
+                        <li style="padding-left: 10px;"><strong>Profitez</strong> et rendez après l'événement</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Trouver une Tonnelle</a>
+                    </div>
+                </div>
+
+                <div id="proposer" class="column-card">
+                    <h3>💰 Vous Voulez Louer Votre Structure ?</h3>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Rentabilisez Votre Tonnelle</h4>
+                    <ul>
+                        <li><strong>Générez un revenu</strong> : Votre barnum peut rapporter 300€ à 800€ par saison</li>
+                        <li><strong>Amortissez votre achat</strong> : Rentabilisez votre investissement rapidement</li>
+                        <li><strong>Structure inutilisée</strong> : Faites profiter votre tonnelle aux autres</li>
+                        <li><strong>Vous gérez tout</strong> : Dates, tarifs et locataires à votre choix</li>
+                        <li><strong>Protection incluse</strong> : Caution pour protéger votre matériel</li>
+                        <li><strong>Forte demande</strong> : Les structures sont très recherchées l'été</li>
+                    </ul>
+
+                    <h4 style="margin: 30px 0 20px; color: #333;">Mettre en Location en 5 Minutes</h4>
+                    <ol style="list-style: decimal; padding-left: 30px;">
+                        <li style="padding-left: 10px;"><strong>Créez</strong> votre annonce avec photos</li>
+                        <li style="padding-left: 10px;"><strong>Définissez</strong> vos disponibilités et tarifs</li>
+                        <li style="padding-left: 10px;"><strong>Recevez</strong> des demandes de location</li>
+                        <li style="padding-left: 10px;"><strong>Validez</strong> les réservations</li>
+                        <li style="padding-left: 10px;"><strong>Encaissez</strong> vos revenus sécurisés</li>
+                    </ol>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="https://www.lokio.fr/add-listing/" class="btn btn-primary">Publier une Annonce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exemples de locations -->
+    <section class="section">
+        <div class="container">
+            <h2>Exemples de Tonnelles Disponibles sur Lokio</h2>
+            <p class="intro-text">
+                Découvrez des exemples de structures proposées sur notre plateforme. De la tonnelle compacte au grand barnum, trouvez l'inspiration pour votre événement.
+            </p>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Barnum Pro 6x3m</h3>
+                    <p><strong>Structure aluminium - 20 personnes</strong></p>
+                    <p>📍 Toulouse (31)</p>
+                    <p><strong>Prix :</strong> 60€/jour - 250€/semaine</p>
+                    <p>Barnum professionnel avec parois latérales complètes. Toile imperméable, structure renforcée. Idéal pour anniversaires.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Chapiteau Pagode 5x5m</h3>
+                    <p><strong>Tente de réception élégante</strong></p>
+                    <p>📍 Nice (06)</p>
+                    <p><strong>Prix :</strong> 100€/jour - 400€/semaine</p>
+                    <p>Chapiteau style pagode, toile blanche premium. Parfait pour mariage ou événement chic jusqu'à 30 convives.</p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Tonnelle Pliante 3x3m</h3>
+                    <p><strong>Structure légère - Montage rapide</strong></p>
+                    <p>📍 Nantes (44)</p>
+                    <p><strong>Prix :</strong> 25€/jour - 100€/semaine</p>
+                    <p>Tonnelle pliante facile à monter en 10 minutes. Idéale pour garden-party ou barbecue entre amis.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Voir Toutes les Annonces</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Quelle taille de tonnelle pour mon événement ?</div>
+                    <div class="faq-answer">
+                        Comptez environ 2m² par personne assise. Une tonnelle 3x3m convient pour 8-10 personnes debout. Un barnum 6x3m accueille 20-25 personnes assises. Pour 50 invités ou plus, optez pour un chapiteau 6x6m minimum ou plusieurs structures.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Quel est le prix moyen pour louer un barnum ?</div>
+                    <div class="faq-answer">
+                        Le prix varie selon la taille. Comptez 20€ à 40€ par jour pour une tonnelle 3x3m, 50€ à 80€ par jour pour un barnum 6x3m, et 100€ à 200€ par jour pour un grand chapiteau. Des forfaits weekend sont souvent proposés.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Le montage est-il compliqué ?</div>
+                    <div class="faq-answer">
+                        Les tonnelles pliantes se montent en 10-15 minutes à 2 personnes. Les barnums plus grands nécessitent 2-4 personnes et 30 minutes à 1 heure. Certains propriétaires proposent une aide au montage moyennant un supplément.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Comment fixer la structure au sol ?</div>
+                    <div class="faq-answer">
+                        Sur herbe, utilisez des sardines ou piquets fournis. Sur béton ou terrasse, des poids de lestage sont nécessaires (souvent inclus ou disponibles en option). Vérifiez les conditions dans l'annonce.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">La structure résiste-t-elle à la pluie ?</div>
+                    <div class="faq-answer">
+                        Les barnums professionnels sont généralement imperméables. Vérifiez dans la description si la toile est certifiée étanche. Pour une protection optimale, choisissez un modèle avec parois latérales complètes.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Combien puis-je gagner en louant mon barnum ?</div>
+                    <div class="faq-answer">
+                        Un barnum de qualité peut générer 300€ à 800€ pendant la saison estivale. Un grand chapiteau peut rapporter davantage. Lokio prélève une commission de 15% sur chaque transaction.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+        <div class="container">
+            <h2>Prêt à Protéger Votre Événement ?</h2>
+            <p class="intro-text">
+                Que vous cherchiez une tonnelle pour votre prochain événement ou que vous souhaitiez rentabiliser votre structure, Lokio est la plateforme idéale. Rejoignez des milliers d'utilisateurs qui font confiance à notre service de location entre particuliers.
+            </p>
+
+            <div class="cta-buttons" style="justify-content: center; margin-top: 40px;">
+                <a href="https://www.lokio.fr/listings/?action=listeo_get_listings" class="btn btn-primary">Louer une Tonnelle</a>
+                <a href="https://www.lokio.fr/add-listing/" class="btn btn-secondary">Gagner de l'Argent</a>
+            </div>
+        </div>
+    </section>
+
+</div>

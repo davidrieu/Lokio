@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Tonnelle et Barnum entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location tonnelle
+
+Titre SEO:
+Location Tonnelle et Barnum entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre tonnelle sur Lokio. Barnum, chapiteau, tente de réception : économisez jusqu'à 75%. Réservez pour votre événement.
+
+URL/Slug:
+location-tonnelle-barnum
+
+Mots-clés secondaires (séparer par des virgules):
+location barnum, louer tonnelle, location chapiteau, location tente réception, location barnum particulier
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location tonnelle" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 25 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

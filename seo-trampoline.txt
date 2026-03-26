@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Trampoline entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location trampoline
+
+Titre SEO:
+Location Trampoline entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre trampoline sur Lokio. Trampolines avec filet, mini trampolines : économisez jusqu'à 65%. Amusement garanti.
+
+URL/Slug:
+location-trampoline
+
+Mots-clés secondaires (séparer par des virgules):
+louer trampoline, location trampoline particulier, location trampoline anniversaire, location trampoline jardin, location mini trampoline
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location trampoline" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 25 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

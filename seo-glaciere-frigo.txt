@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Glacière Électrique et Frigo Portable entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location glacière électrique
+
+Titre SEO:
+Location Glacière Électrique et Frigo Portable | Lokio
+
+Meta Description:
+Louez ou mettez en location votre glacière électrique sur Lokio. Frigo portable, glacière compression : économisez jusqu'à 60%. Fraîcheur garantie.
+
+URL/Slug:
+location-glaciere-electrique-frigo
+
+Mots-clés secondaires (séparer par des virgules):
+location frigo portable, louer glacière électrique, location glacière camping, location frigo compression, location glacière voiture
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location glacière électrique" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 20 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

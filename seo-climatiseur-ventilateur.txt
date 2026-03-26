@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Climatiseur Mobile et Ventilateur entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location climatiseur mobile
+
+Titre SEO:
+Location Climatiseur Mobile et Ventilateur | Lokio
+
+Meta Description:
+Louez ou mettez en location votre climatiseur mobile sur Lokio. Ventilateur, rafraîchisseur d'air : économisez jusqu'à 65%. Restez au frais cet été.
+
+URL/Slug:
+location-climatiseur-mobile-ventilateur
+
+Mots-clés secondaires (séparer par des virgules):
+location ventilateur, louer climatiseur, location rafraîchisseur air, location clim portable, location climatiseur particulier
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location climatiseur mobile" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 22 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

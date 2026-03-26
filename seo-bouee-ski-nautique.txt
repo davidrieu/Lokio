@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Bouée Tractée et Ski Nautique entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location bouée tractée
+
+Titre SEO:
+Location Bouée Tractée et Ski Nautique | Lokio
+
+Meta Description:
+Louez ou mettez en location votre bouée tractée sur Lokio. Ski nautique, wakeboard, banana boat : économisez jusqu'à 65%. Sensations nautiques garanties.
+
+URL/Slug:
+location-bouee-tractee-ski-nautique
+
+Mots-clés secondaires (séparer par des virgules):
+location ski nautique, louer bouée tractée, location wakeboard, location banana boat, location matériel nautique
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location bouée tractée" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 20 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

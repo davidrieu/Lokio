@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Surf et Bodyboard entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location surf
+
+Titre SEO:
+Location Surf et Bodyboard entre Particuliers | Lokio
+
+Meta Description:
+Louez ou mettez en location votre planche de surf sur Lokio. Longboard, shortboard, bodyboard : économisez jusqu'à 60%. Surfez sans investir.
+
+URL/Slug:
+location-surf-bodyboard
+
+Mots-clés secondaires (séparer par des virgules):
+location bodyboard, louer surf, location planche de surf, location longboard, location shortboard
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location surf" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 22 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte

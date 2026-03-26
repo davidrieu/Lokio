@@ -1,0 +1,30 @@
+TITRE H1 (à mettre sur la page WordPress)
+Location Jeux Gonflables et Château Gonflable entre Particuliers
+
+---
+
+PARAMÈTRES RANKMATH
+
+Mot-clé principal:
+location château gonflable
+
+Titre SEO:
+Location Château Gonflable et Jeux Gonflables | Lokio
+
+Meta Description:
+Louez ou mettez en location votre château gonflable sur Lokio. Toboggans, parcours d'obstacles : économisez jusqu'à 70%. Animez vos fêtes d'enfants.
+
+URL/Slug:
+location-chateau-gonflable-jeux
+
+Mots-clés secondaires (séparer par des virgules):
+location jeux gonflables, louer château gonflable, location toboggan gonflable, location parcours obstacles, location structure gonflable
+
+---
+
+INFORMATIONS IMPORTANTES:
+
+Densité du mot-clé "location château gonflable" : ~1% (OPTIMAL)
+Le mot-clé apparaît environ 22 fois dans le contenu
+Présent dans H1, H2, meta description, URL
+Mots-clés secondaires bien intégrés dans le texte
